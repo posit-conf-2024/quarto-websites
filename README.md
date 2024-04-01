@@ -3,7 +3,7 @@ Quarto Websites
 
 ### posit::conf(2024)
 
-by INSTRUCTOR_NAME
+by Charlotte Wickham, Emil Hvitfeldt
 
 -----
 
