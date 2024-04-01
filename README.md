@@ -1,4 +1,4 @@
-WORKSHOP_TITLE
+Quarto Websites
 ================
 
 ### posit::conf(2024)
