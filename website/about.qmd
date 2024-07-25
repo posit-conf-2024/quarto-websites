@@ -1,0 +1,13 @@
+---
+title: "About"
+---
+
+## Teaching Team
+
+### Emil Hvitfeldt
+
+Emil (he/him) is a Software Engineer on the tidymodels team at Posit. Emil works on making modeling easy and intuitive with tidy tools. Outside of modeling, he is also trying to make slidecrafting a well respecting verb. 
+
+### Charlotte Wickham
+
+Charlotte (she/her) is a Developer Educator on the Developer Relations team at Posit. As part of her job at Posit, Charlotte helps to keep [quarto.org](https://quarto.org)---a website about, and also built with, Quarto---up to date. Prior to Posit, she taught Statistics and Data Science at Oregon State University where she received awards for her in-person and online teaching. 

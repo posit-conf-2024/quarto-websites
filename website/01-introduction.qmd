@@ -1,0 +1,130 @@
+---
+format:
+  revealjs: 
+    theme: [default, slide-styles.scss]
+    width: 1280
+    height: 720
+    include-after-body: 
+      - "all-the-js-code.html"
+    footer: "Wifi: Posit Conf 2024 Password: conf2024 | Materials: [pos.it/websites_24](https://pos.it/websites_24)"
+echo: false
+code-line-numbers: false
+---
+
+## Quarto Websites: Welcome!
+
+::: {.columns}
+::: {.column width=75%}
+**WiFi:** Posit Conf 2024 **Password:** conf2024
+
+Find the materials at: [pos.it/websites_24](https://pos.it/websites_24)
+
+Verify the pre-work steps (details 👆):
+
+1.  [Quarto version 1.5](https://quarto.org/docs/download/)
+2.  Your IDE of choice
+3.  Account at [Quarto Pub](https://quartopub.com) (if you want to publish)
+4.  Join the discord: #workshop-quarto-websites
+:::
+::: {.column width=25%}
+{{< qrcode https://pos.it/websites_24 width=250 height=250 >}}
+:::
+::: 
+
+
+## Housekeeping
+
+-   There are gender-neutral bathrooms located on levels 3, 4, 5, 6 & 7
+-   There is a meditation/prayer room located in 503. Available Mon & Tues 7am - 7pm, and Wed 7am - 5pm.
+-   The lactation room is located in 509, same timings as above.
+-   Participants who do not wish to be photographed have red lanyards; please note everyone’s lanyard colors before taking a photo and respect their choices.
+-   The Code of Conduct can be found at https://posit.co/code-of-conduct. Please review carefully. You can report Code of Conduct violations in person, by email, or by phone. Please see the policy linked above for contact information.
+
+## Breaks 
+
+Full schedule at: [pos.it/websites_24](https://pos.it/websites_24)
+
+| Time          |                |
+|---------------|----------------|
+| 10:30 - 11:00 | *Coffee Break* |
+| 12:30 - 13:30 | *Lunch*        |
+| 15:00 - 15:30 | *Coffee Break* |
+| 17:00         | END            |
+
+## About Us
+
+::::: columns
+::: column
+### Charlotte Wickham
+
+-   Quarto user for 2+ years
+-   Quarto website user for 1.5+ years
+-   Statistics + R background
+:::
+
+::: column
+### Emil Hvitfeldt
+
+-   Quarto user for 2+ years
+-   Written some Quarto extensions
+-   R software engineer
+:::
+:::::
+
+## About You
+
+**Your Turn**
+
+Introduce yourself to your neighbors:
+
+-   Name
+-   Professional affiliation
+-   What do you use Quarto for?
+
+## Meeting you where you are
+
+-   You've used Quarto for single documents
+
+-   You are comfortable editing, saving and previewing files in your IDE
+
+-   You want to build a website
+
+## Why Quarto for Websites?
+
+-   You don't need to learn anything new for page content
+-   You get nice website features out of the box: GitHub links, social cards, navigation, etc.
+-   A lot of customization available via YAML options
+-   Customize style as much (or as little) as you want
+
+## Our Goal
+
+::: center
+You walk away with a website that reflects you both in content and style.
+:::
+
+## Our Goal
+
+Along the way you'll learn how to:
+
+-   Use a template to get started quickly
+-   Create a landing page using `about` templates
+-   Use YAML options to customize the style of your website
+-   Add navigational elements to help visitors find your content
+-   Customize the appearance of your site with CSS and SCSS
+-   Generate lists of content automatically with listings
+
+## Workshop structure
+
+-   My turn: Lecture segments + live coding
+
+-   Your Turn: Practice exercises for you
+
+## How to get help?
+
+-   Raise your *color* post-it note
+
+-   Ask in Discord
+
+-   Talk to us during breaks or your-turns
+
+# Let's jump in!

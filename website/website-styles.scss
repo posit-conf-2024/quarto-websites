@@ -1,0 +1,22 @@
+/*-- scss:defaults --*/
+
+$theme-black: #333333;
+$theme-white: #FFFFFF;
+$theme-yellow: #ECC978;
+$theme-orange: #E26F5E;
+$theme-purple: #5A207F;
+
+
+$body-bg: lighten($theme-orange, 35%);
+$body-color: $theme-black;
+$link-color: $theme-purple;
+
+$navbar-bg: $theme-orange;
+$navbar-hl: $theme-white;
+
+
+/*-- scss:rules --*/
+
+.navbar-nav .nav-lin.active span {
+  text-decoration: underline;
+}
