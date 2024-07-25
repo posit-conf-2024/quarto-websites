@@ -1,0 +1,303 @@
+---
+format:
+  revealjs: 
+    theme: [default, slide-styles.scss]
+    width: 1280
+    height: 720
+    include-after-body: 
+      - "all-the-js-code.html"
+echo: false
+code-line-numbers: false
+---
+
+# Website Basics
+
+## Start with a template
+
+1.  Start somewhere logical:
+
+``` {.bash filename="Terminal"}
+cd ~/Documents
+```
+
+2.  Get the website template:
+
+``` {.bash filename="Terminal"}
+
+quarto use template EmilHvitfeldt/website-template
+```
+
+## Start with a template
+
+3.  Follow the prompts:
+
+``` {.bash filename="Terminal"}
+Quarto templates may execute code when documents are rendered. If you do not 
+trust the authors of the template, we recommend that you do not install or 
+use the template.
+? Do you trust the authors of this template (Y/n) › Y
+? Create a subdirectory for template? (Y/n) › Y
+? Directory name: › website
+```
+
+4.  Open the folder:
+
+**RStudio**: New Project \> Existing Directory \>
+
+**VS Code**: File \> Open Folder \>
+
+5.  Open `index.qmd`
+
+## Workflow
+
+::: r-fit-text
+Preview. Edit. Save. Preview.
+:::
+
+## Preview
+
+:::::::::::: panel-tabset
+## RStudio
+
+::::: columns
+::: column
+### Current page
+
+![](images/basics-rstudio-render.png){style="margin-bottom: 0px"}
+
+Cmd/Ctrl + Shift + K
+:::
+
+::: column
+### Whole site
+
+**Build** \> **Render Website**
+
+![](images/basics-rstudio-render-website.png)
+:::
+:::::
+
+## VS Code
+
+::::: columns
+::: column
+### Current page
+
+![](images/basics-vscode-preview.png){style="margin-bottom: 0px"}
+
+Cmd/Ctrl + Shift + K
+:::
+
+::: column
+### Whole site
+
+**Quarto: Render Project**
+:::
+:::::
+
+Requires [Quarto Extension](https://marketplace.visualstudio.com/items?itemName=quarto.quarto)
+
+## Terminal
+
+::::: columns
+::: column
+### Current page
+
+``` {.bash filename="Terminal"}
+quarto preview index.qmd
+```
+:::
+
+::: column
+### Whole site
+
+``` {.bash filename="Terminal"}
+quarto preview 
+```
+:::
+:::::
+::::::::::::
+
+## Your Turn {.exercise}
+
+1.  Get the starter template
+
+2.  Open `index.qmd`
+
+3.  Preview `index.qmd`
+
+4.  Edit `title` and `subtitle` in the `index.qmd` YAML to reflect your site
+
+5.  Previews
+
+6.  What else is in `index.qmd`? Can you match the contents of `index.qmd` with contents of the webpage?
+
+{{< countdown "5:00" >}}
+
+## `index.qmd` Components {.scrollable}
+
+<details>
+
+<summary>No peeking</summary>
+
+![](images/basics-index.jpg)
+
+</details>
+
+## Page Structure
+
+::::: columns
+::: column
+``` {.yaml filename="index.qmd"}
+---
+title: "Alicia"
+subtitle: "Data Scientist"
+# `profile.jpg` photo by Jan Tinneberg on https://unsplash.com
+image: profile.jpg
+about: # https://quarto.org/docs/websites/website-about.html
+  template: jolla
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com
+---
+
+A little bit about me and my life.
+
+## Education
+
+University of XYZ, City \| Location \| Sept 20XX - June 20XX
+
+## Experience
+
+Workplace \| Job title \| April 20XX - present
+```
+:::
+
+::: column
+Webpages are like any other Quarto document:
+
+1.  Start with a YAML header
+2.  Can include code cells
+3.  Everything else is markdown content
+
+Use the visual editor (if you like)
+:::
+:::::
+
+## About Pages
+
+Special pages controlled by the `about` key in YAML.
+
+Content and YAML values are combined using a template:
+
+``` yaml
+---
+about:
+  template: jolla
+---
+```
+
+Templates: `jolla`, `trestles`, `solana`, `marquee`, or `broadside`
+
+::: footer
+https://quarto.org/docs/websites/website-about.html
+:::
+
+## Your Turn {.exercise}
+
+1.  Edit the content in `index.qmd` to reflect you.
+
+2.  Try different templates and pick one.
+
+3.  Edit the links to point at your own profiles, or add different links.
+
+4.  Experiment with [`image-shape`](https://quarto.org/docs/websites/website-about.html#image).
+
+## `image`
+
+Used in `about` template, and social cards.
+
+::::: columns
+::: column
+``` {.yaml filename="index.qmd"}
+---
+image: profile.jpg
+---
+```
+:::
+
+::: column
+```         
+website/
+├── _quarto.yml
+├── index.qmd
+└── profile.jpg
+```
+:::
+:::::
+
+Use a path relative to `index.qmd`
+
+## `image`
+
+Used in `about` template, and social cards.
+
+::::: columns
+::: column
+``` {.yaml filename="index.qmd"}
+---
+image: images/profile.jpg
+---
+```
+:::
+
+::: column
+```         
+website/
+├── _quarto.yml
+├── images/
+│   └──  profile.jpg
+└── index.qmd
+```
+:::
+:::::
+
+Use a path relative to `index.qmd`
+
+## Your Turn {.exercise}
+
+Replace the image with one that reflects you or your site.
+
+## Website Structure
+
+A minimal website has two files: `index.qmd` and `_quarto.yml`
+
+* `index.qmd`: Renders to `index.html`, your home page.
+
+* `_quarto.yml`: Controls project and website properties.
+
+When rendered you will get a  `_site/` folder. This contains everything needed to serve the site.
+
+## `_quarto.yml` {.scrollable}
+
+```{.yaml filename="_quarto.yml" code-line-numbers="|1-2|4-14|15-18"}
+project:
+  type: website
+
+website:
+  title: "Home"
+  open-graph: true # https://quarto.org/docs/websites/website-tools.html#open-graph
+  page-footer: "Made with ❤️ and Quarto"
+  navbar:
+    right:
+      - text: Home
+        href: index.qmd
+
+format:
+  html:
+    theme: [cosmo, styles.scss]
+```

@@ -1,0 +1,412 @@
+---
+format:
+  revealjs: 
+    theme: [default, slide-styles.scss]
+    width: 1280
+    height: 720
+    include-after-body: 
+      - "all-the-js-code.html"
+echo: false
+code-line-numbers: false
+---
+
+# Listings
+
+## Let's add a blog
+
+`blog/` has some folders with documents in them
+
+**Demo:**
+
+1.  Make a new page `blog/index.qmd`
+2.  Make it a listing:
+
+::::: columns
+::: column
+As simple as:
+
+``` yaml
+---
+title: My Blog
+listing: default
+---
+```
+:::
+
+::: column
+Explicit default options:
+
+``` yaml
+---
+title: My Blog
+listing:
+  contents: /
+  sort: "date"
+  type: default
+  categories: false
+---
+```
+:::
+:::::
+
+## A listing is...
+
+::::: columns
+::: column
+-   an automatically generated list of content
+-   styled via a template, (built-in `type`, or custom `template`)
+-   can be included on any page
+:::
+
+::: column
+![](images/listings-default.png)
+:::
+:::::
+
+## Generated from documents in `contents`
+
+::::: columns
+::: column
+![](images/listings-first.png)
+:::
+
+::: column
+``` {.yaml filename="blog/third-post/index.qmd"}
+---
+title: "First Post"
+description: "Post description for first post"
+author: "Alicia"
+date: "5/22/2021"
+image: "cover.jpg"
+categories:
+  - Science
+  - Technology
+---
+```
+:::
+:::::
+
+## Why use a listing?
+
+-   Great for large collections
+-   Great for collections that grow
+
+## Your Turn
+
+1.  (Repeat) Make a new page `blog/index.qmd` which is a listing
+2.  Experiment with `type` and `categories`:
+    * `type`: `grid` or `table`
+    * `categories`: `true`, `unnumbered`, `cloud`
+
+    [Other listing options](https://quarto.org/docs/websites/website-listings.html#listing-options)
+3.  Discuss with your neighbor:
+    -   What makes this a blog?
+    -   What would you change if this was a gallery of your projects?
+
+## Default
+
+![](images/listings-default.png)
+
+## Grid
+
+![](images/listings-grid.png)
+
+## Table
+
+![](images/listings-table.png)
+
+## Categories
+
+::: {.columns}
+::: {.column}
+![`true`/`numbered`](images/listings-categories-true.png)
+
+![`unnumbered`](images/listings-categories-unnumbered.png)
+:::
+::: {.column}
+
+![`cloud`](images/listings-categories-cloud.png)
+:::
+::: 
+
+## Use listings for \_ projects \_
+
+<https://ivelasq.rbind.io/project>
+
+![](images/listings-projects-example.png)
+
+::: footer
+More examples at: <https://charlotte.quarto.pub/listings/>
+:::
+
+## Use listings for \_ talks \_
+
+<https://meghan.rbind.io/talks/>
+
+![](images/listings-talks.png)
+
+::: footer
+More examples at: <https://charlotte.quarto.pub/listings/>
+:::
+
+## Use listings for \_ publications \_
+
+<https://mickael.canouil.fr/publications>
+
+![](images/listings-publications.png)
+
+::: footer
+More examples at: <https://charlotte.quarto.pub/listings/>
+:::
+
+## Use listings for ... 
+ 
+<https://charlotte.quarto.pub/listings/>
+
+```{=html}
+<iframe src="https://charlotte.quarto.pub/listings/" width="100%" height="550" title="Listing Examples"></iframe>
+```
+
+## `contents` can be a YAML file
+
+::: {.columns}
+::: {.column}
+```{.yaml filename="projects/index.qmd"}
+---
+title: Projects
+listing:
+  contents: projects.yml
+  type: grid
+  max-description-length: 250
+---
+```
+:::
+
+::: {.column}
+```{.yaml filename="project/projects.yml"}
+- title: Predicting House Prices with Machine Learning
+  path: https://example.com/house-prices
+  # Photo by Breno Assis on Unsplash https://unsplash.com/photos/aerial-photography-of-rural-r3WAWU5Fi5Q 
+  image: images/breno-assis-r3WAWU5Fi5Q-unsplash.jpg
+  description: >
+    This project involves using machine learning algorithms to predict house prices based on
+    various features such as location, size, and amenities. It includes data cleaning,
+    feature engineering, and model selection.
+  categories: [Python, Machine Learning, Data Cleaning]
+  date: 2024-01-01
+  ...
+```
+`path` can be a relative path to a file in your site, or a URL
+
+You can use [Listing Fields](https://quarto.org/docs/websites/website-listings.html#listing-fields), or create custom ones.
+:::
+::: 
+
+
+## `contents` can be a YAML file
+
+![](images/listings-projects.png)
+
+## Simple Customization: Select Fields
+
+::: {.columns}
+::: {.column  width="40%"}
+Use `fields` to specify which [Listing Fields](https://quarto.org/docs/websites/website-listings.html#listing-fields) are displayed.
+:::
+
+::: {.column  width="60%"}
+E.g. Exclude `date`:
+
+```{.yaml}         
+listing:
+  contents: projects.yml
+  type: grid
+  fields: ["image", "title", "categories", "description"]
+```
+:::
+::: 
+
+
+## Simple Customization: Rename Fields
+
+::: {.columns}
+::: {.column  width="40%"}
+
+Use `field-display-names` to provide a different label for a field 
+
+Mostly useful for `type: table`. 
+:::
+
+::: {.column  width="60%"}
+E.g. Rename `title` to `Project`
+
+```{.yaml}         
+listing:
+  contents: projects.yml
+  type: table
+  field-display-names: 
+    title: Project
+```
+:::
+::: 
+
+## Your Turn
+
+1. Switch to `type: table`
+
+2. Omit the `image` field from the listing
+
+3. Change the name of the "Categories" column to "Skills"
+
+4. Brainstorm:  What could you use a listing for on your own site?
+
+## Advanced Customization
+
+Example: <https://www.andrewheiss.com/teaching/>  
+
+Source: <https://github.com/andrewheiss/ath-quarto/blob/main/teaching/index.qmd>
+
+-   Listing in a custom location on a page
+-   More than one listing on a page 
+-   Custom Template 
+
+## Custom Location
+
+::: {.columns}
+::: {.column}
+```{.yaml filename="teaching/index.qmd"}
+---
+title: "Teaching"
+listing:
+  id: ay_23-24
+  contents: ay_23-24.yml
+---
+```
+Give the listing an `id`
+
+:::
+::: {.column}
+
+```{.markdown filename="teaching/index.qmd"}
+## 2023–24
+
+:::{#ay_23-24}
+:::
+
+## 2022–23
+```
+Use the `id` in a fenced div where you want it to appear
+:::
+::: 
+
+## Multiple Listings
+
+::: {.columns}
+::: {.column}
+```{.yaml filename="teaching/index.qmd"}
+---
+title: "Teaching"
+listing:
+  - id: ay_23-24
+    contents: ay_23-24.yml
+  - id: ay_22-23
+    contents: ay_22-23.yml
+---
+```
+Make `listing` an array, use `id`s
+
+:::
+::: {.column}
+
+```{.markdown filename="teaching/index.qmd"}
+## 2023–24
+
+:::{#ay_23-24}
+:::
+
+## 2022–23
+
+:::{#ay_22-23}
+:::
+```
+Place listings in the page by `id`
+:::
+:::
+
+## Custom template
+
+::: {.columns}
+::: {.column}
+```{.yaml filename="teaching/index.qmd"}
+---
+title: "Teaching"
+listing:
+  - id: ay_23-24
+    contents: ay_23-24.yml
+    template: ../html/teaching/listing.ejs
+---
+```
+Provide an `ejs` file to `template`
+:::
+::: {.column}
+````{.html filename="../html/teaching/listing.ejs"}
+```{=html}
+<div class="teaching">
+    <% for (const course of items) { %>
+    <div class="course-entry">
+        <div class="logo">
+            <% if (course.url) { %>
+            <a href="<%= course.url %>" target="_blank"><img src="<%= course.logo %>" alt="<%= course.title %>" title="<%= course.title %>" /></a>
+            <% } else { %>
+            <img src="<%= course.logo %>" alt="<%= course.title %>" title="<%= course.title %>" />
+            <% } %>
+        </div>
+        <div class="body">
+            <p class="course-title">
+                <% if (course.url) { %>
+                <a href="<%= course.url %>" target="_blank"><%= course.title %></a> 
+                <% } else { %>
+                <%= course.title %> 
+                <% } %>
+            </p>
+            <p class="course-details">
+                <span class="course-number"><%= course.number %></span> | 
+                <span class="course-university"><%= course.university %></span>
+                <% if (course.role) { %>
+                | <span class="course-role"><%= course.role %></span>
+                <% } %>
+            </p>
+            <p class="course-description"><%= course.description %></p>
+
+            <ul class="course-semesters">
+                <% for (const semester of course.semester) { %>
+                <% if (semester.url) { %>
+                <li><a href="<%= semester.url %>"><i class="fa-solid fa-building-columns"></i> <%= semester.name %></a></li>
+                <% } else { %> 
+                <li class="no-link"><i class="fa-solid fa-building-columns"></i> <%= semester.name %></li>
+                <% } %>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+    <% } %>
+</div>
+```
+````
+Define how item in `items` should be generated
+:::
+:::
+
+## Your Turn
+
+**Add a listing page to your site**: 
+
+1. Create a page to house the listing 
+
+2. Either: 
+    - populate a `.yml` file with a couple of items (use `projects/project.yml` as a template), or
+    - create some placeholder `.qmd` files.
+    
+3. Add the page to your site navigation
+
+4. Clean up any template listing pages/files/folders you don't want

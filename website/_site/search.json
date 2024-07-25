@@ -1,0 +1,1185 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "05-css.html#what-is-css",
+    "href": "05-css.html#what-is-css",
+    "title": "Quarto Websites Workshop",
+    "section": "what is CSS",
+    "text": "what is CSS\n\nCascading Style Sheets is a style sheet language used for specifying the presentation and styling of a document"
+  },
+  {
+    "objectID": "05-css.html#html-syntax-in-5-minutes",
+    "href": "05-css.html#html-syntax-in-5-minutes",
+    "title": "Quarto Websites Workshop",
+    "section": "HTML syntax in 5 minutes",
+    "text": "HTML syntax in 5 minutes\nHTML (HyperText Markup Language) is built on tags like\n&lt;html&gt;&lt;/html&gt; and &lt;div&gt;&lt;/div&gt;\nTags can be nested &lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;\n&lt;div&gt;\n  &lt;div&gt;&lt;/div&gt;\n  &lt;div&gt;&lt;/div&gt;\n&lt;/div&gt;"
+  },
+  {
+    "objectID": "05-css.html#html-head",
+    "href": "05-css.html#html-head",
+    "title": "Quarto Websites Workshop",
+    "section": "HTML head",
+    "text": "HTML head\ncontains:\n\nmeta information\nstyle sheets\nand sometimes scripts (mostly javascript)\n\n95% of this will be handled by Quarto for you"
+  },
+  {
+    "objectID": "05-css.html#html-body",
+    "href": "05-css.html#html-body",
+    "title": "Quarto Websites Workshop",
+    "section": "HTML body",
+    "text": "HTML body\n\nContains everything else"
+  },
+  {
+    "objectID": "05-css.html#common-html-tags",
+    "href": "05-css.html#common-html-tags",
+    "title": "Quarto Websites Workshop",
+    "section": "Common HTML tags",
+    "text": "Common HTML tags\nHeaders\n&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;\nParagraph\n&lt;p&gt;\nlinks\n&lt;a&gt;\ngeneral div\n&lt;div&gt;\n\nHTML Element Reference - By Category"
+  },
+  {
+    "objectID": "05-css.html#html-attributes",
+    "href": "05-css.html#html-attributes",
+    "title": "Quarto Websites Workshop",
+    "section": "HTML attributes",
+    "text": "HTML attributes\nAll HTML elements can have attributes\nThey provide additional information about the elements\nAre always specified at the start-tag\nDone by using name-value pairs: name=\"value\"\n\n\nClasses and ids\n&lt;h1 class=\"title\" id=\"special-title\"&gt;\n\n\nImages source attribute\n&lt;img src=\"img_girl.jpg\"&gt;"
+  },
+  {
+    "objectID": "05-css.html#where-is-the-code",
+    "href": "05-css.html#where-is-the-code",
+    "title": "Quarto Websites Workshop",
+    "section": "Where is the code?",
+    "text": "Where is the code?\n\ninline style\nstyle block\nstyle.css"
+  },
+  {
+    "objectID": "05-css.html#in-its-simplest-form",
+    "href": "05-css.html#in-its-simplest-form",
+    "title": "Quarto Websites Workshop",
+    "section": "In its simplest form:",
+    "text": "In its simplest form:\n\nselectors\n\nWhat needs to be styled\n\nAttributes\n\nHow it should be styled"
+  },
+  {
+    "objectID": "05-css.html#selectors",
+    "href": "05-css.html#selectors",
+    "title": "Quarto Websites Workshop",
+    "section": "Selectors",
+    "text": "Selectors\nby tags\nh1 {\n\n}\nby class\n.important {\n\n}\nby id\n#title-text {\n\n}\n\nhttps://www.w3schools.com/cssref/css_selectors.php"
+  },
+  {
+    "objectID": "05-css.html#combining-selectors",
+    "href": "05-css.html#combining-selectors",
+    "title": "Quarto Websites Workshop",
+    "section": "Combining selectors",
+    "text": "Combining selectors\nAll h1 and all h2\nh1, h2 {\n\n}\nAll headers\nh1, h2, h3, h4, h5, h6 {\n\n}\n\nhttps://www.w3schools.com/cssref/css_selectors.php"
+  },
+  {
+    "objectID": "05-css.html#combining-selectors-1",
+    "href": "05-css.html#combining-selectors-1",
+    "title": "Quarto Websites Workshop",
+    "section": "Combining selectors",
+    "text": "Combining selectors\nAll span in p\np span {\n\n}\nOnly &lt;span&gt;friend&lt;/span&gt; would be affected\n&lt;span&gt;Conversation&lt;/span&gt;\n&lt;p&gt;\nhello there my \n&lt;span&gt;friend&lt;/span&gt;\nhow are you doing\n&lt;/p&gt;\n\nhttps://www.w3schools.com/cssref/css_selectors.php"
+  },
+  {
+    "objectID": "05-css.html#selectors-references",
+    "href": "05-css.html#selectors-references",
+    "title": "Quarto Websites Workshop",
+    "section": "Selectors References",
+    "text": "Selectors References\nAs with anything web related, there are tons of resources online\nhttps://www.w3schools.com/cssref/css_selectors.php\nhttps://www.w3schools.com/css/css_selectors.asp\nhttps://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors\nhttps://www.freecodecamp.org/news/css-selectors-cheat-sheet-for-beginners/\nhttps://www.w3.org/TR/CSS21/selector.html%23id-selectors"
+  },
+  {
+    "objectID": "05-css.html#pseudo-classes",
+    "href": "05-css.html#pseudo-classes",
+    "title": "Quarto Websites Workshop",
+    "section": "Pseudo-classes",
+    "text": "Pseudo-classes\nModifies existing classes\n\n\nUser action\n\n:hover\n:active\n\na.navbar:hover {\n  color: blue;\n}\n\na.navbar:active {\n  color: darkblue;\n}\n\n\nhttps://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes"
+  },
+  {
+    "objectID": "05-css.html#pseudo-classes---tree-bases",
+    "href": "05-css.html#pseudo-classes---tree-bases",
+    "title": "Quarto Websites Workshop",
+    "section": "Pseudo-classes - Tree bases",
+    "text": "Pseudo-classes - Tree bases\nCan do math to style only some elements\n\n:first-child\n:nth-of-type\n\np:first-child {\n  border: 2px solid blue;\n}\n\np:nth-of-type(2n+1) {\n  border: 2px solid orange;\n}\n\nhttps://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes"
+  },
+  {
+    "objectID": "05-css.html#pseudo-classes---fancy-selectors",
+    "href": "05-css.html#pseudo-classes---fancy-selectors",
+    "title": "Quarto Websites Workshop",
+    "section": "Pseudo-classes - Fancy selectors",
+    "text": "Pseudo-classes - Fancy selectors\nOutside scope, but shows what can be done if you care to explore it\n\n:has()\n\n\nif h1 has a sibling h2 then set the bottom margin of h1 to 0.25rem\nh1:has(+ h2) {\n  margin-bottom: 0.25rem;\n}\n\n\nWhen the container has a child card hovered, select all the cards that aren’t hovered.\n.card-list:has(.card:hover) .card:not(:hover) {\n  filter: blur(4px)\n}\n\n\nhttps://bejamas.io/blog/learn-css-has-selector-by-examples-top-use-cases/"
+  },
+  {
+    "objectID": "05-css.html#cascading",
+    "href": "05-css.html#cascading",
+    "title": "Quarto Websites Workshop",
+    "section": "Cascading",
+    "text": "Cascading\n\nStylesheets cascade — at a very simple level, this means that the origin, the cascade layer, and the order of CSS rules matter. When two rules from the same cascade layer apply and both have equal specificity, the one that is defined last in the stylesheet is the one that will be used.\n\nh1 looses to h1.title-class because h1.title-class is more specific\n\nhttps://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance"
+  },
+  {
+    "objectID": "05-css.html#attributes",
+    "href": "05-css.html#attributes",
+    "title": "Quarto Websites Workshop",
+    "section": "Attributes",
+    "text": "Attributes\nHow should stuff look\n\nhow things look\n\ncolors\nsizes\nborder lines\n\nlayout"
+  },
+  {
+    "objectID": "05-css.html#layout",
+    "href": "05-css.html#layout",
+    "title": "Quarto Websites Workshop",
+    "section": "Layout",
+    "text": "Layout"
+  },
+  {
+    "objectID": "05-css.html#layout---content",
+    "href": "05-css.html#layout---content",
+    "title": "Quarto Websites Workshop",
+    "section": "Layout - content",
+    "text": "Layout - content\nSize of the content is set using height and width\nValues are lengths\n\n10px\n2em\n\nor percentages\n\n40%\n100%"
+  },
+  {
+    "objectID": "05-css.html#layout---padding",
+    "href": "05-css.html#layout---padding",
+    "title": "Quarto Websites Workshop",
+    "section": "Layout - padding",
+    "text": "Layout - padding\nyou can set the about of padding with\n\npadding or\npadding-bottom, padding-left, padding-right, and padding-top\n\nValues are lengths or percentages.\npadding is used as a shorthand\n\nhttps://www.w3schools.com/css/css_padding.asp"
+  },
+  {
+    "objectID": "05-css.html#layout---padding-1",
+    "href": "05-css.html#layout---padding-1",
+    "title": "Quarto Websites Workshop",
+    "section": "Layout - padding",
+    "text": "Layout - padding\nFollowing are equivalent\n\n\nh1 {\n  padding: 10px;\n}\n\nh1 {\n  padding-bottom: 10px;\n  padding-left: 10px;\n  padding-right: 10px;\n  padding-top: 10px;\n  }\n\n\n\nhttps://www.w3schools.com/css/css_padding.asp"
+  },
+  {
+    "objectID": "05-css.html#layout---padding-2",
+    "href": "05-css.html#layout---padding-2",
+    "title": "Quarto Websites Workshop",
+    "section": "Layout - padding",
+    "text": "Layout - padding\nFollowing are equivalent\n\n\nh1 {\n  padding: 10px 20px;\n}\n\nh1 {\n  padding-bottom: 10px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n  }\n\n\n\nhttps://www.w3schools.com/css/css_padding.asp"
+  },
+  {
+    "objectID": "05-css.html#layout---padding-3",
+    "href": "05-css.html#layout---padding-3",
+    "title": "Quarto Websites Workshop",
+    "section": "Layout - padding",
+    "text": "Layout - padding\nFollowing are equivalent\n\n\nh1 {\n  padding: 10px 20px 30px;\n}\n\nh1 {\n  padding-bottom: 30px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n  }\n\n\n\nhttps://www.w3schools.com/css/css_padding.asp"
+  },
+  {
+    "objectID": "05-css.html#layout---padding-4",
+    "href": "05-css.html#layout---padding-4",
+    "title": "Quarto Websites Workshop",
+    "section": "Layout - padding",
+    "text": "Layout - padding\nFollowing are equivalent (clock-wise)\n\n\nh1 {\n  padding: 10px 20px 30px 40px;\n}\n\nh1 {\n  padding-bottom: 30px;\n  padding-left: 40px;\n  padding-right: 20px;\n  padding-top: 10px;\n  }\n\n\n\nhttps://www.w3schools.com/css/css_padding.asp"
+  },
+  {
+    "objectID": "05-css.html#layout---border",
+    "href": "05-css.html#layout---border",
+    "title": "Quarto Websites Workshop",
+    "section": "Layout - border",
+    "text": "Layout - border\nAre styled as\n\n\nh2 {\n  border: 2px solid #32a1ce;\n}\n\nh2 {\n  border-color: #32a1ce;\n  border-style: solid;\n  border-width: 2px;\n}\n\n\n\nhttps://developer.mozilla.org/en-US/docs/Web/CSS/border"
+  },
+  {
+    "objectID": "05-css.html#layout---margin",
+    "href": "05-css.html#layout---margin",
+    "title": "Quarto Websites Workshop",
+    "section": "Layout - margin",
+    "text": "Layout - margin\nworks the same as padding\n\n\nh1 {\n  margin: 10px 20px 30px;\n}\n\nh1 {\n  margin-bottom: 30px;\n  margin-left: 20px;\n  margin-right: 20px;\n  margin-top: 10px;\n  }\n\n\n\nhttps://www.w3schools.com/css/css_margin.asp"
+  },
+  {
+    "objectID": "05-css.html#layout-demo",
+    "href": "05-css.html#layout-demo",
+    "title": "Quarto Websites Workshop",
+    "section": "Layout demo",
+    "text": "Layout demo\nTODO: Make a thing where we can modify values and see them in action"
+  },
+  {
+    "objectID": "05-css.html#css-grid",
+    "href": "05-css.html#css-grid",
+    "title": "Quarto Websites Workshop",
+    "section": "CSS grid",
+    "text": "CSS grid\n\n\nSlightly outside scope, but is useful to know that it exists\n\nElements are styled as columns and rows\n\nA complete Guide to CSS Grid\nCSS Grid Generator"
+  },
+  {
+    "objectID": "05-css.html#css-flexbox",
+    "href": "05-css.html#css-flexbox",
+    "title": "Quarto Websites Workshop",
+    "section": "CSS flexbox",
+    "text": "CSS flexbox\nSlightly outside scope, but is useful to know that it exists\n\nA flex container expands items to fill available free space or shrinks them to prevent overflow.\n\nA complete Guide to Flexbox"
+  },
+  {
+    "objectID": "05-css.html#absolute-positioning",
+    "href": "05-css.html#absolute-positioning",
+    "title": "Quarto Websites Workshop",
+    "section": "Absolute positioning",
+    "text": "Absolute positioning\nSetting\n\nposition: relative; to parent\nposition: absolute; to child\n\nthen set location using top, left, right, and bottom\n&lt;div style=\"position: relative;\"&gt;\n  &lt;img style=\"position: absolute; left: 10%; top: 25%;\"&gt;\n&lt;/div&gt;\nCan be nice to use, but can be an anti-pattern if used too much"
+  },
+  {
+    "objectID": "05-css.html#centering-in-css",
+    "href": "05-css.html#centering-in-css",
+    "title": "Quarto Websites Workshop",
+    "section": "Centering in CSS",
+    "text": "Centering in CSS\nA common joke in programming\nHas been solved for a while\nhttp://howtocenterincss.com/"
+  },
+  {
+    "objectID": "05-css.html#what-is-scss",
+    "href": "05-css.html#what-is-scss",
+    "title": "Quarto Websites Workshop",
+    "section": "What is SCSS",
+    "text": "What is SCSS"
+  },
+  {
+    "objectID": "05-css.html#design-principles",
+    "href": "05-css.html#design-principles",
+    "title": "Quarto Websites Workshop",
+    "section": "Design principles",
+    "text": "Design principles\nWe will assume you have good content, and it is ordered appropriately with different pages and navigation\n\n\nWhat principles can we employ to make the most out of your website\n\n\n\nIf the user thinks “I wonder which button to click”, something bad happened"
+  },
+  {
+    "objectID": "05-css.html#choosing-colors",
+    "href": "05-css.html#choosing-colors",
+    "title": "Quarto Websites Workshop",
+    "section": "Choosing colors",
+    "text": "Choosing colors\nThe colors can come from a lot of different places\n\ncorporate guidelines\nyou\nfrom online inspiration (Pinterest)"
+  },
+  {
+    "objectID": "05-css.html#choosing-fonts",
+    "href": "05-css.html#choosing-fonts",
+    "title": "Quarto Websites Workshop",
+    "section": "Choosing fonts",
+    "text": "Choosing fonts\nUse readable and web-friendly fonts - common fonts are by definition readable as they are familiar - fonts are designed to be used in different areas, optimize for web fonts - don’t pick too many fonts"
+  },
+  {
+    "objectID": "05-css.html#maintaining-accessibility",
+    "href": "05-css.html#maintaining-accessibility",
+    "title": "Quarto Websites Workshop",
+    "section": "Maintaining accessibility",
+    "text": "Maintaining accessibility\nWhat is web accessibility?\n\nWeb accessibility is the practice of creating websites that are usable for all visitors regardless of a disability or impairment. To fulfill web accessibility best practices, you must create a site that complies with certain design and development guidelines that ensure your site is set up to accommodate folks with disabilities. This ensures that all users have the same or similar experience regardless of ability.\n\n\nhttps://blog.hubspot.com/website/web-accessibility"
+  },
+  {
+    "objectID": "05-css.html#custom-themes-header-styling",
+    "href": "05-css.html#custom-themes-header-styling",
+    "title": "Quarto Websites Workshop",
+    "section": "Custom themes & header styling",
+    "text": "Custom themes & header styling\nTODO: have demo of progress of finding the right place to change"
+  },
+  {
+    "objectID": "05-css.html#what-is-sassscss",
+    "href": "05-css.html#what-is-sassscss",
+    "title": "Quarto Websites Workshop",
+    "section": "What is SASS/SCSS",
+    "text": "What is SASS/SCSS\nSASS (CSS with superpowers), is an extension of CSS\nSCSS is one of the syntaxes, the one we will use\n\nhttps://sass-lang.com/"
+  },
+  {
+    "objectID": "05-css.html#why-use-sass",
+    "href": "05-css.html#why-use-sass",
+    "title": "Quarto Websites Workshop",
+    "section": "Why use SASS?",
+    "text": "Why use SASS?\n\nCSS Compatible\nFeature Rich\nMature\n\n\nhttps://sass-lang.com/"
+  },
+  {
+    "objectID": "05-css.html#why-use-sass-1",
+    "href": "05-css.html#why-use-sass-1",
+    "title": "Quarto Websites Workshop",
+    "section": "Why use SASS?",
+    "text": "Why use SASS?\nCSS but with variables, nested rules, mixins, functions and more\n\n\nthe SCSS file will compile to CSS which browsers understand\nQuarto will do all of this for you"
+  },
+  {
+    "objectID": "05-css.html#sass-variables",
+    "href": "05-css.html#sass-variables",
+    "title": "Quarto Websites Workshop",
+    "section": "SASS variables",
+    "text": "SASS variables\nvariables (much like in R and Python) are a way to store a value to use later, done to reduce repetition\n\n\nusing the syntax: $variable-name: value;\n\n\nh2 {\n  color: #32a1ce;\n}\n\n$favorite-blue: #32a1ce;\n\nh2 {\n  color: $favorite-blue;\n}"
+  },
+  {
+    "objectID": "05-css.html#sass-nested-rules",
+    "href": "05-css.html#sass-nested-rules",
+    "title": "Quarto Websites Workshop",
+    "section": "SASS nested rules",
+    "text": "SASS nested rules\nsyntactic way to organize your style sheets\n\n\nh2 {\n  color: #32a1ce;\n\n  a {\n    color: #055778;\n  }\n}\n\nh2 {\n  color: #32a1ce;\n}\n\nh2 a {\n  color: #055778;\n}\n\n\nCan be a even better improvement wth the right IDE settings\n\nhttps://sass-lang.com/documentation/style-rules/#nesting"
+  },
+  {
+    "objectID": "05-css.html#sass-nested-rules-1",
+    "href": "05-css.html#sass-nested-rules-1",
+    "title": "Quarto Websites Workshop",
+    "section": "SASS nested rules",
+    "text": "SASS nested rules\nSelector Combinators works too\n\n\nh2 {\n  color: #32a1ce;\n\n  &gt; a {\n    color: #055778;\n  }\n}\n\nh2 {\n  color: #32a1ce;\n}\n\nh2 &gt; a {\n  color: #055778;\n}\n\n\n\nhttps://sass-lang.com/documentation/style-rules/#nesting"
+  },
+  {
+    "objectID": "05-css.html#sass-nested-rules-2",
+    "href": "05-css.html#sass-nested-rules-2",
+    "title": "Quarto Websites Workshop",
+    "section": "SASS nested rules",
+    "text": "SASS nested rules\nAdd organization to styling\n.speech {\n  background-color: $theme-grey;\n  padding: 1em;\n  margin-bottom: 1em;\n  border-radius: 15px;\n  border-style: solid;\n  border-width: 5px;\n\n  img {\n    margin-bottom: -0.5em;\n    padding-right: 0.5em;\n    transform: scaleX(-1);\n  }\n\n  &.right {\n    text-align: right;\n\n\n    img {\n      padding-left: 0.5em;\n      transform: scaleX(1);\n    }\n  }\n\n  &.pink {\n    background-color: $theme-pink;\n    border-color: darken($theme-pink, 20%);\n  }\n  &.brown {\n    background-color: $theme-brown;\n    border-color: darken($theme-brown, 20%);\n  }\n  &.blue {\n    background-color: $theme-blue;\n    border-color: darken($theme-blue, 20%);\n  }\n  &.purple {\n    background-color: $theme-purple;\n    border-color: darken($theme-purple, 20%);\n  }\n}\n\nhttps://sass-lang.com/documentation/style-rules/#nesting"
+  },
+  {
+    "objectID": "05-css.html#sass-mixins",
+    "href": "05-css.html#sass-mixins",
+    "title": "Quarto Websites Workshop",
+    "section": "SASS mixins",
+    "text": "SASS mixins\nAvoid duplication of style\n\n\n@mixin padding-small {\n  padding-bottom: 10px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n}\n\nh2 {\n  @include padding-small;\n  color: #32a1ce;\n}\n\nh3 {\n  @include padding-small;\n  color: #32cebc;\n}\n\nh4 {\n  @include padding-small;\n  color: #83ce32;\n}\n\nh2 {\n  padding-bottom: 10px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n  color: #32a1ce;\n}\n\nh3 {\n  padding-bottom: 10px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n  color: #32cebc;\n}\n\nh4 {\n  padding-bottom: 10px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n  color: #83ce32;\n}\n\n\n\nhttps://sass-lang.com/documentation/at-rules/mixin/"
+  },
+  {
+    "objectID": "05-css.html#sass-functions",
+    "href": "05-css.html#sass-functions",
+    "title": "Quarto Websites Workshop",
+    "section": "SASS functions",
+    "text": "SASS functions\nMany different built-in functions\n\n\n$favorite-blue: #32a1ce;\n\nh2 {\n  color: $favorite-blue;\n\n  &gt; a {\n    color: darken($favorite-blue);\n  }\n}\n\nh2 {\n  color: #32a1ce;\n}\n\nh2 &gt; a {\n  color: #055778;\n}\n\n\n\nhttps://sass-lang.com/documentation/modules/"
+  },
+  {
+    "objectID": "05-css.html#what-is-its-purpose",
+    "href": "05-css.html#what-is-its-purpose",
+    "title": "Quarto Websites Workshop",
+    "section": "What is its purpose?",
+    "text": "What is its purpose?\nWhen designing a website we have to keep the audience in mind\nIt all depends on the audience and how you want them to interact with it\n\n\nacademic websites will be different than business sites\n\n\n\n\n\nAcademic\nInformation\n\nBusiness\nCall to action"
+  },
+  {
+    "objectID": "05-css.html#hicks-law",
+    "href": "05-css.html#hicks-law",
+    "title": "Quarto Websites Workshop",
+    "section": "Hick’s Law",
+    "text": "Hick’s Law\n\nEvery additional choice increases the time required to make a decision.\n\n\n\nA reminder to keep it simple\nMake it easy for your users to find what they want"
+  },
+  {
+    "objectID": "05-css.html#readding-patterns",
+    "href": "05-css.html#readding-patterns",
+    "title": "Quarto Websites Workshop",
+    "section": "Readding Patterns",
+    "text": "Readding Patterns\n\n\nF-shaped and Z-shaped\n\nMake sure all content follows a natural order"
+  },
+  {
+    "objectID": "05-css.html#readding-patterns---headers-and-footers",
+    "href": "05-css.html#readding-patterns---headers-and-footers",
+    "title": "Quarto Websites Workshop",
+    "section": "Readding Patterns - headers and footers",
+    "text": "Readding Patterns - headers and footers\nDiscussion:\nKnowing what we know now, what elements are good to place in the header and footer?"
+  },
+  {
+    "objectID": "05-css.html#visual-hierarchy",
+    "href": "05-css.html#visual-hierarchy",
+    "title": "Quarto Websites Workshop",
+    "section": "Visual Hierarchy",
+    "text": "Visual Hierarchy\nTODO: add images"
+  },
+  {
+    "objectID": "05-css.html#negative-space",
+    "href": "05-css.html#negative-space",
+    "title": "Quarto Websites Workshop",
+    "section": "Negative Space",
+    "text": "Negative Space\nYou don’t need to fill all the screen real estate\nwe typically also have a limited text width for ease of reading"
+  },
+  {
+    "objectID": "05-css.html#consistent-design",
+    "href": "05-css.html#consistent-design",
+    "title": "Quarto Websites Workshop",
+    "section": "Consistent Design",
+    "text": "Consistent Design\nWe look at similarities and differences, if an element looks different than the rest, we are going to assume that it matters\nusing principled styling will alleviate many of these problems"
+  },
+  {
+    "objectID": "05-css.html#setting-up-a-color-theme",
+    "href": "05-css.html#setting-up-a-color-theme",
+    "title": "Quarto Websites Workshop",
+    "section": "Setting up a color theme",
+    "text": "Setting up a color theme\nWe can create a color palette in SASS by using a set of environment variables.\n$theme-white: #FFFFFF;\n$theme-black: #222222;\n$theme-blue: #5538f8;\n$theme-red: #df4747;\nThese will then be used throughout the\n$link-color: $theme-blue;\n\n$$sidebar-hl: lighten($theme-blue, 0.5);"
+  },
+  {
+    "objectID": "05-css.html#using-color-on-websites",
+    "href": "05-css.html#using-color-on-websites",
+    "title": "Quarto Websites Workshop",
+    "section": "Using color on websites",
+    "text": "Using color on websites\nBe mindful when using colors\n60-30-10 rule\n60% - Primary color\n\ntypically background\n\n30% - Secondary color\n\ntext and elements\n\n10% - Accent color\n\nhighlights, buttons"
+  },
+  {
+    "objectID": "05-css.html#examples",
+    "href": "05-css.html#examples",
+    "title": "Quarto Websites Workshop",
+    "section": "60-30-10 Examples",
+    "text": "60-30-10 Examples\nTODO: find good pictures"
+  },
+  {
+    "objectID": "05-css.html#deviations",
+    "href": "05-css.html#deviations",
+    "title": "Quarto Websites Workshop",
+    "section": "60-30-10 deviations",
+    "text": "60-30-10 deviations\nAs with all things, this is not a hard and fast rule.\nyou can use fewer or more colors\n\nhttps://codegoda.io/\n\nnotice that they use their colors carefully and consistently"
+  },
+  {
+    "objectID": "05-css.html#html-structure",
+    "href": "05-css.html#html-structure",
+    "title": "Quarto Websites Workshop",
+    "section": "HTML structure",
+    "text": "HTML structure\n\n\nIs built around 3 main tags:\n\n&lt;html&gt;\n&lt;head&gt;\n&lt;body&gt;\n\n\n&lt;!DOCTYPE html&gt; \n&lt;html&gt;\n  &lt;head&gt;\n    &lt;link rel=\"stylesheet\" href=\"styles.css\"&gt;\n  &lt;/head&gt;\n\n  &lt;body&gt;\n    &lt;h1&gt;\n      I'm a header\n    &lt;/h1&gt;\n    &lt;p&gt;\n      Here is some text in a paragraph\n    &lt;/p&gt;\n  &lt;/body&gt;\n&lt;/html&gt;"
+  },
+  {
+    "objectID": "05-css.html#where-is-the-code-for-styling",
+    "href": "05-css.html#where-is-the-code-for-styling",
+    "title": "Quarto Websites Workshop",
+    "section": "Where is the code for styling?",
+    "text": "Where is the code for styling?\n\ninline style\n\n&lt;h1 style=\"color:red;\"&gt;Welcome to styling 101&lt;/h1&gt;\n\nstyle.css\n\nLoaded in &lt;head&gt;\n&lt;link rel=\"stylesheet\" href=\"my-awesome-style.css\"&gt;"
+  },
+  {
+    "objectID": "05-css.html#how-we-use-css",
+    "href": "05-css.html#how-we-use-css",
+    "title": "Quarto Websites Workshop",
+    "section": "How we use CSS",
+    "text": "How we use CSS\nIn its simplest form, we need to define 2 things\n\n\n\nselectors\nWhat needs to be styled\n\n\n\n\nAttributes\nHow it should be styled"
+  },
+  {
+    "objectID": "05-css.html#selectors-1",
+    "href": "05-css.html#selectors-1",
+    "title": "Quarto Websites Workshop",
+    "section": "Selectors",
+    "text": "Selectors\nby tags\nh1 {\n\n}\nby class\n.important {\n\n}\nby id\n#title-text {\n\n}\n\nhttps://www.w3schools.com/cssref/css_selectors.php"
+  },
+  {
+    "objectID": "05-css.html#attributes-1",
+    "href": "05-css.html#attributes-1",
+    "title": "Quarto Websites Workshop",
+    "section": "Attributes",
+    "text": "Attributes\nThe attributes are instructions on how elements should look and behave.\n\nHow things look\n\ncolors\nsizes\nborder lines\netc\n\nHow elements are positioned to other elements\n\nLayout"
+  },
+  {
+    "objectID": "05-css.html#combining-selectors-2",
+    "href": "05-css.html#combining-selectors-2",
+    "title": "Quarto Websites Workshop",
+    "section": "Combining selectors",
+    "text": "Combining selectors\nall h2 1 level deep in .happy\n.happy &gt; h2\nOnly the first would be affected\n&lt;div class=\"happy\"&gt;\n  &lt;h2&gt;header&lt;/h2&gt;\n  &lt;div&gt;\n    &lt;h2&gt;header&lt;/h2&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\nhttps://www.w3schools.com/cssref/css_selectors.php"
+  },
+  {
+    "objectID": "05-css.html#combining-selectors-3",
+    "href": "05-css.html#combining-selectors-3",
+    "title": "Quarto Websites Workshop",
+    "section": "Combining selectors",
+    "text": "Combining selectors\nall h2 elements with .happy class\nh2.happy\nOnly the second h2 would be affected\n&lt;div class=\"happy\"&gt;\n  &lt;h2&gt;header&lt;/h2&gt;\n  &lt;div&gt;\n    &lt;h2 class=\"happy\"&gt;header&lt;/h2&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\nhttps://www.w3schools.com/cssref/css_selectors.php"
+  },
+  {
+    "objectID": "05-css.html#combining-selectors-4",
+    "href": "05-css.html#combining-selectors-4",
+    "title": "Quarto Websites Workshop",
+    "section": "Combining selectors",
+    "text": "Combining selectors\nSimpler is “better”\n\nhttps://www.w3schools.com/cssref/css_selectors.php"
+  },
+  {
+    "objectID": "05-css.html#layout-1",
+    "href": "05-css.html#layout-1",
+    "title": "Quarto Websites Workshop",
+    "section": "Layout",
+    "text": "Layout\n\nContent - The content of the box, where text and images appear\nPadding - Clears an area around the content. The padding is transparent\nBorder - A border that goes around the padding and content\nMargin - Clears an area outside the border. The margin is transparent"
+  },
+  {
+    "objectID": "05-css.html#negative-space-1",
+    "href": "05-css.html#negative-space-1",
+    "title": "Quarto Websites Workshop",
+    "section": "Negative Space",
+    "text": "Negative Space"
+  },
+  {
+    "objectID": "05-css.html#negative-space-2",
+    "href": "05-css.html#negative-space-2",
+    "title": "Quarto Websites Workshop",
+    "section": "Negative Space",
+    "text": "Negative Space"
+  },
+  {
+    "objectID": "05-css.html#maintaining-accessibility-1",
+    "href": "05-css.html#maintaining-accessibility-1",
+    "title": "Quarto Websites Workshop",
+    "section": "Maintaining accessibility",
+    "text": "Maintaining accessibility\nHow do we do it?\n\nAvoid blinking/flashing content\nMaintain high color contrast when needed\n\nhttps://colourcontrast.cc/\ncolor contrast varies based on font size\n\nAdd alt-text to elements\nEnsure complete functionality via the keyboard\n\nshould be handled by Quarto"
+  },
+  {
+    "objectID": "05-css.html#your-turn",
+    "href": "05-css.html#your-turn",
+    "title": "Quarto Websites Workshop",
+    "section": "Your turn",
+    "text": "Your turn\nOpen styles.scss file and do the following:\n\nChange styling of h1 and h2 elements\n\nat least change the color\n\nChange styling of text (p elements)\nChange styling of only the subtitle of the front page\nChange styling of buttons on front page"
+  },
+  {
+    "objectID": "05-css.html#your-turn-1",
+    "href": "05-css.html#your-turn-1",
+    "title": "Quarto Websites Workshop",
+    "section": "Your turn",
+    "text": "Your turn\nOpen styles.scss file and do the following:\n\nFind an element that would benefit from having a pseudo-class\n\n:hover is a safe choice, but not the only one\n\nApply pseudo-class to said element"
+  },
+  {
+    "objectID": "05-css.html#your-turn-2",
+    "href": "05-css.html#your-turn-2",
+    "title": "Quarto Websites Workshop",
+    "section": "Your turn",
+    "text": "Your turn\nOpen styles.scss file and do the following:\n\nFind an element\n\nimages or text\n\nChange the height and width"
+  },
+  {
+    "objectID": "05-css.html#your-turn-3",
+    "href": "05-css.html#your-turn-3",
+    "title": "Quarto Websites Workshop",
+    "section": "Your turn",
+    "text": "Your turn\nContinue with element from before\n\nChange the 4 values of padding and see what happens"
+  },
+  {
+    "objectID": "05-css.html#your-turn-4",
+    "href": "05-css.html#your-turn-4",
+    "title": "Quarto Websites Workshop",
+    "section": "Your turn",
+    "text": "Your turn\nContinue with element from before\n\nChange the 4 values of margin and see what happens"
+  },
+  {
+    "objectID": "05-css.html#your-turn-5",
+    "href": "05-css.html#your-turn-5",
+    "title": "Quarto Websites Workshop",
+    "section": "Your Turn",
+    "text": "Your Turn\n-Open styles.scss and\n\nuse a SASS variable to define h1 and h2 colors\nconsider what other things we could use variables for"
+  },
+  {
+    "objectID": "05-css.html#your-turn-6",
+    "href": "05-css.html#your-turn-6",
+    "title": "Quarto Websites Workshop",
+    "section": "Your Turn",
+    "text": "Your Turn\n-Open styles.scss and\n\nrewrite your existing styles to use nested rules"
+  },
+  {
+    "objectID": "05-css.html#your-turn-7",
+    "href": "05-css.html#your-turn-7",
+    "title": "Quarto Websites Workshop",
+    "section": "Your Turn",
+    "text": "Your Turn\n-Open styles.scss and\n\nuse a SASS mixins to reduce complexity in your styles"
+  },
+  {
+    "objectID": "05-css.html#your-turn-8",
+    "href": "05-css.html#your-turn-8",
+    "title": "Quarto Websites Workshop",
+    "section": "Your Turn",
+    "text": "Your Turn\n-Open styles.scss and\n\nuse a SASS color function to make the colors of h1 and h2 different"
+  },
+  {
+    "objectID": "05-css.html#your-turn-9",
+    "href": "05-css.html#your-turn-9",
+    "title": "Quarto Websites Workshop",
+    "section": "Your turn",
+    "text": "Your turn\nOpen styles.scss then\n\nfind a color theme\nadd colors as SASS variables\nUse SASS variables"
+  },
+  {
+    "objectID": "05-css.html#your-turn-10",
+    "href": "05-css.html#your-turn-10",
+    "title": "Quarto Websites Workshop",
+    "section": "Your turn",
+    "text": "Your turn\nOpen styles.scss then\n\nmake temporary changes to the colors, sizes and fonts that would go against accessibility advice to see how the experience gets worse"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Quarto Websites",
+    "section": "",
+    "text": "Do you need a professional website to showcase your work? Or have you got an idea for a website at work, but it needs to reflect your organization’s brand? If you’ve used Quarto to produce a document, you’ve already got the technical skills to create a Quarto website. In this workshop, you’ll learn everything else you need to build a website and customize its appearance."
+  },
+  {
+    "objectID": "index.html#schedule",
+    "href": "index.html#schedule",
+    "title": "Quarto Websites",
+    "section": "Schedule",
+    "text": "Schedule\n\n\n\nTime\nTopic\nInstructor\n\n\n\n\n09:00 - 9:20\nIntroduction\nCharlotte\n\n\n09:20 - 9:50\nBasics\nCharlotte\n\n\n09:50 - 10:30\nStyle\nEmil\n\n\n10:30 - 11:00\nCoffee Break\n\n\n\n11:00 - 12:30\nNavigation\nCharlotte\n\n\n12:30 - 13:30\nLunch\n\n\n\n13:30 - 15:00\nCSS\nEmil\n\n\n15:00 - 15:30\nCoffee Break\n\n\n\n15:30 - 16:30\nListings\nCharlotte\n\n\n16:30 - 17:00\nRoundup\nEmil"
+  },
+  {
+    "objectID": "prework.html",
+    "href": "prework.html",
+    "title": "Pre-workshop Instructions",
+    "section": "",
+    "text": "Prior to the workshop check you have the required software, set up any accounts you might need for publishing your site, and collect a few items that will help you make as much progress on your site as possible."
+  },
+  {
+    "objectID": "prework.html#required-software",
+    "href": "prework.html#required-software",
+    "title": "Pre-workshop Instructions",
+    "section": "Required Software",
+    "text": "Required Software\n\nQuarto: v1.5\nOne of the following IDEs:\n\nRStudio\nVS Code and the VS Code Quarto Extension"
+  },
+  {
+    "objectID": "prework.html#optional-publishing-accounts",
+    "href": "prework.html#optional-publishing-accounts",
+    "title": "Pre-workshop Instructions",
+    "section": "Optional Publishing Accounts",
+    "text": "Optional Publishing Accounts\nTo publish your website you’ll need an account on one of Quarto’s publishing venues:\n\n(Recommended) Quarto Pub\nGitHub only if you are already a Git/GitHub user"
+  },
+  {
+    "objectID": "prework.html#join-the-workshop-discord-channel",
+    "href": "prework.html#join-the-workshop-discord-channel",
+    "title": "Pre-workshop Instructions",
+    "section": "Join the Workshop Discord Channel",
+    "text": "Join the Workshop Discord Channel\nThe Discord server will be available after August 8th:\n\npos.it/conf-event-portal: Login\nClick on “Join Discord, the virtual networking platform!”\nBrowse Channels -&gt; #workshop-quarto-websites"
+  },
+  {
+    "objectID": "prework.html#preparation",
+    "href": "prework.html#preparation",
+    "title": "Pre-workshop Instructions",
+    "section": "Preparation",
+    "text": "Preparation\nThere are a few things you might like to collect before arriving:\n\nAn photo/image you would like on your home page\nA paragraph about who you are (or what your site is about)\n\nA list of projects, talks, classes, or publications\nAny existing Quarto documents you would like to include in your site"
+  },
+  {
+    "objectID": "02-basics.html",
+    "href": "02-basics.html",
+    "title": "Website Basics",
+    "section": "",
+    "text": "Start somewhere logical:\n\n\n\nTerminal\n\ncd ~/Documents\n\n\nGet the website template:\n\n\n\nTerminal\n\n\nquarto use template EmilHvitfeldt/website-template\n\n\n\n\n\nFollow the prompts:\n\n\n\nTerminal\n\nQuarto templates may execute code when documents are rendered. If you do not \ntrust the authors of the template, we recommend that you do not install or \nuse the template.\n? Do you trust the authors of this template (Y/n) › Y\n? Create a subdirectory for template? (Y/n) › Y\n? Directory name: › website\n\n\nOpen the folder:\n\nRStudio: New Project &gt; Existing Directory &gt;\nVS Code: File &gt; Open Folder &gt;\n\nOpen index.qmd\n\n\n\n\n\nPreview. Edit. Save. Preview.\n\n\n\n\n\nRStudioVS CodeTerminal\n\n\n\n\n\n\n\nCmd/Ctrl + Shift + K\n\n\n\n\nBuild &gt; Render Website\n\n\n\n\n\n\n\n\n\n\n\nCmd/Ctrl + Shift + K\n\n\n\n\nQuarto: Render Project\n\n\n\nRequires Quarto Extension\n\n\n\n\n\n\n\n\nTerminal\n\nquarto preview index.qmd\n\n\n\n\n\n\n\nTerminal\n\nquarto preview \n\n\n\n\n\n\n\n\n\n\n\nGet the starter template\nOpen index.qmd\nPreview index.qmd\nEdit title and subtitle in the index.qmd YAML to reflect your site\nPreviews\nWhat else is in index.qmd? Can you match the contents of index.qmd with contents of the webpage?\n\n\n  \n    −\n    +\n \n 05:00\n \n\n\n\n\n\nNo peeking\n\n\n\n\n\n\n\n\n\n\nindex.qmd\n\n---\ntitle: \"Alicia\"\nsubtitle: \"Data Scientist\"\n# `profile.jpg` photo by Jan Tinneberg on https://unsplash.com\nimage: profile.jpg\nabout: # https://quarto.org/docs/websites/website-about.html\n  template: jolla\n  links:\n    - icon: github\n      text: Github\n      href: https://github.com\n    - icon: linkedin\n      text: LinkedIn\n      href: https://linkedin.com\n---\n\nA little bit about me and my life.\n\n## Education\n\nUniversity of XYZ, City \\| Location \\| Sept 20XX - June 20XX\n\n## Experience\n\nWorkplace \\| Job title \\| April 20XX - present\n\n\nWebpages are like any other Quarto document:\n\nStart with a YAML header\nCan include code cells\nEverything else is markdown content\n\nUse the visual editor (if you like)\n\n\n\n\n\nSpecial pages controlled by the about key in YAML.\nContent and YAML values are combined using a template:\n---\nabout:\n  template: jolla\n---\nTemplates: jolla, trestles, solana, marquee, or broadside\n\nhttps://quarto.org/docs/websites/website-about.html\n\n\n\n\n\nEdit the content in index.qmd to reflect you.\nTry different templates and pick one.\nEdit the links to point at your own profiles, or add different links.\nExperiment with image-shape.\n\n\n\n\nUsed in about template, and social cards.\n\n\n\n\nindex.qmd\n\n---\nimage: profile.jpg\n---\n\n\nwebsite/\n├── _quarto.yml\n├── index.qmd\n└── profile.jpg\n\n\nUse a path relative to index.qmd\n\n\n\nUsed in about template, and social cards.\n\n\n\n\nindex.qmd\n\n---\nimage: images/profile.jpg\n---\n\n\nwebsite/\n├── _quarto.yml\n├── images/\n│   └──  profile.jpg\n└── index.qmd\n\n\nUse a path relative to index.qmd\n\n\n\nReplace the image with one that reflects you or your site.\n\n\n\nA minimal website has two files: index.qmd and _quarto.yml\n\nindex.qmd: Renders to index.html, your home page.\n_quarto.yml: Controls project and website properties.\n\nWhen rendered you will get a _site/ folder. This contains everything needed to serve the site.\n\n\n\n\n\n_quarto.yml\n\nproject:\n  type: website\n\nwebsite:\n  title: \"Home\"\n  open-graph: true # https://quarto.org/docs/websites/website-tools.html#open-graph\n  page-footer: \"Made with ❤️ and Quarto\"\n  navbar:\n    right:\n      - text: Home\n        href: index.qmd\n\nformat:\n  html:\n    theme: [cosmo, styles.scss]"
+  },
+  {
+    "objectID": "02-basics.html#start-with-a-template",
+    "href": "02-basics.html#start-with-a-template",
+    "title": "Website Basics",
+    "section": "",
+    "text": "Start somewhere logical:\n\n\n\nTerminal\n\ncd ~/Documents\n\n\nGet the website template:\n\n\n\nTerminal\n\n\nquarto use template EmilHvitfeldt/website-template"
+  },
+  {
+    "objectID": "02-basics.html#start-with-a-template-1",
+    "href": "02-basics.html#start-with-a-template-1",
+    "title": "Website Basics",
+    "section": "",
+    "text": "Follow the prompts:\n\n\n\nTerminal\n\nQuarto templates may execute code when documents are rendered. If you do not \ntrust the authors of the template, we recommend that you do not install or \nuse the template.\n? Do you trust the authors of this template (Y/n) › Y\n? Create a subdirectory for template? (Y/n) › Y\n? Directory name: › website\n\n\nOpen the folder:\n\nRStudio: New Project &gt; Existing Directory &gt;\nVS Code: File &gt; Open Folder &gt;\n\nOpen index.qmd"
+  },
+  {
+    "objectID": "02-basics.html#workflow",
+    "href": "02-basics.html#workflow",
+    "title": "Website Basics",
+    "section": "",
+    "text": "Preview. Edit. Save. Preview."
+  },
+  {
+    "objectID": "02-basics.html#preview",
+    "href": "02-basics.html#preview",
+    "title": "Website Basics",
+    "section": "",
+    "text": "RStudioVS CodeTerminal\n\n\n\n\n\n\n\nCmd/Ctrl + Shift + K\n\n\n\n\nBuild &gt; Render Website\n\n\n\n\n\n\n\n\n\n\n\nCmd/Ctrl + Shift + K\n\n\n\n\nQuarto: Render Project\n\n\n\nRequires Quarto Extension\n\n\n\n\n\n\n\n\nTerminal\n\nquarto preview index.qmd\n\n\n\n\n\n\n\nTerminal\n\nquarto preview"
+  },
+  {
+    "objectID": "02-basics.html#your-turn",
+    "href": "02-basics.html#your-turn",
+    "title": "Website Basics",
+    "section": "",
+    "text": "Get the starter template\nOpen index.qmd\nPreview index.qmd\nEdit title and subtitle in the index.qmd YAML to reflect your site\nPreviews\nWhat else is in index.qmd? Can you match the contents of index.qmd with contents of the webpage?\n\n\n  \n    −\n    +\n \n 05:00"
+  },
+  {
+    "objectID": "02-basics.html#index.qmd-components",
+    "href": "02-basics.html#index.qmd-components",
+    "title": "Website Basics",
+    "section": "",
+    "text": "No peeking"
+  },
+  {
+    "objectID": "02-basics.html#page-structure",
+    "href": "02-basics.html#page-structure",
+    "title": "Website Basics",
+    "section": "",
+    "text": "index.qmd\n\n---\ntitle: \"Alicia\"\nsubtitle: \"Data Scientist\"\n# `profile.jpg` photo by Jan Tinneberg on https://unsplash.com\nimage: profile.jpg\nabout: # https://quarto.org/docs/websites/website-about.html\n  template: jolla\n  links:\n    - icon: github\n      text: Github\n      href: https://github.com\n    - icon: linkedin\n      text: LinkedIn\n      href: https://linkedin.com\n---\n\nA little bit about me and my life.\n\n## Education\n\nUniversity of XYZ, City \\| Location \\| Sept 20XX - June 20XX\n\n## Experience\n\nWorkplace \\| Job title \\| April 20XX - present\n\n\nWebpages are like any other Quarto document:\n\nStart with a YAML header\nCan include code cells\nEverything else is markdown content\n\nUse the visual editor (if you like)"
+  },
+  {
+    "objectID": "02-basics.html#about-pages",
+    "href": "02-basics.html#about-pages",
+    "title": "Website Basics",
+    "section": "",
+    "text": "Special pages controlled by the about key in YAML.\nContent and YAML values are combined using a template:\n---\nabout:\n  template: jolla\n---\nTemplates: jolla, trestles, solana, marquee, or broadside\n\nhttps://quarto.org/docs/websites/website-about.html"
+  },
+  {
+    "objectID": "02-basics.html#your-turn-1",
+    "href": "02-basics.html#your-turn-1",
+    "title": "Website Basics",
+    "section": "",
+    "text": "Edit the content in index.qmd to reflect you.\nTry different templates and pick one.\nEdit the links to point at your own profiles, or add different links.\nExperiment with image-shape."
+  },
+  {
+    "objectID": "02-basics.html#image",
+    "href": "02-basics.html#image",
+    "title": "Website Basics",
+    "section": "",
+    "text": "Used in about template, and social cards.\n\n\n\n\nindex.qmd\n\n---\nimage: profile.jpg\n---\n\n\nwebsite/\n├── _quarto.yml\n├── index.qmd\n└── profile.jpg\n\n\nUse a path relative to index.qmd"
+  },
+  {
+    "objectID": "02-basics.html#image-1",
+    "href": "02-basics.html#image-1",
+    "title": "Website Basics",
+    "section": "",
+    "text": "Used in about template, and social cards.\n\n\n\n\nindex.qmd\n\n---\nimage: images/profile.jpg\n---\n\n\nwebsite/\n├── _quarto.yml\n├── images/\n│   └──  profile.jpg\n└── index.qmd\n\n\nUse a path relative to index.qmd"
+  },
+  {
+    "objectID": "02-basics.html#your-turn-2",
+    "href": "02-basics.html#your-turn-2",
+    "title": "Website Basics",
+    "section": "",
+    "text": "Replace the image with one that reflects you or your site."
+  },
+  {
+    "objectID": "02-basics.html#website-structure",
+    "href": "02-basics.html#website-structure",
+    "title": "Website Basics",
+    "section": "",
+    "text": "A minimal website has two files: index.qmd and _quarto.yml\n\nindex.qmd: Renders to index.html, your home page.\n_quarto.yml: Controls project and website properties.\n\nWhen rendered you will get a _site/ folder. This contains everything needed to serve the site."
+  },
+  {
+    "objectID": "02-basics.html#quarto.yml",
+    "href": "02-basics.html#quarto.yml",
+    "title": "Website Basics",
+    "section": "",
+    "text": "_quarto.yml\n\nproject:\n  type: website\n\nwebsite:\n  title: \"Home\"\n  open-graph: true # https://quarto.org/docs/websites/website-tools.html#open-graph\n  page-footer: \"Made with ❤️ and Quarto\"\n  navbar:\n    right:\n      - text: Home\n        href: index.qmd\n\nformat:\n  html:\n    theme: [cosmo, styles.scss]"
+  },
+  {
+    "objectID": "04-navigation.html",
+    "href": "04-navigation.html",
+    "title": "Let’s Add a Page!",
+    "section": "",
+    "text": "If you’ve published your site:\nAdd your site-url to _quarto.yml, e.g. \n\n\n_quarto.yml\n\nwebsite:\n  site-url: https://charlotte.quarto.pub/template-site"
+  },
+  {
+    "objectID": "04-navigation.html#before-we-proceed",
+    "href": "04-navigation.html#before-we-proceed",
+    "title": "Let’s Add a Page!",
+    "section": "",
+    "text": "If you’ve published your site:\nAdd your site-url to _quarto.yml, e.g. \n\n\n_quarto.yml\n\nwebsite:\n  site-url: https://charlotte.quarto.pub/template-site"
+  },
+  {
+    "objectID": "04-navigation.html#adding-pages",
+    "href": "04-navigation.html#adding-pages",
+    "title": "Let’s Add a Page!",
+    "section": "Adding Pages",
+    "text": "Adding Pages\nTwo decisions:\n\nStructure Where will it live in your website project?\nNavigation How will people discover it on your website?"
+  },
+  {
+    "objectID": "04-navigation.html#file-path-becomes-url-path",
+    "href": "04-navigation.html#file-path-becomes-url-path",
+    "title": "Let’s Add a Page!",
+    "section": "File path becomes URL path",
+    "text": "File path becomes URL path\n\n\nFile location\ntalks.qmd\nreports/air-quality.qmd\n\nURL\n{ site url }/talks.html\n{ site url }/reports/air-quality.html"
+  },
+  {
+    "objectID": "04-navigation.html#index.html-is-special",
+    "href": "04-navigation.html#index.html-is-special",
+    "title": "Let’s Add a Page!",
+    "section": "index.html is special",
+    "text": "index.html is special\n\n\nFile location\nindex.qmd\ntalks/index.qmd\n\nURL\n{ site url }\n{ site url }/talks\n\n\nindex.qmd (or .md, or .ipynb) -&gt; index.html\nindex.html acts like a default page for the site or directory."
+  },
+  {
+    "objectID": "04-navigation.html#you-arent-limited-to-.html",
+    "href": "04-navigation.html#you-arent-limited-to-.html",
+    "title": "Let’s Add a Page!",
+    "section": "You aren’t limited to .html",
+    "text": "You aren’t limited to .html\n\n\nFile location\ndata/monthly.csv\ncv.pdf\nreports/air-quality.qmd with format: pdf\n\nURL\n{ site url }/data/monthly.csv\n{ site url }/cv.pdf\n{ site url }/reports/air-quality.pdf"
+  },
+  {
+    "objectID": "04-navigation.html#structure-helps",
+    "href": "04-navigation.html#structure-helps",
+    "title": "Let’s Add a Page!",
+    "section": "Structure helps …",
+    "text": "Structure helps …\n\nYou: Navigate and organize your content\nYour readers: Understand context of content from its URL"
+  },
+  {
+    "objectID": "04-navigation.html#your-turn",
+    "href": "04-navigation.html#your-turn",
+    "title": "Let’s Add a Page!",
+    "section": "Your Turn",
+    "text": "Your Turn\nAdd a new page to your site:\n\nThink about the URL first\nCreate the page file in the appropriate location\nAdd some content"
+  },
+  {
+    "objectID": "04-navigation.html#in-text-links",
+    "href": "04-navigation.html#in-text-links",
+    "title": "Let’s Add a Page!",
+    "section": "In-text Links",
+    "text": "In-text Links\n\n\nUse relative paths\nUse .qmd rather than .html\n\n\n\nindex.qmd\n\nI occasionally give [talks](talks.qmd).\n\nYou might like to look at \nmy projects [projects](projects/)\n\n\n\n\n\n\n\nUse / to refer to site root\n\n\n\nprojects/index.qmd\n\nYou might also be interested \nin my [talks](/talks.qmd) \n\n\n\n\nhttps://quarto.org/docs/websites/#linking"
+  },
+  {
+    "objectID": "04-navigation.html#navigation-bar",
+    "href": "04-navigation.html#navigation-bar",
+    "title": "Let’s Add a Page!",
+    "section": "Navigation Bar",
+    "text": "Navigation Bar\nIn _quarto.yml under website: navbar\n\n\nGive a path from site root\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    right: \n      - talks.qmd"
+  },
+  {
+    "objectID": "04-navigation.html#your-turn-1",
+    "href": "04-navigation.html#your-turn-1",
+    "title": "Let’s Add a Page!",
+    "section": "Your Turn",
+    "text": "Your Turn\nProvide links to your new page:\n\nFrom somewhere in the content of index.qmd\nBefore “Home” in the navigation bar"
+  },
+  {
+    "objectID": "04-navigation.html#navigation-items",
+    "href": "04-navigation.html#navigation-items",
+    "title": "Let’s Add a Page!",
+    "section": "Navigation Items",
+    "text": "Navigation Items\n\n\nA path:\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    right:\n      - talks.qmd\n\n\nA nav item object:\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    right:\n      - href: talks.qmd\n        text: Speaking\n        icon: megaphone\n\n\n\nIf you don’t have text, add aria-label\nOptions for icon: Bootstrap Icons"
+  },
+  {
+    "objectID": "04-navigation.html#navigation-bar-links",
+    "href": "04-navigation.html#navigation-bar-links",
+    "title": "Let’s Add a Page!",
+    "section": "Navigation Bar Links",
+    "text": "Navigation Bar Links\nUse navigation items in left, right and tools\n\n\n\n\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    right: \n      - talks.qmd\n    left:\n      - text: Home\n        href: index.qmd\n        icon: house-door-fill\n    tools: \n      - icon: github\n        href: https://github.com/cwickham\n\n\n\n\nhttps://quarto.org/docs/websites/website-navigation.html#top-navigation"
+  },
+  {
+    "objectID": "04-navigation.html#navigation-bar-options",
+    "href": "04-navigation.html#navigation-bar-options",
+    "title": "Let’s Add a Page!",
+    "section": "Navigation Bar Options",
+    "text": "Navigation Bar Options\nOther customization: title, logo, search\n\n\n\n\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    title: cwick.co.nz \n    logo: logo.png\n    search: true\n    right: \n      - talks.qmd\n    left:\n      - text: Home\n        href: index.qmd\n        icon: house-door-fill\n    tools: \n      - icon: github\n        href: https://github.com/cwickham\n\n\n\n\nhttps://quarto.org/docs/websites/website-navigation.html#top-navigation"
+  },
+  {
+    "objectID": "04-navigation.html#your-turn-2",
+    "href": "04-navigation.html#your-turn-2",
+    "title": "Let’s Add a Page!",
+    "section": "Your Turn",
+    "text": "Your Turn\n\nCustomize your navigation bar title\nExperiment with the position of your links in the navbar: left, right or a mix\nAdd at least one item to tools in your navbar"
+  },
+  {
+    "objectID": "04-navigation.html#your-turn-3",
+    "href": "04-navigation.html#your-turn-3",
+    "title": "Let’s Add a Page!",
+    "section": "Your Turn",
+    "text": "Your Turn\nBrainstorm with your neighbor: What elements on this page allow the user to navigate the site?\n\n…\n\n\nhttps://quarto.org/docs/websites/website-navigation.html#top-navigation"
+  },
+  {
+    "objectID": "04-navigation.html#navigation-elements",
+    "href": "04-navigation.html#navigation-elements",
+    "title": "Let’s Add a Page!",
+    "section": "Navigation Elements",
+    "text": "Navigation Elements\n\n\nDon’t peek\n\n\n…"
+  },
+  {
+    "objectID": "04-navigation.html#primary-navigation",
+    "href": "04-navigation.html#primary-navigation",
+    "title": "Let’s Add a Page!",
+    "section": "Primary Navigation",
+    "text": "Primary Navigation\n\n\nTop navigation\n\n\nSide navigation"
+  },
+  {
+    "objectID": "04-navigation.html#primary-navigation-1",
+    "href": "04-navigation.html#primary-navigation-1",
+    "title": "Let’s Add a Page!",
+    "section": "Primary Navigation",
+    "text": "Primary Navigation\n\n\nTop navigation\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    left:\n      - index.qmd\n      - talks.qmd\n      - projects/index.qmd\n    tools:\n      - text: GitHub\n        href: http://github.com\n        icon: github        \n\nAdd items to left, right and tools\n\nSide navigation\n\n\n_quarto.yml\n\nwebsite:\n  sidebar:\n    contents:\n      - index.qmd\n      - talks.qmd\n      - projects/index.qmd\n    tools:\n      - text: GitHub\n        href: http://github.com\n        icon: github    \n\nAdd items to contents and tools"
+  },
+  {
+    "objectID": "04-navigation.html#nested-navigation",
+    "href": "04-navigation.html#nested-navigation",
+    "title": "Let’s Add a Page!",
+    "section": "Nested Navigation",
+    "text": "Nested Navigation\n\n\nTop navigation\n\n\nSide navigation"
+  },
+  {
+    "objectID": "04-navigation.html#nested-navigation-1",
+    "href": "04-navigation.html#nested-navigation-1",
+    "title": "Let’s Add a Page!",
+    "section": "Nested Navigation",
+    "text": "Nested Navigation\n\n\nTop navigation\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    left:\n      - index.qmd\n      - text: Work\n        menu: \n          - talks.qmd\n          - projects/index.qmd\n\nAdd a text item along with menu\n\nSide navigation\n\n\n_quarto.yml\n\nwebsite:\n  sidebar:\n    contents:\n      - index.qmd\n      - section: Work\n        contents: \n          - talks.qmd\n          - projects/index.qmd\n\nAdd a section with its own contents"
+  },
+  {
+    "objectID": "04-navigation.html#hybrid-navigation",
+    "href": "04-navigation.html#hybrid-navigation",
+    "title": "Let’s Add a Page!",
+    "section": "Hybrid Navigation",
+    "text": "Hybrid Navigation\nTop navigation navigates between the different “sections” of the website.\nEach “section” has its own side navigation."
+  },
+  {
+    "objectID": "04-navigation.html#hybrid-navigation-1",
+    "href": "04-navigation.html#hybrid-navigation-1",
+    "title": "Let’s Add a Page!",
+    "section": "Hybrid Navigation",
+    "text": "Hybrid Navigation\n\n\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    left:\n      - index.qmd\n      - text: Work\n        href: talks.qmd\n\n  sidebar:\n    - title: Work\n      contents:\n        - talks.qmd\n        - projects/index.qmd\n\n\n\nMatch navbar item text to a sidebar item title\nList navbar item href as first value in sidebar item contents"
+  },
+  {
+    "objectID": "04-navigation.html#automatic-sidebar",
+    "href": "04-navigation.html#automatic-sidebar",
+    "title": "Let’s Add a Page!",
+    "section": "Automatic Sidebar",
+    "text": "Automatic Sidebar\nIf your structure is good, an automatic sidebar can go a long way:\n\n\n_quarto.yml\n\nwebsite:\n  sidebar:\n    contents: auto"
+  },
+  {
+    "objectID": "04-navigation.html#your-turn-4",
+    "href": "04-navigation.html#your-turn-4",
+    "title": "Let’s Add a Page!",
+    "section": "Your Turn",
+    "text": "Your Turn\nHere’s three different navigation options for the same set of content:\n\nAutomatically generated side navigation\nEverything in top navigation\nHybrid navigation\n\nPick one, and discuss the pros and cons with your neighbor.\n(Done? Expand your conversation to another option or another neighbor)"
+  },
+  {
+    "objectID": "04-navigation.html#pro-and-cons",
+    "href": "04-navigation.html#pro-and-cons",
+    "title": "Let’s Add a Page!",
+    "section": "Pro and Cons",
+    "text": "Pro and Cons\n\n\n\n\n\n\n\n\n\nPros\nCons\n\n\n\n\nSide nav\n\n\n\n\nTop nav\n\n\n\n\nHybrid"
+  },
+  {
+    "objectID": "04-navigation.html#pro-and-cons-1",
+    "href": "04-navigation.html#pro-and-cons-1",
+    "title": "Let’s Add a Page!",
+    "section": "Pro and Cons",
+    "text": "Pro and Cons\n\n\n\n\n\n\n\n\n\nPros\nCons\n\n\n\n\nSide nav\n\nauto: easy to generate and maintain\nLinearly present linear content (e.g. a progression through a tutorial)\nCan be deeply nested\nCan handle longer entries\n\n\nMay show too much detail for sections that aren’t of immediate interest\n\n\n\nTop nav\n\nFirst place most people look\n\n\nNot good for long entries, e.g. keep to short single words\nCan’t be nested beyond one level\nNested content is hidden unless clicked on\n\n\n\nHybrid\n\nOrganize lots of content without overwhelming viewer\n\n\nHarder to build and maintain"
+  },
+  {
+    "objectID": "04-navigation.html#github-links",
+    "href": "04-navigation.html#github-links",
+    "title": "Let’s Add a Page!",
+    "section": "GitHub Links",
+    "text": "GitHub Links\nhttps://quarto.org/docs/websites/website-navigation.html#github-links\n\n\n_quarto.yml\n\nwebsite:\n  repo-url: https://github.com/quarto-dev/quarto-web\n  repo-actions: [edit, issue]"
+  },
+  {
+    "objectID": "04-navigation.html#page-navigation",
+    "href": "04-navigation.html#page-navigation",
+    "title": "Let’s Add a Page!",
+    "section": "Page Navigation",
+    "text": "Page Navigation\nNavigate between items in a section of sidebar\nhttps://quarto.org/docs/websites/website-navigation.html#page-navigation\n\n\n_quarto.yml\n\nwebsite:\n  page-navigation: true"
+  },
+  {
+    "objectID": "04-navigation.html#breadcrumbs",
+    "href": "04-navigation.html#breadcrumbs",
+    "title": "Let’s Add a Page!",
+    "section": "Breadcrumbs",
+    "text": "Breadcrumbs\nhttps://quarto.org/docs/websites/website-navigation.html#breadcrumbs\nNavigate up levels in a nested sidebar. Displayed by default.\n\n\n_quarto.yml\n\nwebsite:\n  bread-crumbs: false"
+  },
+  {
+    "objectID": "04-navigation.html#footer",
+    "href": "04-navigation.html#footer",
+    "title": "Let’s Add a Page!",
+    "section": "Footer",
+    "text": "Footer\nhttps://quarto.org/docs/websites/website-navigation.html#page-footer\n\n\n_quarto.yml\n\nwebsite:\n  page-footer: \n    left: \"Copyright 2021, Norah Jones\" \n    right: \n      - icon: github\n        href: https://github.com/\n      - icon: twitter \n        href: https://twitter.com/"
+  },
+  {
+    "objectID": "04-navigation.html#table-of-contents",
+    "href": "04-navigation.html#table-of-contents",
+    "title": "Let’s Add a Page!",
+    "section": "Table of Contents",
+    "text": "Table of Contents\nhttps://quarto.org/docs/output-formats/html-basics.html#table-of-contents\nControlled by format not website:\n\n\n_quarto.yml\n\nformat:\n  html: \n    toc: true"
+  },
+  {
+    "objectID": "04-navigation.html#wrapping-up-1",
+    "href": "04-navigation.html#wrapping-up-1",
+    "title": "Let’s Add a Page!",
+    "section": "Wrapping Up",
+    "text": "Wrapping Up\n\nTo add content:\n\nAdd a page/pages in the structure of your site\nAdd a link to the page in navigation\n\nListings (this afternoon) — Another navigation option"
+  },
+  {
+    "objectID": "04-navigation.html#your-turn-5",
+    "href": "04-navigation.html#your-turn-5",
+    "title": "Let’s Add a Page!",
+    "section": "Your Turn",
+    "text": "Your Turn\nWork on your site: add pages, edit navigation, add/edit content.\nWe are here to help. Publish a new version before lunch."
+  },
+  {
+    "objectID": "01-introduction.html",
+    "href": "01-introduction.html",
+    "title": "Let’s jump in!",
+    "section": "",
+    "text": "WiFi: Posit Conf 2024 Password: conf2024\nFind the materials at: pos.it/websites_24\nVerify the pre-work steps (details 👆):\n\nQuarto version 1.5\nYour IDE of choice\nAccount at Quarto Pub (if you want to publish)\nJoin the discord: #workshop-quarto-websites"
+  },
+  {
+    "objectID": "01-introduction.html#quarto-websites-welcome",
+    "href": "01-introduction.html#quarto-websites-welcome",
+    "title": "Let’s jump in!",
+    "section": "",
+    "text": "WiFi: Posit Conf 2024 Password: conf2024\nFind the materials at: pos.it/websites_24\nVerify the pre-work steps (details 👆):\n\nQuarto version 1.5\nYour IDE of choice\nAccount at Quarto Pub (if you want to publish)\nJoin the discord: #workshop-quarto-websites"
+  },
+  {
+    "objectID": "01-introduction.html#housekeeping",
+    "href": "01-introduction.html#housekeeping",
+    "title": "Let’s jump in!",
+    "section": "Housekeeping",
+    "text": "Housekeeping\n\nThere are gender-neutral bathrooms located on levels 3, 4, 5, 6 & 7\nThere is a meditation/prayer room located in 503. Available Mon & Tues 7am - 7pm, and Wed 7am - 5pm.\nThe lactation room is located in 509, same timings as above.\nParticipants who do not wish to be photographed have red lanyards; please note everyone’s lanyard colors before taking a photo and respect their choices.\nThe Code of Conduct can be found at https://posit.co/code-of-conduct. Please review carefully. You can report Code of Conduct violations in person, by email, or by phone. Please see the policy linked above for contact information."
+  },
+  {
+    "objectID": "01-introduction.html#breaks",
+    "href": "01-introduction.html#breaks",
+    "title": "Let’s jump in!",
+    "section": "Breaks",
+    "text": "Breaks\nFull schedule at: pos.it/websites_24\n\n\n\nTime\n\n\n\n\n\n10:30 - 11:00\nCoffee Break\n\n\n12:30 - 13:30\nLunch\n\n\n15:00 - 15:30\nCoffee Break\n\n\n17:00\nEND"
+  },
+  {
+    "objectID": "01-introduction.html#about-us",
+    "href": "01-introduction.html#about-us",
+    "title": "Let’s jump in!",
+    "section": "About Us",
+    "text": "About Us\n\n\n\nCharlotte Wickham\n\nQuarto user for 2+ years\nQuarto website user for 1.5+ years\nStatistics + R background\n\n\n\n\nEmil Hvitfeldt\n\nQuarto user for 2+ years\nWritten some Quarto extensions\nR software engineer"
+  },
+  {
+    "objectID": "01-introduction.html#about-you",
+    "href": "01-introduction.html#about-you",
+    "title": "Let’s jump in!",
+    "section": "About You",
+    "text": "About You\nYour Turn\nIntroduce yourself to your neighbors:\n\nName\nProfessional affiliation\nWhat do you use Quarto for?"
+  },
+  {
+    "objectID": "01-introduction.html#meeting-you-where-you-are",
+    "href": "01-introduction.html#meeting-you-where-you-are",
+    "title": "Let’s jump in!",
+    "section": "Meeting you where you are",
+    "text": "Meeting you where you are\n\nYou’ve used Quarto for single documents\nYou are comfortable editing, saving and previewing files in your IDE\nYou want to build a website"
+  },
+  {
+    "objectID": "01-introduction.html#why-quarto-for-websites",
+    "href": "01-introduction.html#why-quarto-for-websites",
+    "title": "Let’s jump in!",
+    "section": "Why Quarto for Websites?",
+    "text": "Why Quarto for Websites?\n\nYou don’t need to learn anything new for page content\nYou get nice website features out of the box: GitHub links, social cards, navigation, etc.\nA lot of customization available via YAML options\nCustomize style as much (or as little) as you want"
+  },
+  {
+    "objectID": "01-introduction.html#our-goal",
+    "href": "01-introduction.html#our-goal",
+    "title": "Let’s jump in!",
+    "section": "Our Goal",
+    "text": "Our Goal\n\nYou walk away with a website that reflects you both in content and style."
+  },
+  {
+    "objectID": "01-introduction.html#our-goal-1",
+    "href": "01-introduction.html#our-goal-1",
+    "title": "Let’s jump in!",
+    "section": "Our Goal",
+    "text": "Our Goal\nAlong the way you’ll learn how to:\n\nUse a template to get started quickly\nCreate a landing page using about templates\nUse YAML options to customize the style of your website\nAdd navigational elements to help visitors find your content\nCustomize the appearance of your site with CSS and SCSS\nGenerate lists of content automatically with listings"
+  },
+  {
+    "objectID": "01-introduction.html#workshop-structure",
+    "href": "01-introduction.html#workshop-structure",
+    "title": "Let’s jump in!",
+    "section": "Workshop structure",
+    "text": "Workshop structure\n\nMy turn: Lecture segments + live coding\nYour Turn: Practice exercises for you"
+  },
+  {
+    "objectID": "01-introduction.html#how-to-get-help",
+    "href": "01-introduction.html#how-to-get-help",
+    "title": "Let’s jump in!",
+    "section": "How to get help?",
+    "text": "How to get help?\n\nRaise your color post-it note\nAsk in Discord\nTalk to us during breaks or your-turns"
+  },
+  {
+    "objectID": "06-listings.html",
+    "href": "06-listings.html",
+    "title": "Listings",
+    "section": "",
+    "text": "blog/ has some folders with documents in them\nDemo:\n\nMake a new page blog/index.qmd\nMake it a listing:\n\n\n\nAs simple as:\n---\ntitle: My Blog\nlisting: default\n---\n\nExplicit default options:\n---\ntitle: My Blog\nlisting:\n  contents: /\n  sort: \"date\"\n  type: default\n  categories: false\n---\n\n\n\n\n\n\n\n\nan automatically generated list of content\nstyled via a template, (built-in type, or custom template)\ncan be included on any page\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nblog/third-post/index.qmd\n\n---\ntitle: \"First Post\"\ndescription: \"Post description for first post\"\nauthor: \"Alicia\"\ndate: \"5/22/2021\"\nimage: \"cover.jpg\"\ncategories:\n  - Science\n  - Technology\n---\n\n\n\n\n\n\n\nGreat for large collections\nGreat for collections that grow\n\n\n\n\n\n(Repeat) Make a new page blog/index.qmd which is a listing\nExperiment with type and categories:\n\ntype: grid or table\ncategories: true, unnumbered, cloud\n\nOther listing options\nDiscuss with your neighbor:\n\nWhat makes this a blog?\nWhat would you change if this was a gallery of your projects?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ntrue/numbered\n\n\n\n\n\nunnumbered\n\n\n\n\n\n\ncloud\n\n\n\n\n\n\n\nhttps://ivelasq.rbind.io/project\n\n\nMore examples at: https://charlotte.quarto.pub/listings/\n\n\n\n\nhttps://meghan.rbind.io/talks/\n\n\nMore examples at: https://charlotte.quarto.pub/listings/\n\n\n\n\nhttps://mickael.canouil.fr/publications\n\n\nMore examples at: https://charlotte.quarto.pub/listings/\n\n\n\n\nhttps://charlotte.quarto.pub/listings/\n\n\n\n\n\n\n\n\nprojects/index.qmd\n\n---\ntitle: Projects\nlisting:\n  contents: projects.yml\n  type: grid\n  max-description-length: 250\n---\n\n\n\n\nproject/projects.yml\n\n- title: Predicting House Prices with Machine Learning\n  path: https://example.com/house-prices\n  # Photo by Breno Assis on Unsplash https://unsplash.com/photos/aerial-photography-of-rural-r3WAWU5Fi5Q \n  image: images/breno-assis-r3WAWU5Fi5Q-unsplash.jpg\n  description: &gt;\n    This project involves using machine learning algorithms to predict house prices based on\n    various features such as location, size, and amenities. It includes data cleaning,\n    feature engineering, and model selection.\n  categories: [Python, Machine Learning, Data Cleaning]\n  date: 2024-01-01\n  ...\n\npath can be a relative path to a file in your site, or a URL\nYou can use Listing Fields, or create custom ones.\n\n\n\n\n\n\n\n\n\n\n\nUse fields to specify which Listing Fields are displayed.\n\nE.g. Exclude date:\nlisting:\n  contents: projects.yml\n  type: grid\n  fields: [\"image\", \"title\", \"categories\", \"description\"]\n\n\n\n\n\n\n\nUse field-display-names to provide a different label for a field\nMostly useful for type: table.\n\nE.g. Rename title to Project\nlisting:\n  contents: projects.yml\n  type: table\n  field-display-names: \n    title: Project\n\n\n\n\n\n\nSwitch to type: table\nOmit the image field from the listing\nChange the name of the “Categories” column to “Skills”\nBrainstorm: What could you use a listing for on your own site?\n\n\n\n\nExample: https://www.andrewheiss.com/teaching/\nSource: https://github.com/andrewheiss/ath-quarto/blob/main/teaching/index.qmd\n\nListing in a custom location on a page\nMore than one listing on a page\nCustom Template\n\n\n\n\n\n\n\n\nteaching/index.qmd\n\n---\ntitle: \"Teaching\"\nlisting:\n  id: ay_23-24\n  contents: ay_23-24.yml\n---\n\nGive the listing an id\n\n\n\nteaching/index.qmd\n\n## 2023–24\n\n:::{#ay_23-24}\n:::\n\n## 2022–23\n\nUse the id in a fenced div where you want it to appear\n\n\n\n\n\n\n\n\n\nteaching/index.qmd\n\n---\ntitle: \"Teaching\"\nlisting:\n  - id: ay_23-24\n    contents: ay_23-24.yml\n  - id: ay_22-23\n    contents: ay_22-23.yml\n---\n\nMake listing an array, use ids\n\n\n\nteaching/index.qmd\n\n## 2023–24\n\n:::{#ay_23-24}\n:::\n\n## 2022–23\n\n:::{#ay_22-23}\n:::\n\nPlace listings in the page by id\n\n\n\n\n\n\n\n\n\nteaching/index.qmd\n\n---\ntitle: \"Teaching\"\nlisting:\n  - id: ay_23-24\n    contents: ay_23-24.yml\n    template: ../html/teaching/listing.ejs\n---\n\nProvide an ejs file to template\n\n\n\n../html/teaching/listing.ejs\n\n```{=html}\n&lt;div class=\"teaching\"&gt;\n    &lt;% for (const course of items) { %&gt;\n    &lt;div class=\"course-entry\"&gt;\n        &lt;div class=\"logo\"&gt;\n            &lt;% if (course.url) { %&gt;\n            &lt;a href=\"&lt;%= course.url %&gt;\" target=\"_blank\"&gt;&lt;img src=\"&lt;%= course.logo %&gt;\" alt=\"&lt;%= course.title %&gt;\" title=\"&lt;%= course.title %&gt;\" /&gt;&lt;/a&gt;\n            &lt;% } else { %&gt;\n            &lt;img src=\"&lt;%= course.logo %&gt;\" alt=\"&lt;%= course.title %&gt;\" title=\"&lt;%= course.title %&gt;\" /&gt;\n            &lt;% } %&gt;\n        &lt;/div&gt;\n        &lt;div class=\"body\"&gt;\n            &lt;p class=\"course-title\"&gt;\n                &lt;% if (course.url) { %&gt;\n                &lt;a href=\"&lt;%= course.url %&gt;\" target=\"_blank\"&gt;&lt;%= course.title %&gt;&lt;/a&gt; \n                &lt;% } else { %&gt;\n                &lt;%= course.title %&gt; \n                &lt;% } %&gt;\n            &lt;/p&gt;\n            &lt;p class=\"course-details\"&gt;\n                &lt;span class=\"course-number\"&gt;&lt;%= course.number %&gt;&lt;/span&gt; | \n                &lt;span class=\"course-university\"&gt;&lt;%= course.university %&gt;&lt;/span&gt;\n                &lt;% if (course.role) { %&gt;\n                | &lt;span class=\"course-role\"&gt;&lt;%= course.role %&gt;&lt;/span&gt;\n                &lt;% } %&gt;\n            &lt;/p&gt;\n            &lt;p class=\"course-description\"&gt;&lt;%= course.description %&gt;&lt;/p&gt;\n\n            &lt;ul class=\"course-semesters\"&gt;\n                &lt;% for (const semester of course.semester) { %&gt;\n                &lt;% if (semester.url) { %&gt;\n                &lt;li&gt;&lt;a href=\"&lt;%= semester.url %&gt;\"&gt;&lt;i class=\"fa-solid fa-building-columns\"&gt;&lt;/i&gt; &lt;%= semester.name %&gt;&lt;/a&gt;&lt;/li&gt;\n                &lt;% } else { %&gt; \n                &lt;li class=\"no-link\"&gt;&lt;i class=\"fa-solid fa-building-columns\"&gt;&lt;/i&gt; &lt;%= semester.name %&gt;&lt;/li&gt;\n                &lt;% } %&gt;\n                &lt;% } %&gt;\n            &lt;/ul&gt;\n        &lt;/div&gt;\n    &lt;/div&gt;\n    &lt;% } %&gt;\n&lt;/div&gt;\n```\n\nDefine how item in items should be generated\n\n\n\n\n\nAdd a listing page to your site:\n\nCreate a page to house the listing\nEither:\n\npopulate a .yml file with a couple of items (use projects/project.yml as a template), or\ncreate some placeholder .qmd files.\n\nAdd the page to your site navigation\nClean up any template listing pages/files/folders you don’t want"
+  },
+  {
+    "objectID": "06-listings.html#lets-add-a-blog",
+    "href": "06-listings.html#lets-add-a-blog",
+    "title": "Listings",
+    "section": "",
+    "text": "blog/ has some folders with documents in them\nDemo:\n\nMake a new page blog/index.qmd\nMake it a listing:\n\n\n\nAs simple as:\n---\ntitle: My Blog\nlisting: default\n---\n\nExplicit default options:\n---\ntitle: My Blog\nlisting:\n  contents: /\n  sort: \"date\"\n  type: default\n  categories: false\n---"
+  },
+  {
+    "objectID": "06-listings.html#a-listing-is",
+    "href": "06-listings.html#a-listing-is",
+    "title": "Listings",
+    "section": "",
+    "text": "an automatically generated list of content\nstyled via a template, (built-in type, or custom template)\ncan be included on any page"
+  },
+  {
+    "objectID": "06-listings.html#generated-from-documents-in-contents",
+    "href": "06-listings.html#generated-from-documents-in-contents",
+    "title": "Listings",
+    "section": "",
+    "text": "blog/third-post/index.qmd\n\n---\ntitle: \"First Post\"\ndescription: \"Post description for first post\"\nauthor: \"Alicia\"\ndate: \"5/22/2021\"\nimage: \"cover.jpg\"\ncategories:\n  - Science\n  - Technology\n---"
+  },
+  {
+    "objectID": "06-listings.html#why-use-a-listing",
+    "href": "06-listings.html#why-use-a-listing",
+    "title": "Listings",
+    "section": "",
+    "text": "Great for large collections\nGreat for collections that grow"
+  },
+  {
+    "objectID": "06-listings.html#your-turn",
+    "href": "06-listings.html#your-turn",
+    "title": "Listings",
+    "section": "",
+    "text": "(Repeat) Make a new page blog/index.qmd which is a listing\nExperiment with type and categories:\n\ntype: grid or table\ncategories: true, unnumbered, cloud\n\nOther listing options\nDiscuss with your neighbor:\n\nWhat makes this a blog?\nWhat would you change if this was a gallery of your projects?"
+  },
+  {
+    "objectID": "06-listings.html#categories",
+    "href": "06-listings.html#categories",
+    "title": "Listings",
+    "section": "",
+    "text": "true/numbered\n\n\n\n\n\nunnumbered\n\n\n\n\n\n\ncloud"
+  },
+  {
+    "objectID": "06-listings.html#use-listings-for-_-projects-_",
+    "href": "06-listings.html#use-listings-for-_-projects-_",
+    "title": "Listings",
+    "section": "",
+    "text": "https://ivelasq.rbind.io/project\n\n\nMore examples at: https://charlotte.quarto.pub/listings/"
+  },
+  {
+    "objectID": "06-listings.html#use-listings-for-_-talks-_",
+    "href": "06-listings.html#use-listings-for-_-talks-_",
+    "title": "Listings",
+    "section": "",
+    "text": "https://meghan.rbind.io/talks/\n\n\nMore examples at: https://charlotte.quarto.pub/listings/"
+  },
+  {
+    "objectID": "06-listings.html#use-listings-for-_-publications-_",
+    "href": "06-listings.html#use-listings-for-_-publications-_",
+    "title": "Listings",
+    "section": "",
+    "text": "https://mickael.canouil.fr/publications\n\n\nMore examples at: https://charlotte.quarto.pub/listings/"
+  },
+  {
+    "objectID": "06-listings.html#use-listings-for",
+    "href": "06-listings.html#use-listings-for",
+    "title": "Listings",
+    "section": "",
+    "text": "https://charlotte.quarto.pub/listings/"
+  },
+  {
+    "objectID": "06-listings.html#contents-can-be-a-yaml-file",
+    "href": "06-listings.html#contents-can-be-a-yaml-file",
+    "title": "Listings",
+    "section": "",
+    "text": "projects/index.qmd\n\n---\ntitle: Projects\nlisting:\n  contents: projects.yml\n  type: grid\n  max-description-length: 250\n---\n\n\n\n\nproject/projects.yml\n\n- title: Predicting House Prices with Machine Learning\n  path: https://example.com/house-prices\n  # Photo by Breno Assis on Unsplash https://unsplash.com/photos/aerial-photography-of-rural-r3WAWU5Fi5Q \n  image: images/breno-assis-r3WAWU5Fi5Q-unsplash.jpg\n  description: &gt;\n    This project involves using machine learning algorithms to predict house prices based on\n    various features such as location, size, and amenities. It includes data cleaning,\n    feature engineering, and model selection.\n  categories: [Python, Machine Learning, Data Cleaning]\n  date: 2024-01-01\n  ...\n\npath can be a relative path to a file in your site, or a URL\nYou can use Listing Fields, or create custom ones."
+  },
+  {
+    "objectID": "06-listings.html#simple-customization-select-fields",
+    "href": "06-listings.html#simple-customization-select-fields",
+    "title": "Listings",
+    "section": "",
+    "text": "Use fields to specify which Listing Fields are displayed.\n\nE.g. Exclude date:\nlisting:\n  contents: projects.yml\n  type: grid\n  fields: [\"image\", \"title\", \"categories\", \"description\"]"
+  },
+  {
+    "objectID": "06-listings.html#simple-customization-rename-fields",
+    "href": "06-listings.html#simple-customization-rename-fields",
+    "title": "Listings",
+    "section": "",
+    "text": "Use field-display-names to provide a different label for a field\nMostly useful for type: table.\n\nE.g. Rename title to Project\nlisting:\n  contents: projects.yml\n  type: table\n  field-display-names: \n    title: Project"
+  },
+  {
+    "objectID": "06-listings.html#your-turn-1",
+    "href": "06-listings.html#your-turn-1",
+    "title": "Listings",
+    "section": "",
+    "text": "Switch to type: table\nOmit the image field from the listing\nChange the name of the “Categories” column to “Skills”\nBrainstorm: What could you use a listing for on your own site?"
+  },
+  {
+    "objectID": "06-listings.html#advanced-customization",
+    "href": "06-listings.html#advanced-customization",
+    "title": "Listings",
+    "section": "",
+    "text": "Example: https://www.andrewheiss.com/teaching/\nSource: https://github.com/andrewheiss/ath-quarto/blob/main/teaching/index.qmd\n\nListing in a custom location on a page\nMore than one listing on a page\nCustom Template"
+  },
+  {
+    "objectID": "06-listings.html#custom-location",
+    "href": "06-listings.html#custom-location",
+    "title": "Listings",
+    "section": "",
+    "text": "teaching/index.qmd\n\n---\ntitle: \"Teaching\"\nlisting:\n  id: ay_23-24\n  contents: ay_23-24.yml\n---\n\nGive the listing an id\n\n\n\nteaching/index.qmd\n\n## 2023–24\n\n:::{#ay_23-24}\n:::\n\n## 2022–23\n\nUse the id in a fenced div where you want it to appear"
+  },
+  {
+    "objectID": "06-listings.html#multiple-listings",
+    "href": "06-listings.html#multiple-listings",
+    "title": "Listings",
+    "section": "",
+    "text": "teaching/index.qmd\n\n---\ntitle: \"Teaching\"\nlisting:\n  - id: ay_23-24\n    contents: ay_23-24.yml\n  - id: ay_22-23\n    contents: ay_22-23.yml\n---\n\nMake listing an array, use ids\n\n\n\nteaching/index.qmd\n\n## 2023–24\n\n:::{#ay_23-24}\n:::\n\n## 2022–23\n\n:::{#ay_22-23}\n:::\n\nPlace listings in the page by id"
+  },
+  {
+    "objectID": "06-listings.html#custom-template",
+    "href": "06-listings.html#custom-template",
+    "title": "Listings",
+    "section": "",
+    "text": "teaching/index.qmd\n\n---\ntitle: \"Teaching\"\nlisting:\n  - id: ay_23-24\n    contents: ay_23-24.yml\n    template: ../html/teaching/listing.ejs\n---\n\nProvide an ejs file to template\n\n\n\n../html/teaching/listing.ejs\n\n```{=html}\n&lt;div class=\"teaching\"&gt;\n    &lt;% for (const course of items) { %&gt;\n    &lt;div class=\"course-entry\"&gt;\n        &lt;div class=\"logo\"&gt;\n            &lt;% if (course.url) { %&gt;\n            &lt;a href=\"&lt;%= course.url %&gt;\" target=\"_blank\"&gt;&lt;img src=\"&lt;%= course.logo %&gt;\" alt=\"&lt;%= course.title %&gt;\" title=\"&lt;%= course.title %&gt;\" /&gt;&lt;/a&gt;\n            &lt;% } else { %&gt;\n            &lt;img src=\"&lt;%= course.logo %&gt;\" alt=\"&lt;%= course.title %&gt;\" title=\"&lt;%= course.title %&gt;\" /&gt;\n            &lt;% } %&gt;\n        &lt;/div&gt;\n        &lt;div class=\"body\"&gt;\n            &lt;p class=\"course-title\"&gt;\n                &lt;% if (course.url) { %&gt;\n                &lt;a href=\"&lt;%= course.url %&gt;\" target=\"_blank\"&gt;&lt;%= course.title %&gt;&lt;/a&gt; \n                &lt;% } else { %&gt;\n                &lt;%= course.title %&gt; \n                &lt;% } %&gt;\n            &lt;/p&gt;\n            &lt;p class=\"course-details\"&gt;\n                &lt;span class=\"course-number\"&gt;&lt;%= course.number %&gt;&lt;/span&gt; | \n                &lt;span class=\"course-university\"&gt;&lt;%= course.university %&gt;&lt;/span&gt;\n                &lt;% if (course.role) { %&gt;\n                | &lt;span class=\"course-role\"&gt;&lt;%= course.role %&gt;&lt;/span&gt;\n                &lt;% } %&gt;\n            &lt;/p&gt;\n            &lt;p class=\"course-description\"&gt;&lt;%= course.description %&gt;&lt;/p&gt;\n\n            &lt;ul class=\"course-semesters\"&gt;\n                &lt;% for (const semester of course.semester) { %&gt;\n                &lt;% if (semester.url) { %&gt;\n                &lt;li&gt;&lt;a href=\"&lt;%= semester.url %&gt;\"&gt;&lt;i class=\"fa-solid fa-building-columns\"&gt;&lt;/i&gt; &lt;%= semester.name %&gt;&lt;/a&gt;&lt;/li&gt;\n                &lt;% } else { %&gt; \n                &lt;li class=\"no-link\"&gt;&lt;i class=\"fa-solid fa-building-columns\"&gt;&lt;/i&gt; &lt;%= semester.name %&gt;&lt;/li&gt;\n                &lt;% } %&gt;\n                &lt;% } %&gt;\n            &lt;/ul&gt;\n        &lt;/div&gt;\n    &lt;/div&gt;\n    &lt;% } %&gt;\n&lt;/div&gt;\n```\n\nDefine how item in items should be generated"
+  },
+  {
+    "objectID": "06-listings.html#your-turn-2",
+    "href": "06-listings.html#your-turn-2",
+    "title": "Listings",
+    "section": "",
+    "text": "Add a listing page to your site:\n\nCreate a page to house the listing\nEither:\n\npopulate a .yml file with a couple of items (use projects/project.yml as a template), or\ncreate some placeholder .qmd files.\n\nAdd the page to your site navigation\nClean up any template listing pages/files/folders you don’t want"
+  }
+]

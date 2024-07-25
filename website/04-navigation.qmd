@@ -1,0 +1,627 @@
+---
+format:
+  revealjs: 
+    theme: [default, slide-styles.scss]
+    width: 1280
+    height: 720
+    include-after-body: 
+      - "all-the-js-code.html"
+echo: false
+code-line-numbers: false
+---
+
+## Before we proceed...
+
+If you've published your site:
+
+Add your `site-url` to `_quarto.yml`, e.g. 
+
+```{.yaml filename="_quarto.yml"}
+website:
+  site-url: https://charlotte.quarto.pub/template-site
+```
+
+# Let's Add a Page!
+
+::::: columns
+
+::: column
+-   Create a new page: `/talks.qmd`
+
+-   Add some content
+
+-   Preview:
+
+    `< site url >/talks.html`
+:::
+
+::: column
+``` {.markdown shortcodes="false" filename="talks.qmd"}
+---
+title: Talks
+---
+
+{{< lipsum 1 >}}
+{{< placeholder 400 400 >}}
+```
+:::
+:::::
+
+## Adding Pages
+
+Two decisions:
+
+1.  **Structure** Where will it live in your website project?
+2.  **Navigation** How will people discover it on your website?
+
+# Structure
+
+## File path becomes URL path {.smaller}
+
+::::: columns
+::: {.column width="40%"}
+File location
+
+`talks.qmd`
+
+`reports/air-quality.qmd`
+:::
+
+::: {.column width="60%"}
+URL
+
+`{ site url }/talks.html`
+
+`{ site url }/reports/air-quality.html`
+:::
+:::::
+
+## `index.html` is special {.smaller}
+
+::::: columns
+::: {.column width="40%"}
+File location
+
+`index.qmd`
+
+`talks/index.qmd`
+:::
+
+::: {.column width="60%"}
+URL
+
+`{ site url }`
+
+`{ site url }/talks`
+:::
+:::::
+
+`index.qmd` (or `.md`, or `.ipynb`) -\> `index.html`
+
+`index.html` acts like a default page for the site or directory.
+
+## You aren't limited to `.html` {.smaller}
+
+::::: columns
+::: {.column width="40%"}
+File location
+
+`data/monthly.csv`
+
+`cv.pdf`
+
+`reports/air-quality.qmd` with `format: pdf`
+:::
+
+::: {.column width="60%"}
+URL
+
+`{ site url }/data/monthly.csv`
+
+`{ site url }/cv.pdf`
+
+`{ site url }/reports/air-quality.pdf`
+:::
+:::::
+
+## Structure helps ...
+
+-   **You**: Navigate and organize your content
+
+-   **Your readers**: Understand context of content from its URL
+
+## Your Turn
+
+Add a new page to your site:
+
+1.  Think about the URL first
+2.  Create the page file in the appropriate location
+3.  Add some content
+
+# Navigation
+
+## In-text Links
+
+::::: columns
+::: column
+Use relative paths
+
+Use `.qmd` rather than `.html`
+:::
+
+::: column
+``` {.markdown filename="index.qmd"}
+I occasionally give [talks](talks.qmd).
+
+You might like to look at 
+my projects [projects](projects/)
+```
+:::
+:::::
+
+\
+
+::::: columns
+::: column
+Use `/` to refer to site root
+:::
+
+::: column
+``` {.markdown filename="projects/index.qmd"}
+You might also be interested 
+in my [talks](/talks.qmd) 
+```
+:::
+:::::
+
+::: footer
+https://quarto.org/docs/websites/#linking
+:::
+
+## Navigation Bar
+
+In `_quarto.yml` under `website: navbar`
+
+::::: columns
+::: column
+Give a path from site root
+
+``` {.yaml filename="_quarto.yml"}
+website:
+  navbar:
+    right: 
+      - talks.qmd
+```
+:::
+
+::: column
+:::
+:::::
+
+## Your Turn {.exercise}
+
+Provide links to your new page:
+
+-   From somewhere in the content of `index.qmd`
+-   Before "Home" in the navigation bar
+
+## Navigation Items
+
+::::: columns
+::: column
+A path:
+
+``` {.yaml filename="_quarto.yml"}
+website:
+  navbar:
+    right:
+      - talks.qmd
+```
+:::
+
+::: column
+A nav item object:
+
+``` {.yaml filename="_quarto.yml"}
+website:
+  navbar:
+    right:
+      - href: talks.qmd
+        text: Speaking
+        icon: megaphone
+```
+:::
+:::::
+
+If you don't have `text`, add `aria-label`
+
+Options for `icon`: [Bootstrap Icons](https://icons.getbootstrap.com)
+
+## Navigation Bar Links
+
+Use navigation items in `left`, `right` and `tools`
+
+::::: columns
+::: column
+![](images/navigation-navbar-navitems.png)
+:::
+
+::: column
+``` {.yaml filename="_quarto.yml" code-line-numbers="true"}
+website:
+  navbar:
+    right: 
+      - talks.qmd
+    left:
+      - text: Home
+        href: index.qmd
+        icon: house-door-fill
+    tools: 
+      - icon: github
+        href: https://github.com/cwickham
+```
+:::
+:::::
+
+::: footer
+https://quarto.org/docs/websites/website-navigation.html#top-navigation
+:::
+
+## Navigation Bar Options
+
+Other customization: `title`, `logo`, `search`
+
+::::: columns
+::: column
+![](images/navigation-navbar-options.png)
+:::
+
+::: column
+``` {.yaml filename="_quarto.yml" code-line-numbers="3-5"}
+website:
+  navbar:
+    title: cwick.co.nz 
+    logo: logo.png
+    search: true
+    right: 
+      - talks.qmd
+    left:
+      - text: Home
+        href: index.qmd
+        icon: house-door-fill
+    tools: 
+      - icon: github
+        href: https://github.com/cwickham
+```
+:::
+:::::
+
+::: footer
+https://quarto.org/docs/websites/website-navigation.html#top-navigation
+:::
+
+## Your Turn {.exercise}
+
+1.  Customize your navigation bar `title`
+2.  Experiment with the position of your links in the navbar: `left`, `right` or a mix
+3.  Add at least one item to `tools` in your navbar
+
+# When things get more complicated...
+
+## Your Turn {.exercise .scrollable}
+
+**Brainstorm with your neighbor:** What elements on this page allow the user to navigate the site?
+
+![](images/navigation-quarto-web.png)
+
+...
+
+![](images/navigation-quarto-web-footer.png)
+
+::: footer
+<https://quarto.org/docs/websites/website-navigation.html#top-navigation>
+:::
+
+## Navigation Elements {.scrollable}
+
+<details>
+
+<summary>Don't peek</summary>
+
+![](images/navigation-quarto-web-annotated.jpg)
+
+...
+
+![](images/navigation-quarto-web-footer-annotated.jpg)
+
+</details>
+
+## Primary Navigation
+
+::::: columns
+::: column
+Top navigation
+
+![](images/navigation-top.png)
+:::
+
+::: column
+Side navigation
+
+![](images/navigation-side.png)
+:::
+:::::
+
+## Primary Navigation
+
+::::: columns
+::: column
+Top navigation
+
+``` {.yaml filename="_quarto.yml" code-line-numbers=""}
+website:
+  navbar:
+    left:
+      - index.qmd
+      - talks.qmd
+      - projects/index.qmd
+    tools:
+      - text: GitHub
+        href: http://github.com
+        icon: github        
+```
+
+Add items to `left`, `right` and `tools`
+:::
+
+::: column
+Side navigation
+
+``` {.yaml filename="_quarto.yml" code-line-numbers="|2|3"}
+website:
+  sidebar:
+    contents:
+      - index.qmd
+      - talks.qmd
+      - projects/index.qmd
+    tools:
+      - text: GitHub
+        href: http://github.com
+        icon: github    
+```
+
+Add items to `contents` and `tools`
+:::
+:::::
+
+## Nested Navigation
+
+::::: columns
+::: column
+Top navigation
+
+![](images/navigation-top-nested.png)
+:::
+
+::: column
+Side navigation
+
+![](images/navigation-side-nested.png)
+:::
+:::::
+
+## Nested Navigation
+
+::::: columns
+::: column
+Top navigation
+
+``` {.yaml filename="_quarto.yml" code-line-numbers="|5-8"}
+website:
+  navbar:
+    left:
+      - index.qmd
+      - text: Work
+        menu: 
+          - talks.qmd
+          - projects/index.qmd
+```
+
+Add a `text` item along with `menu`
+:::
+
+::: column
+Side navigation
+
+``` {.yaml filename="_quarto.yml" code-line-numbers="|5-8"}
+website:
+  sidebar:
+    contents:
+      - index.qmd
+      - section: Work
+        contents: 
+          - talks.qmd
+          - projects/index.qmd
+```
+
+Add a `section` with its own `contents`
+:::
+:::::
+
+## Hybrid Navigation
+
+Top navigation navigates between the different "sections" of the website.
+
+Each "section" has its own side navigation.
+
+::::: columns
+::: column
+![](images/navigation-hybrid-1.png)
+:::
+
+::: column
+![](images/navigation-hybrid-2.png)
+:::
+:::::
+
+## Hybrid Navigation
+
+::::: columns
+::: column
+``` {.yaml filename="_quarto.yml" code-line-numbers="|5,9|6,11"}
+website:
+  navbar:
+    left:
+      - index.qmd
+      - text: Work
+        href: talks.qmd
+
+  sidebar:
+    - title: Work
+      contents:
+        - talks.qmd
+        - projects/index.qmd
+```
+:::
+
+::: column
+1.  Match `navbar` item `text` to a `sidebar` item `title`
+2.  List `navbar` item `href` as first value in `sidebar` item `contents`
+:::
+:::::
+
+## Automatic Sidebar
+
+If your structure is good, an automatic sidebar can go a long way:
+
+``` {.yaml filename="_quarto.yml"}
+website:
+  sidebar:
+    contents: auto
+```
+
+## Your Turn {.exercise}
+
+Here's three different navigation options for the same set of content:
+
+-   [Automatically generated side navigation](https://charlotte.quarto.pub/navigation-demo-auto-sidebar/)
+-   [Everything in top navigation](https://charlotte.quarto.pub/navigation-demo-all-top-nav/)
+-   [Hybrid navigation](https://charlotte.quarto.pub/navigation-demo-hybrid/)
+
+Pick one, and discuss the pros and cons with your neighbor.
+
+*(Done? Expand your conversation to another option or another neighbor)*
+
+## Pro and Cons
+
++-----------+----------------------------+----------------------------+
+|           | Pros                       | Cons                       |
++===========+============================+============================+
+| Side nav  |                            |                            |
++-----------+----------------------------+----------------------------+
+| Top nav   |                            |                            |
++-----------+----------------------------+----------------------------+
+| Hybrid    |                            |                            |
++-----------+----------------------------+----------------------------+
+
+## Pro and Cons {.hidden}
+
++----------+-----------------------------------------------------------------------------+-----------------------------------------------------------------------------+
+|          | Pros                                                                        | Cons                                                                        |
++==========+=============================================================================+=============================================================================+
+| Side nav | -   `auto`: easy to generate and maintain                                   | -   May show too much detail for sections that aren't of immediate interest |
+|          |                                                                             |                                                                             |
+|          | -   Linearly present linear content (e.g. a progression through a tutorial) |                                                                             |
+|          |                                                                             |                                                                             |
+|          | -   Can be deeply nested                                                    |                                                                             |
+|          |                                                                             |                                                                             |
+|          | -   Can handle longer entries                                               |                                                                             |
++----------+-----------------------------------------------------------------------------+-----------------------------------------------------------------------------+
+| Top nav  | -   First place most people look                                            | -   Not good for long entries, e.g. keep to short single words              |
+|          |                                                                             |                                                                             |
+|          |                                                                             | -   Can't be nested beyond one level                                        |
+|          |                                                                             |                                                                             |
+|          |                                                                             | -   Nested content is hidden unless clicked on                              |
++----------+-----------------------------------------------------------------------------+-----------------------------------------------------------------------------+
+| Hybrid   | -   Organize lots of content without overwhelming viewer                    | -   Harder to build and maintain                                            |
++----------+-----------------------------------------------------------------------------+-----------------------------------------------------------------------------+
+
+# Other navigation elements
+
+*For reference*
+
+## GitHub Links
+
+<https://quarto.org/docs/websites/website-navigation.html#github-links>
+
+``` {.yaml filename="_quarto.yml"}
+website:
+  repo-url: https://github.com/quarto-dev/quarto-web
+  repo-actions: [edit, issue]
+```
+
+## Page Navigation
+
+Navigate between items in a `section` of `sidebar`
+
+<https://quarto.org/docs/websites/website-navigation.html#page-navigation>
+
+``` {.yaml filename="_quarto.yml"}
+website:
+  page-navigation: true
+```
+
+## Breadcrumbs
+
+<https://quarto.org/docs/websites/website-navigation.html#breadcrumbs>
+
+Navigate up levels in a nested sidebar. Displayed by default.
+
+``` {.yaml filename="_quarto.yml"}
+website:
+  bread-crumbs: false
+```
+
+## Footer
+
+<https://quarto.org/docs/websites/website-navigation.html#page-footer>
+
+``` {.yaml filename="_quarto.yml"}
+website:
+  page-footer: 
+    left: "Copyright 2021, Norah Jones" 
+    right: 
+      - icon: github
+        href: https://github.com/
+      - icon: twitter 
+        href: https://twitter.com/ 
+```
+
+## Table of Contents
+
+<https://quarto.org/docs/output-formats/html-basics.html#table-of-contents>
+
+Controlled by `format` not `website`:
+
+``` {.yaml filename="_quarto.yml"}
+format:
+  html: 
+    toc: true
+```
+
+# Wrapping Up
+
+## Wrapping Up
+
+-   To add content:
+
+    1.  Add a page/pages in the structure of your site
+    2.  Add a link to the page in navigation
+
+-   Listings (*this afternoon*) --- Another navigation option
+
+## Your Turn {.exercise}
+
+Work on your site: add pages, edit navigation, add/edit content.
+
+We are here to help. Publish a new version before lunch.

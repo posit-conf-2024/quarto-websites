@@ -1,0 +1,22 @@
+---
+title: Quarto Websites
+subtitle: "`posit::conf(2024)`"
+format: html
+---
+
+Do you need a professional website to showcase your work? Or have you got an idea for a website at work, but it needs to reflect your organization's brand? If you've used Quarto to produce a document, you've already got the technical skills to create a Quarto website. In this workshop, you'll learn everything else you need to build a website and customize its appearance.
+
+## Schedule
+
+| Time          | Topic                               | Instructor |
+|---------------|-------------------------------------|------------|
+| 09:00 - 9:20  | [Introduction](01-introduction.qmd) | Charlotte  |
+| 09:20 - 9:50  | [Basics](02-basics.qmd)             | Charlotte  |
+| 09:50 - 10:30 | [Style](03-style.qmd)               | Emil       |
+| 10:30 - 11:00 | *Coffee Break*                      |            |
+| 11:00 - 12:30 | [Navigation](04-navigation.qmd)     | Charlotte  |
+| 12:30 - 13:30 | *Lunch*                             |            |
+| 13:30 - 15:00 | [CSS](05-css.qmd)                   | Emil       |
+| 15:00 - 15:30 | *Coffee Break*                      |            |
+| 15:30 - 16:30 | [Listings](06-listings.qmd)         | Charlotte  |
+| 16:30 - 17:00 | [Roundup](07-roundup.qmd)           | Emil       |

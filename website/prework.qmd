@@ -1,0 +1,41 @@
+---
+title: "Pre-workshop Instructions"
+---
+
+Prior to the workshop check you have the required software, set up any accounts you might need for publishing your site, and collect a few items that will help you make as much progress on your site as possible.
+
+## Required Software
+
+-   [**Quarto**](https://quarto.org/docs/download/): v1.5
+
+-   **One** of the following IDEs:
+
+    -   [**RStudio**](https://posit.co/download/rstudio-desktop/)
+
+    -   [**VS Code**](https://code.visualstudio.com/download) and the [VS Code Quarto Extension](https://marketplace.visualstudio.com/items?itemName=quarto.quarto)
+
+## Optional Publishing Accounts
+
+To publish your website you'll need an account on one of Quarto's publishing venues:
+
+-   **(Recommended)** [Quarto Pub](https://quartopub.com/sign-up)
+
+-   [GitHub](https://github.com) only **if you are already** a Git/GitHub user
+
+## Join the Workshop Discord Channel
+
+The Discord server will be available after August 8th:
+
+* [pos.it/conf-event-portal](http://pos.it/conf-event-portal): Login
+* Click on “Join Discord, the virtual networking platform!”
+* Browse Channels -> #workshop-quarto-websites
+
+## Preparation
+
+There are a few things you might like to collect before arriving:
+
+* An photo/image you would like on your home page
+* A paragraph about who you are (or what your site is about)  
+* A list of projects, talks, classes, or publications 
+* Any existing Quarto documents you would like to include in your site
+

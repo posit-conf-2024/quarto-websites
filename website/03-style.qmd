@@ -1,0 +1,230 @@
+---
+format:
+  revealjs: 
+    theme: [default, slide-styles.scss]
+    width: 1280
+    height: 720
+    include-after-body: 
+      - "all-the-js-code.html"
+echo: false
+code-line-numbers: false
+---
+
+# Styling
+
+## We have a website and we are happy with it!
+
+TODO: insert fun celebratory image
+
+## They all look the same
+
+TODO: insert sad-ish image here
+
+TODO: add "BUT wait" caption as incremental effect
+
+## Styling with Quarto
+
+the task of styling websites follows the pattern of **diminishing returns**
+
+> Each unit change to the style, will lead to fewer improvements in the results
+
+We can take the reverse, and apply a few changes for maximum results
+
+## Styling using yaml
+
+With Quarto [html output](https://quarto.org/docs/output-formats/html-themes.html) we have a number of ways to style the site
+
+A number of basic options allows us to change **colors**, **fonts**, and ***sizes*
+
+::: footer
+
+<https://quarto.org/docs/output-formats/html-themes.html#basic-options>
+:::
+
+## colors, fonts, sizes
+
+TODO: diagram/picture of a web page, with relevant areas highlighted
+
+## Colors
+
+. . .
+
+- `fontcolor`
+
+The main color for text on the site
+
+. . .
+
+- `linkcolor`
+
+Color of the links
+
+. . .
+
+- `backgroundcolor`
+
+Background color of the whole site
+
+. . .
+
+- `monobackgroundcolor`
+
+background for code chunks
+
+. . .
+
+## What is a color?
+
+We can specify colors in many different ways using CSS
+
+- [named colors](https://developer.mozilla.org/en-US/docs/Web/CSS/named-color) such as `orange` and `lightskyblue`
+
+- [RGB Hexadecimal](https://developer.mozilla.org/en-US/docs/Web/CSS/hex-color), such as `#FFA500` and `#87CEFA`
+
+- Using a color space
+  - `rgb(214, 122, 127)`
+  - `hsl(30deg 82% 43%)`
+  - `hwb(152deg 0% 58% / 70%)`
+
+- and more
+
+::: footer
+
+<https://developer.mozilla.org/en-US/docs/Web/CSS/color>
+:::
+
+## Colors
+
+TODO: show examples and before after
+
+## Your Turn!
+
+Open up your `_quarto.yml` file and experiment with the colors
+
+- `fontcolor`
+
+- `linkcolor`
+
+- `backgroundcolor`
+
+- `monobackgroundcolor`
+
+## Fonts
+
+. . .
+
+- `mainfont`
+
+The main font for text on the site
+
+. . .
+
+- `monofont`
+
+Font for code elements
+
+## What is a font?
+
+A font family is specified either as a family name or as a generic name.
+
+In the below example, `"Gill Sans"` is a family name, and `sans-serif` is a generic name. 
+
+```css
+"Gill Sans", sans-serif
+```
+
+Font specification works by having a fallback, so if `"Gill Sans"` isn't available for the user, then `sans-serif` is used instead.
+
+We will talk more later, about how we can load in new family names.
+
+::: footer
+
+<https://developer.mozilla.org/en-US/docs/Web/CSS/font-family>
+:::
+
+## Fonts
+
+TODO: show examples and before after
+
+## Your Turn!
+
+Open up your `_quarto.yml` file and experiment with the fonts
+
+- `mainfont`
+
+- `monofont`
+
+generic families include
+
+serif, sans-serif, monospace, cursive, fantasy, system-ui, ui-serif, ui-sans-serif, ui-monospace, ui-rounded, and fangsong
+
+## Sizes
+
+. . .
+
+- `max-width`
+
+Width of the main text area of the pages
+
+. . .
+
+- `fontsize`
+
+Base font size for website
+
+. . .
+
+- `linestretch`
+
+Distance between lines of text
+
+## How to specify sizes
+
+Specifying a length in CSS can be done in dozens of ways,
+
+- Using pixel counts `18px` or `100px`
+
+- Calculated font-size of an element, `1em` should remain unchanged, `2em` should double it
+
+::: footer
+
+[font sizes](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size) & [line height](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height)
+:::
+
+## Sizes
+
+TODO: show examples and before after
+
+## Your Turn!
+
+Open up your `_quarto.yml` file and experiment with the sizing
+
+- `max-width`
+
+- `fontsize`
+
+- `linestretch`
+
+# Publishing
+
+## Show the world!
+
+TODO: add fun image
+
+There are many different ways we can publish the our stuff. We will show [Quarto Pub](https://quartopub.com/) here and now
+
+Many different ways: <https://quarto.org/docs/publishing/>
+
+## Quarto Pub
+
+We use the `quarto publish` commend, specifically `quarto publish quarto-pub`
+
+## what happens next
+
+TODO: add ¿pictures?
+
+## Your Turn!
+
+Make sure you are set up to use Quarto Pub, then run `quarto publish quarto-pub`
+
+## You did it!
