@@ -968,77 +968,77 @@
   {
     "objectID": "01-introduction.html#quarto-websites-welcome",
     "href": "01-introduction.html#quarto-websites-welcome",
-    "title": "Let’s jump in!",
-    "section": "",
-    "text": "WiFi: Posit Conf 2024 Password: conf2024\nFind the materials at: pos.it/websites_24\nVerify the pre-work steps (details 👆):\n\nQuarto version 1.5\nYour IDE of choice\nAccount at Quarto Pub (if you want to publish)\nJoin the discord: #workshop-quarto-websites"
+    "title": "Quarto Websites Workshop",
+    "section": "Quarto Websites: Welcome!",
+    "text": "Quarto Websites: Welcome!\n\n\nWiFi: Posit Conf 2024 Password: conf2024\nFind the materials at: pos.it/websites_24\nVerify the pre-work steps (details 👆):\n\nQuarto version 1.5\nYour IDE of choice\nAccount at Quarto Pub (if you want to publish)\nJoin the discord: #workshop-quarto-websites"
   },
   {
     "objectID": "01-introduction.html#housekeeping",
     "href": "01-introduction.html#housekeeping",
-    "title": "Let’s jump in!",
+    "title": "Quarto Websites Workshop",
     "section": "Housekeeping",
     "text": "Housekeeping\n\nThere are gender-neutral bathrooms located on levels 3, 4, 5, 6 & 7\nThere is a meditation/prayer room located in 503. Available Mon & Tues 7am - 7pm, and Wed 7am - 5pm.\nThe lactation room is located in 509, same timings as above.\nParticipants who do not wish to be photographed have red lanyards; please note everyone’s lanyard colors before taking a photo and respect their choices.\nThe Code of Conduct can be found at https://posit.co/code-of-conduct. Please review carefully. You can report Code of Conduct violations in person, by email, or by phone. Please see the policy linked above for contact information."
   },
   {
     "objectID": "01-introduction.html#breaks",
     "href": "01-introduction.html#breaks",
-    "title": "Let’s jump in!",
+    "title": "Quarto Websites Workshop",
     "section": "Breaks",
     "text": "Breaks\nFull schedule at: pos.it/websites_24\n\n\n\nTime\n\n\n\n\n\n10:30 - 11:00\nCoffee Break\n\n\n12:30 - 13:30\nLunch\n\n\n15:00 - 15:30\nCoffee Break\n\n\n17:00\nEND"
   },
   {
     "objectID": "01-introduction.html#about-us",
     "href": "01-introduction.html#about-us",
-    "title": "Let’s jump in!",
+    "title": "Quarto Websites Workshop",
     "section": "About Us",
-    "text": "About Us\n\n\n\nCharlotte Wickham\n\nQuarto user for 2+ years\nQuarto website user for 1.5+ years\nStatistics + R background\n\n\n\n\nEmil Hvitfeldt\n\nQuarto user for 2+ years\nWritten some Quarto extensions\nR software engineer"
+    "text": "About Us\n\n\nCharlotte Wickham\n\nQuarto user for 2+ years\nQuarto website user for 1.5+ years\nStatistics + R background\n\n\nEmil Hvitfeldt\n\nQuarto user for 2+ years\nWritten some Quarto extensions\nR software engineer"
   },
   {
     "objectID": "01-introduction.html#about-you",
     "href": "01-introduction.html#about-you",
-    "title": "Let’s jump in!",
+    "title": "Quarto Websites Workshop",
     "section": "About You",
     "text": "About You\nYour Turn\nIntroduce yourself to your neighbors:\n\nName\nProfessional affiliation\nWhat do you use Quarto for?"
   },
   {
     "objectID": "01-introduction.html#meeting-you-where-you-are",
     "href": "01-introduction.html#meeting-you-where-you-are",
-    "title": "Let’s jump in!",
+    "title": "Quarto Websites Workshop",
     "section": "Meeting you where you are",
     "text": "Meeting you where you are\n\nYou’ve used Quarto for single documents\nYou are comfortable editing, saving and previewing files in your IDE\nYou want to build a website"
   },
   {
     "objectID": "01-introduction.html#why-quarto-for-websites",
     "href": "01-introduction.html#why-quarto-for-websites",
-    "title": "Let’s jump in!",
+    "title": "Quarto Websites Workshop",
     "section": "Why Quarto for Websites?",
     "text": "Why Quarto for Websites?\n\nYou don’t need to learn anything new for page content\nYou get nice website features out of the box: GitHub links, social cards, navigation, etc.\nA lot of customization available via YAML options\nCustomize style as much (or as little) as you want"
   },
   {
     "objectID": "01-introduction.html#our-goal",
     "href": "01-introduction.html#our-goal",
-    "title": "Let’s jump in!",
+    "title": "Quarto Websites Workshop",
     "section": "Our Goal",
     "text": "Our Goal\n\nYou walk away with a website that reflects you both in content and style."
   },
   {
     "objectID": "01-introduction.html#our-goal-1",
     "href": "01-introduction.html#our-goal-1",
-    "title": "Let’s jump in!",
+    "title": "Quarto Websites Workshop",
     "section": "Our Goal",
     "text": "Our Goal\nAlong the way you’ll learn how to:\n\nUse a template to get started quickly\nCreate a landing page using about templates\nUse YAML options to customize the style of your website\nAdd navigational elements to help visitors find your content\nCustomize the appearance of your site with CSS and SCSS\nGenerate lists of content automatically with listings"
   },
   {
     "objectID": "01-introduction.html#workshop-structure",
     "href": "01-introduction.html#workshop-structure",
-    "title": "Let’s jump in!",
+    "title": "Quarto Websites Workshop",
     "section": "Workshop structure",
     "text": "Workshop structure\n\nMy turn: Lecture segments + live coding\nYour Turn: Practice exercises for you"
   },
   {
     "objectID": "01-introduction.html#how-to-get-help",
     "href": "01-introduction.html#how-to-get-help",
-    "title": "Let’s jump in!",
+    "title": "Quarto Websites Workshop",
     "section": "How to get help?",
     "text": "How to get help?\n\nRaise your color post-it note\nAsk in Discord\nTalk to us during breaks or your-turns"
   },
