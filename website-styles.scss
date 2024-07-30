@@ -6,17 +6,38 @@ $theme-yellow: #ECC978;
 $theme-orange: #E26F5E;
 $theme-purple: #5A207F;
 
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Sanchez:ital@0;1&display=swap');
+
+$font-family-sans-serif: "Dosis", sans-serif;
+$font-size-root: 20px;
 
 $body-bg: lighten($theme-orange, 35%);
 $body-color: $theme-black;
-$link-color: $theme-purple;
+$link-color: lighten($theme-purple, 10%);
 
 $navbar-bg: $theme-orange;
 $navbar-hl: $theme-white;
 
-
 /*-- scss:rules --*/
 
-.navbar-nav .nav-lin.active span {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Sanchez", serif;
+}
+
+a.nav-link.active span {
   text-decoration: underline;
+  text-decoration-thickness: 0.5px;
+}
+
+a.dropdown-item:hover {
+  background-color: lighten($theme-yellow, 20%);
+}
+
+p code:not(.sourceCode) {
+  background-color: $body-bg;
 }

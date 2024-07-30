@@ -1,3 +1,71 @@
 /*-- scss:defaults --*/
 
+$theme-black: #333333;
+$theme-white: #FFFFFF;
+$theme-yellow: #ECC978;
+$theme-orange: #E26F5E;
+$theme-purple: #5A207F;
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Sanchez:ital@0;1&display=swap');
+
+$font-family-sans-serif: "Dosis", sans-serif;
+$font-size-root: 20px;
+
+$link-color: lighten($theme-purple, 10%);
+
+$code-color: darken($theme-orange, 10%);
+
 /*-- scss:rules --*/
+
+.reveal {
+
+  a {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Sanchez", serif;
+  }
+
+  .progress {
+    color: $theme-orange;
+  }
+}
+
+code span {
+  &.fu {
+    color: $theme-purple;
+  }
+
+  &.im {
+    color: lighten($theme-purple, 20%);
+  }
+
+  &.ot {
+    color: darken($theme-purple, 10%);
+  }
+
+  &.st,
+  &.pp {
+    color: darken($theme-orange, 20%);
+  }
+
+  &.at,
+  &.ch {
+    color: darken($theme-yellow, 35%);
+  }
+
+  &.co {
+    color: darken($theme-orange, 50%)
+  }
+}
+
+pre>code.sourceCode>span {
+  color: darken($theme-orange, 50%)
+}
