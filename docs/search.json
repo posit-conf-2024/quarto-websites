@@ -46,7 +46,7 @@
     "href": "02-basics.html#start-with-a-template-1",
     "title": "Quarto Websites Workshop",
     "section": "Start with a template",
-    "text": "Start with a template\n\nFollow the prompts:\n\n\n\nTerminal\n\nQuarto templates may execute code when documents are rendered. If you do not \ntrust the authors of the template, we recommend that you do not install or \nuse the template.\n? Do you trust the authors of this template (Y/n) › Y\n? Create a subdirectory for template? (Y/n) › Y\n? Directory name: › website\n\n\nOpen the folder:\n\nRStudio: New Project &gt; Existing Directory &gt;\nVS Code: File &gt; Open Folder &gt;\n\nOpen index.qmd"
+    "text": "Start with a template\n\nFollow the prompts:\n\n\n\nTerminal\n\nQuarto templates may execute code when documents are rendered. If you do not \ntrust the authors of the template, we recommend that you do not install or \nuse the template.\n? Do you trust the authors of this template (Y/n) › Y\n? Create a subdirectory for template? (Y/n) › Y\n? Directory name: › website\n\n\nOpen the folder:\nRStudio: New Project &gt; Existing Directory &gt;\nVS Code: File &gt; Open Folder &gt;\nOpen index.qmd"
   },
   {
     "objectID": "02-basics.html#workflow",
@@ -60,7 +60,7 @@
     "href": "02-basics.html#preview",
     "title": "Quarto Websites Workshop",
     "section": "Preview",
-    "text": "Preview\n\nRStudioVS CodeTerminal\n\n\n\n\nCurrent page\n\nCmd/Ctrl + Shift + K\n\nWhole site\nBuild &gt; Render Website\n\n\n\n\n\n\n\nCurrent page\n\nCmd/Ctrl + Shift + K\n\nWhole site\nQuarto: Render Project\n\n\nRequires Quarto Extension\n\n\n\n\nCurrent page\n\n\nTerminal\n\nquarto preview index.qmd\n\n\nWhole site\n\n\nTerminal\n\nquarto preview"
+    "text": "Preview\n\nRStudioVS CodeTerminal\n\n\n\n\nCurrent page\n\nCmd/Ctrl + Shift + K\n\nWhole site\nBuild &gt; Render Website\n\n\n\n\n\n\nCurrent page\n\nCmd/Ctrl + Shift + K\n\nWhole site\nQuarto: Render Project\n\nRequires Quarto Extension\n\n\n\n\nCurrent page\n\n\nTerminal\n\nquarto preview index.qmd\n\n\nWhole site\n\n\nTerminal\n\nquarto preview"
   },
   {
     "objectID": "02-basics.html#your-turn",
@@ -102,14 +102,14 @@
     "href": "02-basics.html#image",
     "title": "Quarto Websites Workshop",
     "section": "image",
-    "text": "image\nUsed in about template, and social cards.\n\n\n\n\nindex.qmd\n\n---\nimage: profile.jpg\n---\n\n\nwebsite/\n├── _quarto.yml\n├── index.qmd\n└── profile.jpg\n\n\nUse a path relative to index.qmd"
+    "text": "image\nUsed in about template, and social cards.\n\n\n\n\nindex.qmd\n\n---\nimage: profile.jpg\n---\n\n\nwebsite/\n├── _quarto.yml\n├── index.qmd\n└── profile.jpg\n\nUse a path relative to index.qmd"
   },
   {
     "objectID": "02-basics.html#image-1",
     "href": "02-basics.html#image-1",
     "title": "Quarto Websites Workshop",
     "section": "image",
-    "text": "image\nUsed in about template, and social cards.\n\n\n\n\nindex.qmd\n\n---\nimage: images/profile.jpg\n---\n\n\nwebsite/\n├── _quarto.yml\n├── images/\n│   └──  profile.jpg\n└── index.qmd\n\n\nUse a path relative to index.qmd"
+    "text": "image\nUsed in about template, and social cards.\n\n\n\n\nindex.qmd\n\n---\nimage: images/profile.jpg\n---\n\n\nwebsite/\n├── _quarto.yml\n├── images/\n│   └──  profile.jpg\n└── index.qmd\n\nUse a path relative to index.qmd"
   },
   {
     "objectID": "02-basics.html#your-turn-2",
