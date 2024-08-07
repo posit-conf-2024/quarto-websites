@@ -16,13 +16,13 @@ code-line-numbers: false
 
 1.  Start somewhere logical:
 
-``` {.bash filename="Terminal"}
+``` {.default filename="Terminal"}
 cd ~/Documents
 ```
 
 2.  Get the website template:
 
-``` {.bash filename="Terminal"}
+``` {.default filename="Terminal"}
 
 quarto use template EmilHvitfeldt/website-template
 ```
@@ -31,7 +31,7 @@ quarto use template EmilHvitfeldt/website-template
 
 3.  Follow the prompts:
 
-``` {.bash filename="Terminal"}
+``` {.default filename="Terminal"}
 Quarto templates may execute code when documents are rendered. If you do not 
 trust the authors of the template, we recommend that you do not install or 
 use the template.
@@ -42,9 +42,9 @@ use the template.
 
 4.  Open the folder:
 
-**RStudio**: New Project \> Existing Directory \>
+    **RStudio**: New Project \> Existing Directory \>
 
-**VS Code**: File \> Open Folder \>
+    **VS Code**: File \> Open Folder \>
 
 5.  Open `index.qmd`
 
@@ -103,7 +103,7 @@ Requires [Quarto Extension](https://marketplace.visualstudio.com/items?itemName=
 ::: column
 ### Current page
 
-``` {.bash filename="Terminal"}
+``` {.default filename="Terminal"}
 quarto preview index.qmd
 ```
 :::
@@ -111,7 +111,7 @@ quarto preview index.qmd
 ::: column
 ### Whole site
 
-``` {.bash filename="Terminal"}
+``` {.default filename="Terminal"}
 quarto preview 
 ```
 :::
