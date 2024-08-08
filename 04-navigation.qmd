@@ -138,11 +138,13 @@ Add a new page to your site:
 2.  Create the page file in the appropriate location
 3.  Add some content
 
+{{< countdown 5:00 >}}
+
 # Navigation
 
 ## In-text Links
 
-::::: columns
+::::: {.columns .fragment}
 ::: column
 Use relative paths
 
@@ -161,7 +163,7 @@ my projects [projects](projects/)
 
 \
 
-::::: columns
+::::: {.columns .fragment}
 ::: column
 Use `/` to refer to site root
 :::
@@ -306,6 +308,8 @@ https://quarto.org/docs/websites/website-navigation.html#top-navigation
 2.  Experiment with the position of your links in the navbar: `left`, `right` or a mix
 3.  Add at least one item to `tools` in your navbar
 
+{{< countdown 5:00 >}}
+
 # When things get more complicated...
 
 ## Your Turn {.exercise .scrollable}
@@ -317,6 +321,8 @@ https://quarto.org/docs/websites/website-navigation.html#top-navigation
 ...
 
 ![](images/navigation-quarto-web-footer.png)
+
+{{< countdown 5:00 >}}
 
 ::: footer
 <https://quarto.org/docs/websites/website-navigation.html#top-navigation>
@@ -512,6 +518,8 @@ Pick one, and discuss the pros and cons with your neighbor.
 
 *(Done? Expand your conversation to another option or another neighbor)*
 
+{{< countdown 5:00 >}}
+
 ## Pro and Cons
 
 +-----------+----------------------------+----------------------------+
@@ -625,3 +633,5 @@ format:
 Work on your site: add pages, edit navigation, add/edit content.
 
 We are here to help. Publish a new version before lunch.
+
+{{< countdown 10:00 >}}

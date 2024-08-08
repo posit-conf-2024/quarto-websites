@@ -81,6 +81,8 @@ Introduce yourself to your neighbors:
 -   Professional affiliation
 -   What do you use Quarto for?
 
+{{< countdown 4:00 >}}
+
 ## Meeting you where you are
 
 -   You've used Quarto for single documents

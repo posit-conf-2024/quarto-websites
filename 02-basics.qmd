@@ -91,7 +91,12 @@ Cmd/Ctrl + Shift + K
 ::: column
 ### Whole site
 
-**Quarto: Render Project**
+No command, use Terminal:
+
+``` {.default filename="Terminal"}
+quarto preview 
+```
+
 :::
 :::::
 
@@ -120,7 +125,7 @@ quarto preview
 
 ## Your Turn {.exercise}
 
-1.  Get the starter template
+1.  Get the starter template. (*On Posit Cloud? Skip this step.*)
 
 2.  Open `index.qmd`
 
@@ -128,7 +133,7 @@ quarto preview
 
 4.  Edit `title` and `subtitle` in the `index.qmd` YAML to reflect your site
 
-5.  Previews
+5.  Preview
 
 6.  What else is in `index.qmd`? Can you match the contents of `index.qmd` with contents of the webpage?
 
@@ -217,6 +222,8 @@ https://quarto.org/docs/websites/website-about.html
 
 4.  Experiment with [`image-shape`](https://quarto.org/docs/websites/website-about.html#image).
 
+{{< countdown 4:00 >}}
+
 ## `image`
 
 Used in `about` template, and social cards.
@@ -271,6 +278,8 @@ Use a path relative to `index.qmd`
 ## Your Turn {.exercise}
 
 Replace the image with one that reflects you or your site.
+
+{{< countdown 4:00 >}}
 
 ## Website Structure
 
