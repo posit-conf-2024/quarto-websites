@@ -718,7 +718,7 @@
     "href": "05-css.html#your-turn",
     "title": "Quarto Websites Workshop",
     "section": "Your turn",
-    "text": "Your turn\nOpen styles.scss file and do the following:\n\nChange styling of h1 and h2 elements\n\nat least change the color\n\nChange styling of text (p elements)\nChange styling of only the subtitle of the front page\nChange styling of buttons on front page"
+    "text": "Your turn\nOpen styles.scss file and do the following:\n\nChange styling of h1 and h2 elements\n\nat least change the color\n\nChange styling of text (p elements)\nChange styling of only the subtitle of the front page\nChange styling of buttons on front page\n\n\n  \n    −\n    +\n \n 05:00"
   },
   {
     "objectID": "05-css.html#selectors-references",
@@ -753,7 +753,7 @@
     "href": "05-css.html#your-turn-1",
     "title": "Quarto Websites Workshop",
     "section": "Your turn",
-    "text": "Your turn\nOpen styles.scss file and do the following:\n\nFind an element that would benefit from having a pseudo-class\n\n:hover is a safe choice, but not the only one\n\nApply pseudo-class to said element"
+    "text": "Your turn\nOpen styles.scss file and do the following:\n\nFind an element that would benefit from having a pseudo-class\n\n:hover is a safe choice, but not the only one\n\nApply pseudo-class to said element\n\n\n  \n    −\n    +\n \n 02:00"
   },
   {
     "objectID": "05-css.html#cascading",
@@ -795,7 +795,7 @@
     "href": "05-css.html#your-turn-2",
     "title": "Quarto Websites Workshop",
     "section": "Your turn",
-    "text": "Your turn\nOpen styles.scss file and do the following:\n\nFind an element\n\nimages or text\n\nChange the height and width"
+    "text": "Your turn\nOpen styles.scss file and do the following:\n\nFind an element\n\nimages or text\n\nChange the height and width\n\n\n  \n    −\n    +\n \n 02:00"
   },
   {
     "objectID": "05-css.html#layout---padding",
@@ -837,7 +837,7 @@
     "href": "05-css.html#your-turn-3",
     "title": "Quarto Websites Workshop",
     "section": "Your turn",
-    "text": "Your turn\nContinue with element from before\n\nChange the 4 values of padding and see what happens"
+    "text": "Your turn\nContinue with element from before\n\nChange the 4 values of padding and see what happens\n\n\n  \n    −\n    +\n \n 02:00"
   },
   {
     "objectID": "05-css.html#layout---border",
@@ -858,7 +858,7 @@
     "href": "05-css.html#your-turn-4",
     "title": "Quarto Websites Workshop",
     "section": "Your turn",
-    "text": "Your turn\nContinue with element from before\n\nChange the 4 values of margin and see what happens"
+    "text": "Your turn\nContinue with element from before\n\nChange the 4 values of margin and see what happens\n\n\n  \n    −\n    +\n \n 02:00"
   },
   {
     "objectID": "05-css.html#css-grid",
@@ -920,8 +920,8 @@
     "objectID": "05-css.html#your-turn-5",
     "href": "05-css.html#your-turn-5",
     "title": "Quarto Websites Workshop",
-    "section": "Your Turn",
-    "text": "Your Turn\n-Open styles.scss and\n\nuse a SASS variable to define h1 and h2 colors\nconsider what other things we could use variables for"
+    "section": "Your turn",
+    "text": "Your turn\n-Open styles.scss and\n\nuse a SASS variable to define h1 and h2 colors\nconsider what other things we could use variables for\n\n\n  \n    −\n    +\n \n 03:00"
   },
   {
     "objectID": "05-css.html#sass-nested-rules",
@@ -948,8 +948,8 @@
     "objectID": "05-css.html#your-turn-6",
     "href": "05-css.html#your-turn-6",
     "title": "Quarto Websites Workshop",
-    "section": "Your Turn",
-    "text": "Your Turn\n-Open styles.scss and\n\nrewrite your existing styles to use nested rules"
+    "section": "Your turn",
+    "text": "Your turn\n-Open styles.scss and\n\nrewrite your existing styles to use nested rules\n\n\n  \n    −\n    +\n \n 02:00"
   },
   {
     "objectID": "05-css.html#sass-mixins",
@@ -962,8 +962,8 @@
     "objectID": "05-css.html#your-turn-7",
     "href": "05-css.html#your-turn-7",
     "title": "Quarto Websites Workshop",
-    "section": "Your Turn",
-    "text": "Your Turn\n-Open styles.scss and\n\nuse a SASS mixins to reduce complexity in your styles"
+    "section": "Your turn",
+    "text": "Your turn\n-Open styles.scss and\n\nuse a SASS mixins to reduce complexity in your styles\n\n\n  \n    −\n    +\n \n 02:00"
   },
   {
     "objectID": "05-css.html#sass-functions",
@@ -976,8 +976,8 @@
     "objectID": "05-css.html#your-turn-8",
     "href": "05-css.html#your-turn-8",
     "title": "Quarto Websites Workshop",
-    "section": "Your Turn",
-    "text": "Your Turn\n-Open styles.scss and\n\nuse a SASS color function to make the colors of h1 and h2 different"
+    "section": "Your turn",
+    "text": "Your turn\n-Open styles.scss and\n\nuse a SASS color function to make the colors of h1 and h2 different\n\n\n  \n    −\n    +\n \n 03:00"
   },
   {
     "objectID": "05-css.html#design-principles",
@@ -1061,7 +1061,7 @@
     "href": "05-css.html#your-turn-9",
     "title": "Quarto Websites Workshop",
     "section": "Your turn",
-    "text": "Your turn\nOpen styles.scss then\n\nfind a color theme\nadd colors as SASS variables\nUse SASS variables"
+    "text": "Your turn\nOpen styles.scss then\n\nfind a color theme\nadd colors as SASS variables\nUse SASS variables\n\n\n  \n    −\n    +\n \n 05:00"
   },
   {
     "objectID": "05-css.html#using-color-on-websites",
@@ -1082,7 +1082,7 @@
     "href": "05-css.html#choosing-fonts",
     "title": "Quarto Websites Workshop",
     "section": "Choosing fonts",
-    "text": "Choosing fonts\nUse readable and web-friendly fonts - common fonts are by definition readable as they are familiar - fonts are designed to be used in different areas, optimize for web fonts - don’t pick too many fonts"
+    "text": "Choosing fonts\nUse readable and web-friendly fonts\n\ncommon fonts are by definition readable as they are familiar\nfonts are designed to be used in different areas, optimize for web fonts\ndon’t pick too many fonts"
   },
   {
     "objectID": "05-css.html#maintaining-accessibility",
@@ -1103,7 +1103,7 @@
     "href": "05-css.html#your-turn-10",
     "title": "Quarto Websites Workshop",
     "section": "Your turn",
-    "text": "Your turn\nOpen styles.scss then\n\nmake temporary changes to the colors, sizes and fonts that would go against accessibility advice to see how the experience gets worse"
+    "text": "Your turn\nOpen styles.scss then\n\nmake temporary changes to the colors, sizes and fonts that would go against accessibility advice to see how the experience gets worse\n\n\n  \n    −\n    +\n \n 04:00"
   },
   {
     "objectID": "about.html",

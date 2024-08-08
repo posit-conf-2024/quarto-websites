@@ -296,7 +296,7 @@ Only the second `h2` would be affected
 https://www.w3schools.com/cssref/css_selectors.php
 :::
 
-## Your turn
+## Your turn {.exercise}
 
 Open `styles.scss` file and do the following:
 
@@ -305,6 +305,8 @@ Open `styles.scss` file and do the following:
 - Change styling of text (`p` elements)
 - Change styling of only the subtitle of the front page
 - Change styling of buttons on front page
+
+{{< countdown "5:00" >}}
 
 ## Selectors References
 
@@ -400,13 +402,15 @@ When the container has a child card hovered, select all the cards that aren’t 
 <https://bejamas.io/blog/learn-css-has-selector-by-examples-top-use-cases/>
 :::
 
-## Your turn
+## Your turn {.exercise}
 
 Open `styles.scss` file and do the following:
 
 1. Find an element that would benefit from having a pseudo-class
     - `:hover` is a safe choice, but not the only one
 2. Apply pseudo-class to said element
+
+{{< countdown "2:00" >}}
 
 ## Cascading
 
@@ -456,13 +460,15 @@ Values are [lengths](https://developer.mozilla.org/en-US/docs/Web/CSS/length)
 - `40%`
 - `100%`
 
-## Your turn
+## Your turn {.exercise}
 
 Open `styles.scss` file and do the following:
 
 1. Find an element
     - images or text
 2. Change the `height` and `width`
+
+{{< countdown "2:00" >}}
 
 ## Layout - padding
 
@@ -596,11 +602,13 @@ h1 {
 <https://www.w3schools.com/css/css_padding.asp>
 :::
 
-## Your turn
+## Your turn {.exercise}
 
 Continue with element from before
 
 1. Change the 4 values of `padding` and see what happens
+
+{{< countdown "2:00" >}}
 
 ## Layout - border
 
@@ -659,11 +667,13 @@ h1 {
 <https://www.w3schools.com/css/css_margin.asp>
 :::
 
-## Your turn
+## Your turn {.exercise}
 
 Continue with element from before
 
 1. Change the 4 values of `margin` and see what happens
+
+{{< countdown "2:00" >}}
 
 ## CSS grid
 
@@ -783,12 +793,14 @@ h2 {
 
 :::
 
-## Your Turn
+## Your turn {.exercise}
 
 -Open `styles.scss` and 
 
 - use a SASS variable to define `h1` and `h2` colors
 - consider what other things we could use variables for
+
+{{< countdown "3:00" >}}
 
 ## SASS nested rules
 
@@ -911,11 +923,13 @@ Add organization to styling
 <https://sass-lang.com/documentation/style-rules/#nesting>
 :::
 
-## Your Turn
+## Your turn {.exercise}
 
 -Open `styles.scss` and 
 
 - rewrite your existing styles to use nested rules
+
+{{< countdown "2:00" >}}
 
 ## SASS mixins
 
@@ -981,11 +995,13 @@ h4 {
 <https://sass-lang.com/documentation/at-rules/mixin/>
 :::
 
-## Your Turn
+## Your turn {.exercise}
 
 -Open `styles.scss` and 
 
 - use a SASS mixins to reduce complexity in your styles
+
+{{< countdown "2:00" >}}
 
 ## SASS functions
 
@@ -1025,11 +1041,13 @@ h2 > a {
 <https://sass-lang.com/documentation/modules/>
 :::
 
-## Your Turn
+## Your turn {.exercise}
 
 -Open `styles.scss` and 
 
 - use a SASS color function to make the colors of `h1` and `h2` different
+
+{{< countdown "3:00" >}}
 
 ## Design principles 
 
@@ -1172,13 +1190,16 @@ $link-color: $theme-blue;
 $$sidebar-hl: lighten($theme-blue, 0.5);
 ```
 
-## Your turn
+## Your turn {.exercise}
 
 Open `styles.scss` then
 
 - find a color theme
 - add colors as SASS variables
 - Use SASS variables
+
+
+{{< countdown "5:00" >}}
 
 ## Using color on websites
 
@@ -1211,6 +1232,7 @@ notice that they use their colors carefully and consistently
 ## Choosing fonts
 
 Use readable and web-friendly fonts
+
 - common fonts are by definition readable as they are familiar
 - fonts are designed to be used in different areas, optimize for web fonts
 - don't pick too many fonts
@@ -1239,8 +1261,10 @@ How do we do it?
 -  Ensure complete functionality via the keyboard
     - should be handled by Quarto
 
-## Your turn
+## Your turn {.exercise}
 
 Open `styles.scss` then
 
 - make temporary changes to the colors, sizes and fonts that would go against accessibility advice to see how the experience gets worse
+
+{{< countdown "4:00" >}}
