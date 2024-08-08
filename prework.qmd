@@ -14,6 +14,8 @@ Prior to the workshop check you have the required software, set up any accounts 
 
     -   [**VS Code**](https://code.visualstudio.com/download) and the [VS Code Quarto Extension](https://marketplace.visualstudio.com/items?itemName=quarto.quarto)
 
+If you have any trouble with the software requirements, we will have a [Posit Cloud](http://posit.cloud) workspace available with everything you need already installed. We'll share the link to join on the day.    
+
 ## Optional Publishing Accounts
 
 To publish your website you'll need an account on one of Quarto's publishing venues:
@@ -21,14 +23,6 @@ To publish your website you'll need an account on one of Quarto's publishing ven
 -   **(Recommended)** [Quarto Pub](https://quartopub.com/sign-up)
 
 -   [GitHub](https://github.com) only **if you are already** a Git/GitHub user
-
-## Join the Workshop Discord Channel
-
-The Discord server will be available after August 8th:
-
-* [pos.it/conf-event-portal](http://pos.it/conf-event-portal): Login
-* Click on “Join Discord, the virtual networking platform!”
-* Browse Channels -> #workshop-quarto-websites
 
 ## Preparation
 
@@ -39,3 +33,10 @@ There are a few things you might like to collect before arriving:
 * A list of projects, talks, classes, or publications 
 * Any existing Quarto documents you would like to include in your site
 
+## Join the Workshop Discord Channel
+
+The Discord server will be available after August 8th:
+
+* [pos.it/conf-event-portal](http://pos.it/conf-event-portal): Login
+* Click on “Join Discord, the virtual networking platform!”
+* Browse Channels -> #workshop-quarto-websites
