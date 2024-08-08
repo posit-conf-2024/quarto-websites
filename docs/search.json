@@ -11,7 +11,7 @@
     "href": "prework.html#required-software",
     "title": "Pre-workshop Instructions",
     "section": "Required Software",
-    "text": "Required Software\n\nQuarto: v1.5\nOne of the following IDEs:\n\nRStudio\nVS Code and the VS Code Quarto Extension"
+    "text": "Required Software\n\nQuarto: v1.5\nOne of the following IDEs:\n\nRStudio\nVS Code and the VS Code Quarto Extension\n\n\nIf you have any trouble with the software requirements, we will have a Posit Cloud workspace available with everything you need already installed. We’ll share the link to join on the day."
   },
   {
     "objectID": "prework.html#optional-publishing-accounts",
@@ -21,18 +21,18 @@
     "text": "Optional Publishing Accounts\nTo publish your website you’ll need an account on one of Quarto’s publishing venues:\n\n(Recommended) Quarto Pub\nGitHub only if you are already a Git/GitHub user"
   },
   {
-    "objectID": "prework.html#join-the-workshop-discord-channel",
-    "href": "prework.html#join-the-workshop-discord-channel",
-    "title": "Pre-workshop Instructions",
-    "section": "Join the Workshop Discord Channel",
-    "text": "Join the Workshop Discord Channel\nThe Discord server will be available after August 8th:\n\npos.it/conf-event-portal: Login\nClick on “Join Discord, the virtual networking platform!”\nBrowse Channels -&gt; #workshop-quarto-websites"
-  },
-  {
     "objectID": "prework.html#preparation",
     "href": "prework.html#preparation",
     "title": "Pre-workshop Instructions",
     "section": "Preparation",
     "text": "Preparation\nThere are a few things you might like to collect before arriving:\n\nAn photo/image you would like on your home page\nA paragraph about who you are (or what your site is about)\n\nA list of projects, talks, classes, or publications\nAny existing Quarto documents you would like to include in your site"
+  },
+  {
+    "objectID": "prework.html#join-the-workshop-discord-channel",
+    "href": "prework.html#join-the-workshop-discord-channel",
+    "title": "Pre-workshop Instructions",
+    "section": "Join the Workshop Discord Channel",
+    "text": "Join the Workshop Discord Channel\nThe Discord server will be available after August 8th:\n\npos.it/conf-event-portal: Login\nClick on “Join Discord, the virtual networking platform!”\nBrowse Channels -&gt; #workshop-quarto-websites"
   },
   {
     "objectID": "02-basics.html#start-with-a-template",
@@ -60,14 +60,14 @@
     "href": "02-basics.html#preview",
     "title": "Quarto Websites Workshop",
     "section": "Preview",
-    "text": "Preview\n\nRStudioVS CodeTerminal\n\n\n\n\nCurrent page\n\nCmd/Ctrl + Shift + K\n\nWhole site\nBuild &gt; Render Website\n\n\n\n\n\n\nCurrent page\n\nCmd/Ctrl + Shift + K\n\nWhole site\nQuarto: Render Project\n\nRequires Quarto Extension\n\n\n\n\nCurrent page\n\n\nTerminal\n\nquarto preview index.qmd\n\n\nWhole site\n\n\nTerminal\n\nquarto preview"
+    "text": "Preview\n\nRStudioVS CodeTerminal\n\n\n\n\nCurrent page\n\nCmd/Ctrl + Shift + K\n\nWhole site\nBuild &gt; Render Website\n\n\n\n\n\n\nCurrent page\n\nCmd/Ctrl + Shift + K\n\nWhole site\nNo command, use Terminal:\n\n\nTerminal\n\nquarto preview \n\n\nRequires Quarto Extension\n\n\n\n\nCurrent page\n\n\nTerminal\n\nquarto preview index.qmd\n\n\nWhole site\n\n\nTerminal\n\nquarto preview"
   },
   {
     "objectID": "02-basics.html#your-turn",
     "href": "02-basics.html#your-turn",
     "title": "Quarto Websites Workshop",
     "section": "Your Turn",
-    "text": "Your Turn\n\nGet the starter template\nOpen index.qmd\nPreview index.qmd\nEdit title and subtitle in the index.qmd YAML to reflect your site\nPreviews\nWhat else is in index.qmd? Can you match the contents of index.qmd with contents of the webpage?\n\n\n  \n    −\n    +\n \n 05:00"
+    "text": "Your Turn\n\nGet the starter template. (On Posit Cloud? Skip this step.)\nOpen index.qmd\nPreview index.qmd\nEdit title and subtitle in the index.qmd YAML to reflect your site\nPreview\nWhat else is in index.qmd? Can you match the contents of index.qmd with contents of the webpage?\n\n\n  \n    −\n    +\n \n 05:00"
   },
   {
     "objectID": "02-basics.html#index.qmd-components",
@@ -95,7 +95,7 @@
     "href": "02-basics.html#your-turn-1",
     "title": "Quarto Websites Workshop",
     "section": "Your Turn",
-    "text": "Your Turn\n\nEdit the content in index.qmd to reflect you.\nTry different templates and pick one.\nEdit the links to point at your own profiles, or add different links.\nExperiment with image-shape."
+    "text": "Your Turn\n\nEdit the content in index.qmd to reflect you.\nTry different templates and pick one.\nEdit the links to point at your own profiles, or add different links.\nExperiment with image-shape.\n\n\n  \n    −\n    +\n \n 04:00"
   },
   {
     "objectID": "02-basics.html#image",
@@ -116,7 +116,7 @@
     "href": "02-basics.html#your-turn-2",
     "title": "Quarto Websites Workshop",
     "section": "Your Turn",
-    "text": "Your Turn\nReplace the image with one that reflects you or your site."
+    "text": "Your Turn\nReplace the image with one that reflects you or your site.\n\n  \n    −\n    +\n \n 04:00"
   },
   {
     "objectID": "02-basics.html#website-structure",
@@ -683,7 +683,7 @@
     "href": "04-navigation.html#your-turn",
     "title": "Quarto Websites Workshop",
     "section": "Your Turn",
-    "text": "Your Turn\nAdd a new page to your site:\n\nThink about the URL first\nCreate the page file in the appropriate location\nAdd some content"
+    "text": "Your Turn\nAdd a new page to your site:\n\nThink about the URL first\nCreate the page file in the appropriate location\nAdd some content\n\n\n  \n    −\n    +\n \n 05:00"
   },
   {
     "objectID": "04-navigation.html#in-text-links",
@@ -732,14 +732,14 @@
     "href": "04-navigation.html#your-turn-2",
     "title": "Quarto Websites Workshop",
     "section": "Your Turn",
-    "text": "Your Turn\n\nCustomize your navigation bar title\nExperiment with the position of your links in the navbar: left, right or a mix\nAdd at least one item to tools in your navbar"
+    "text": "Your Turn\n\nCustomize your navigation bar title\nExperiment with the position of your links in the navbar: left, right or a mix\nAdd at least one item to tools in your navbar\n\n\n  \n    −\n    +\n \n 05:00"
   },
   {
     "objectID": "04-navigation.html#your-turn-3",
     "href": "04-navigation.html#your-turn-3",
     "title": "Quarto Websites Workshop",
     "section": "Your Turn",
-    "text": "Your Turn\nBrainstorm with your neighbor: What elements on this page allow the user to navigate the site?\n\n…\n\n\nhttps://quarto.org/docs/websites/website-navigation.html#top-navigation"
+    "text": "Your Turn\nBrainstorm with your neighbor: What elements on this page allow the user to navigate the site?\n\n…\n\n\n  \n    −\n    +\n \n 05:00\n \n\nhttps://quarto.org/docs/websites/website-navigation.html#top-navigation"
   },
   {
     "objectID": "04-navigation.html#navigation-elements",
@@ -802,7 +802,7 @@
     "href": "04-navigation.html#your-turn-4",
     "title": "Quarto Websites Workshop",
     "section": "Your Turn",
-    "text": "Your Turn\nHere’s three different navigation options for the same set of content:\n\nAutomatically generated side navigation\nEverything in top navigation\nHybrid navigation\n\nPick one, and discuss the pros and cons with your neighbor.\n(Done? Expand your conversation to another option or another neighbor)"
+    "text": "Your Turn\nHere’s three different navigation options for the same set of content:\n\nAutomatically generated side navigation\nEverything in top navigation\nHybrid navigation\n\nPick one, and discuss the pros and cons with your neighbor.\n(Done? Expand your conversation to another option or another neighbor)\n\n  \n    −\n    +\n \n 05:00"
   },
   {
     "objectID": "04-navigation.html#pro-and-cons",
@@ -865,7 +865,7 @@
     "href": "04-navigation.html#your-turn-5",
     "title": "Quarto Websites Workshop",
     "section": "Your Turn",
-    "text": "Your Turn\nWork on your site: add pages, edit navigation, add/edit content.\nWe are here to help. Publish a new version before lunch."
+    "text": "Your Turn\nWork on your site: add pages, edit navigation, add/edit content.\nWe are here to help. Publish a new version before lunch.\n\n  \n    −\n    +\n \n 10:00"
   },
   {
     "objectID": "LICENSE.html#creative-commons-attribution-sharealike-4.0-international-public-license",
@@ -907,7 +907,7 @@
     "href": "01-introduction.html#about-you",
     "title": "Quarto Websites Workshop",
     "section": "About You",
-    "text": "About You\nYour Turn\nIntroduce yourself to your neighbors:\n\nName\nProfessional affiliation\nWhat do you use Quarto for?"
+    "text": "About You\nYour Turn\nIntroduce yourself to your neighbors:\n\nName\nProfessional affiliation\nWhat do you use Quarto for?\n\n\n  \n    −\n    +\n \n 04:00"
   },
   {
     "objectID": "01-introduction.html#meeting-you-where-you-are",
@@ -1159,7 +1159,7 @@
     "href": "06-listings.html#your-turn",
     "title": "Quarto Websites Workshop",
     "section": "Your Turn",
-    "text": "Your Turn\n\n(Repeat) Make a new page blog/index.qmd which is a listing\nExperiment with type and categories:\n\ntype: grid or table\ncategories: true, unnumbered, cloud\n\nOther listing options\nDiscuss with your neighbor:\n\nWhat makes this a blog?\nWhat would you change if this was a gallery of your projects?"
+    "text": "Your Turn\n\n(Repeat) Make a new page blog/index.qmd which is a listing\nExperiment with type and categories:\n\ntype: grid or table\ncategories: true, unnumbered, cloud\n\nOther listing options\nDiscuss with your neighbor:\n\nWhat makes this a blog?\nWhat would you change if this was a gallery of your projects?\n\n\n\n  \n    −\n    +\n \n 10:00"
   },
   {
     "objectID": "06-listings.html#default",
@@ -1250,7 +1250,7 @@
     "href": "06-listings.html#your-turn-1",
     "title": "Quarto Websites Workshop",
     "section": "Your Turn",
-    "text": "Your Turn\n\nSwitch to type: table\nOmit the image field from the listing\nChange the name of the “Categories” column to “Skills”\nBrainstorm: What could you use a listing for on your own site?"
+    "text": "Your Turn\n\nSwitch to type: table\nOmit the image field from the listing\nChange the name of the “Categories” column to “Skills”\nBrainstorm: What could you use a listing for on your own site?\n\n\n  \n    −\n    +\n \n 10:00"
   },
   {
     "objectID": "06-listings.html#advanced-customization",
@@ -1285,6 +1285,6 @@
     "href": "06-listings.html#your-turn-2",
     "title": "Quarto Websites Workshop",
     "section": "Your Turn",
-    "text": "Your Turn\nAdd a listing page to your site:\n\nCreate a page to house the listing\nEither:\n\npopulate a .yml file with a couple of items (use projects/project.yml as a template), or\ncreate some placeholder .qmd files.\n\nAdd the page to your site navigation\nClean up any template listing pages/files/folders you don’t want"
+    "text": "Your Turn\nAdd a listing page to your site:\n\nCreate a page to house the listing\nEither:\n\npopulate a .yml file with a couple of items (use projects/project.yml as a template), or\ncreate some placeholder .qmd files.\n\nAdd the page to your site navigation\nClean up any template listing pages/files/folders you don’t want\n\n\n  \n    −\n    +\n \n 10:00"
   }
 ]
