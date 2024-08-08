@@ -60,7 +60,7 @@
     "href": "02-basics.html#preview",
     "title": "Quarto Websites Workshop",
     "section": "Preview",
-    "text": "Preview\n\nRStudioVS CodeTerminal\n\n\n\n\nCurrent page\n\nCmd/Ctrl + Shift + K\n\nWhole site\nBuild &gt; Render Website\n\n\n\n\n\n\nCurrent page\n\nCmd/Ctrl + Shift + K\n\nWhole site\nQuarto: Render Project\n\nRequires Quarto Extension\n\n\n\n\nCurrent page\n\n\nTerminal\n\nquarto preview index.qmd\n\n\nWhole site\n\n\nTerminal\n\nquarto preview"
+    "text": "Preview\n\nRStudioVS CodeTerminal\n\n\n\n\nCurrent page\n\nCmd/Ctrl + Shift + K\n\nWhole site\nBuild &gt; Render Website\n\n\n\n\n\n\n\nCurrent page\n\nCmd/Ctrl + Shift + K\n\nWhole site\nQuarto: Render Project\n\n\nRequires Quarto Extension\n\n\n\n\nCurrent page\n\n\nTerminal\n\nquarto preview index.qmd\n\n\nWhole site\n\n\nTerminal\n\nquarto preview"
   },
   {
     "objectID": "02-basics.html#your-turn",
@@ -102,14 +102,14 @@
     "href": "02-basics.html#image",
     "title": "Quarto Websites Workshop",
     "section": "image",
-    "text": "image\nUsed in about template, and social cards.\n\n\n\n\nindex.qmd\n\n---\nimage: profile.jpg\n---\n\n\nwebsite/\n├── _quarto.yml\n├── index.qmd\n└── profile.jpg\n\nUse a path relative to index.qmd"
+    "text": "image\nUsed in about template, and social cards.\n\n\n\n\nindex.qmd\n\n---\nimage: profile.jpg\n---\n\n\nwebsite/\n├── _quarto.yml\n├── index.qmd\n└── profile.jpg\n\n\nUse a path relative to index.qmd"
   },
   {
     "objectID": "02-basics.html#image-1",
     "href": "02-basics.html#image-1",
     "title": "Quarto Websites Workshop",
     "section": "image",
-    "text": "image\nUsed in about template, and social cards.\n\n\n\n\nindex.qmd\n\n---\nimage: images/profile.jpg\n---\n\n\nwebsite/\n├── _quarto.yml\n├── images/\n│   └──  profile.jpg\n└── index.qmd\n\nUse a path relative to index.qmd"
+    "text": "image\nUsed in about template, and social cards.\n\n\n\n\nindex.qmd\n\n---\nimage: images/profile.jpg\n---\n\n\nwebsite/\n├── _quarto.yml\n├── images/\n│   └──  profile.jpg\n└── index.qmd\n\n\nUse a path relative to index.qmd"
   },
   {
     "objectID": "02-basics.html#your-turn-2",
@@ -165,14 +165,14 @@
     "href": "03-style.html#styling-with-quarto",
     "title": "Quarto Websites Workshop",
     "section": "Styling with Quarto",
-    "text": "Styling with Quarto\nthe task of styling websites follows the pattern of diminishing returns\n\nEach unit change to the style, will lead to fewer improvements in the results\n\nWe can take the reverse, and apply a few changes for maximum results"
+    "text": "Styling with Quarto\nthe task of styling websites follows the pattern of diminishing returns\n\n\nEach unit change to the style, will lead to fewer improvements in the results\n\n\nWe can take the reverse, and apply a few changes for maximum results"
   },
   {
     "objectID": "03-style.html#styling-using-yaml",
     "href": "03-style.html#styling-using-yaml",
     "title": "Quarto Websites Workshop",
     "section": "Styling using yaml",
-    "text": "Styling using yaml\nWith Quarto html output we have a number of ways to style the site\nA number of basic options allows us to change colors, fonts, and **sizes\n\nhttps://quarto.org/docs/output-formats/html-themes.html#basic-options"
+    "text": "Styling using yaml\n\n\nWith Quarto html output we have a number of ways to style the site\n\nA number of basic options allows us to change colors, fonts, and SIZES\n\n\n\nhttps://quarto.org/docs/output-formats/html-themes.html#basic-options"
   },
   {
     "objectID": "03-style.html#colors-fonts-sizes",
@@ -207,7 +207,7 @@
     "href": "03-style.html#your-turn",
     "title": "Quarto Websites Workshop",
     "section": "Your Turn!",
-    "text": "Your Turn!\nOpen up your _quarto.yml file and experiment with the colors\n\nfontcolor\nlinkcolor\nbackgroundcolor\nmonobackgroundcolor"
+    "text": "Your Turn!\nOpen up your _quarto.yml file and experiment with the colors\n\nfontcolor\nlinkcolor\nbackgroundcolor\nmonobackgroundcolor\n\n\n  \n    −\n    +\n \n 05:00"
   },
   {
     "objectID": "03-style.html#fonts",
@@ -235,7 +235,7 @@
     "href": "03-style.html#your-turn-1",
     "title": "Quarto Websites Workshop",
     "section": "Your Turn!",
-    "text": "Your Turn!\nOpen up your _quarto.yml file and experiment with the fonts\n\nmainfont\nmonofont\n\ngeneric families include\nserif, sans-serif, monospace, cursive, fantasy, system-ui, ui-serif, ui-sans-serif, ui-monospace, ui-rounded, and fangsong"
+    "text": "Your Turn!\nOpen up your _quarto.yml file and experiment with the fonts\n\nmainfont\nmonofont\n\ngeneric families include\nserif, sans-serif, monospace, cursive, fantasy, system-ui, ui-serif, ui-sans-serif, ui-monospace, ui-rounded, and fangsong\n\n  \n    −\n    +\n \n 05:00"
   },
   {
     "objectID": "03-style.html#sizes",
@@ -263,14 +263,14 @@
     "href": "03-style.html#your-turn-2",
     "title": "Quarto Websites Workshop",
     "section": "Your Turn!",
-    "text": "Your Turn!\nOpen up your _quarto.yml file and experiment with the sizing\n\nmax-width\nfontsize\nlinestretch"
+    "text": "Your Turn!\nOpen up your _quarto.yml file and experiment with the sizing\n\nmax-width\nfontsize\nlinestretch\n\n\n  \n    −\n    +\n \n 05:00"
   },
   {
     "objectID": "03-style.html#show-the-world",
     "href": "03-style.html#show-the-world",
     "title": "Quarto Websites Workshop",
     "section": "Show the world!",
-    "text": "Show the world!\nTODO: add fun image\nThere are many different ways we can publish the our stuff. We will show Quarto Pub here and now\nMany different ways: https://quarto.org/docs/publishing/"
+    "text": "Show the world!\nThere are many different ways we can publish our stuff. We will show Quarto Pub here and now\nMany different ways: https://quarto.org/docs/publishing/"
   },
   {
     "objectID": "03-style.html#quarto-pub",
@@ -291,7 +291,7 @@
     "href": "03-style.html#your-turn-3",
     "title": "Quarto Websites Workshop",
     "section": "Your Turn!",
-    "text": "Your Turn!\nMake sure you are set up to use Quarto Pub, then run quarto publish quarto-pub"
+    "text": "Your Turn!\nMake sure you are set up to use Quarto Pub, then run quarto publish quarto-pub\n\n  \n    −\n    +\n \n 05:00"
   },
   {
     "objectID": "03-style.html#you-did-it",
@@ -1279,5 +1279,61 @@
     "title": "Quarto Websites Workshop",
     "section": "Your Turn",
     "text": "Your Turn\nAdd a listing page to your site:\n\nCreate a page to house the listing\nEither:\n\npopulate a .yml file with a couple of items (use projects/project.yml as a template), or\ncreate some placeholder .qmd files.\n\nAdd the page to your site navigation\nClean up any template listing pages/files/folders you don’t want"
+  },
+  {
+    "objectID": "03-style.html#section",
+    "href": "03-style.html#section",
+    "title": "Quarto Websites Workshop",
+    "section": "",
+    "text": "We have a website!\n🎉🥳🎉"
+  },
+  {
+    "objectID": "03-style.html#section-1",
+    "href": "03-style.html#section-1",
+    "title": "Quarto Websites Workshop",
+    "section": "",
+    "text": "They all look the same\n🌧️🙁🌧️\n\nBut wait!"
+  },
+  {
+    "objectID": "03-style.html#colors-before",
+    "href": "03-style.html#colors-before",
+    "title": "Quarto Websites Workshop",
+    "section": "Colors before",
+    "text": "Colors before"
+  },
+  {
+    "objectID": "03-style.html#colors-after",
+    "href": "03-style.html#colors-after",
+    "title": "Quarto Websites Workshop",
+    "section": "Colors after",
+    "text": "Colors after"
+  },
+  {
+    "objectID": "03-style.html#fonts-before",
+    "href": "03-style.html#fonts-before",
+    "title": "Quarto Websites Workshop",
+    "section": "Fonts before",
+    "text": "Fonts before"
+  },
+  {
+    "objectID": "03-style.html#fonts-after",
+    "href": "03-style.html#fonts-after",
+    "title": "Quarto Websites Workshop",
+    "section": "Fonts after",
+    "text": "Fonts after"
+  },
+  {
+    "objectID": "03-style.html#sizes-before",
+    "href": "03-style.html#sizes-before",
+    "title": "Quarto Websites Workshop",
+    "section": "Sizes before",
+    "text": "Sizes before"
+  },
+  {
+    "objectID": "03-style.html#sizes-after",
+    "href": "03-style.html#sizes-after",
+    "title": "Quarto Websites Workshop",
+    "section": "Sizes after",
+    "text": "Sizes after"
   }
 ]

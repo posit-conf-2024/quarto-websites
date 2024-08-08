@@ -7,7 +7,9 @@
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/quarto-contrib/countdown-0.5.0/countdown.js"></script>
+<link href="site_libs/quarto-contrib/countdown-0.5.0/countdown.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.554">
 
   <title>Quarto Websites Workshop</title>
@@ -395,34 +397,45 @@
 <h1>Styling</h1>
 
 </section>
-<section id="we-have-a-website-and-we-are-happy-with-it" class="slide level2">
-<h2>We have a website and we are happy with it!</h2>
-<p>TODO: insert fun celebratory image</p>
+<section id="section" class="slide level2">
+<h2></h2>
+<div class="r-fit-text" style="text-align: center;">
+<p>We have a website!</p>
+<p>🎉🥳🎉</p>
+</div>
 </section>
-<section id="they-all-look-the-same" class="slide level2">
-<h2>They all look the same</h2>
-<p>TODO: insert sad-ish image here</p>
-<p>TODO: add “BUT wait” caption as incremental effect</p>
+<section id="section-1" class="slide level2">
+<h2></h2>
+<div class="r-fit-text" style="text-align: center;">
+<p>They all look the same</p>
+<p>🌧️🙁🌧️</p>
+<div class="fragment">
+<p>But wait!</p>
+</div>
+</div>
 </section>
 <section id="styling-with-quarto" class="slide level2">
 <h2>Styling with Quarto</h2>
 <p>the task of styling websites follows the pattern of <strong>diminishing returns</strong></p>
+<p><br></p>
 <blockquote>
 <p>Each unit change to the style, will lead to fewer improvements in the results</p>
 </blockquote>
+<p><br></p>
 <p>We can take the reverse, and apply a few changes for maximum results</p>
 </section>
 <section id="styling-using-yaml" class="slide level2">
 <h2>Styling using yaml</h2>
+<div class="columns">
+<div class="column">
 <p>With Quarto <a href="https://quarto.org/docs/output-formats/html-themes.html">html output</a> we have a number of ways to style the site</p>
-<p>A number of basic options allows us to change <strong>colors</strong>, <strong>fonts</strong>, and **<em>sizes</em></p>
+</div><div class="column">
+<p>A number of basic options allows us to change <strong>colors</strong>, <em>fonts</em>, and <strong>SIZES</strong></p>
+</div>
+</div>
 <div class="footer">
 <p><a href="https://quarto.org/docs/output-formats/html-themes.html#basic-options" class="uri">https://quarto.org/docs/output-formats/html-themes.html#basic-options</a></p>
 </div>
-</section>
-<section id="colors-fonts-sizes" class="slide level2">
-<h2>colors, fonts, sizes</h2>
-<p>TODO: diagram/picture of a web page, with relevant areas highlighted</p>
 </section>
 <section id="colors" class="slide level2">
 <h2>Colors</h2>
@@ -469,11 +482,15 @@
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color" class="uri">https://developer.mozilla.org/en-US/docs/Web/CSS/color</a></p>
 </div>
 </section>
-<section id="colors-1" class="slide level2">
-<h2>Colors</h2>
-<p>TODO: show examples and before after</p>
-</section>
-<section id="your-turn" class="slide level2">
+<section id="colors-before" class="slide level2">
+<h2>Colors before</h2>
+
+<img data-src="images/colors-before.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="colors-after" class="slide level2">
+<h2>Colors after</h2>
+
+<img data-src="images/colors-after.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="your-turn" class="slide level2 exercise">
 <h2>Your Turn!</h2>
 <p>Open up your <code>_quarto.yml</code> file and experiment with the colors</p>
 <ul>
@@ -482,6 +499,13 @@
 <li><p><code>backgroundcolor</code></p></li>
 <li><p><code>monobackgroundcolor</code></p></li>
 </ul>
+<div id="timer_0ac276398b9a55b0bf685e2f56213c166c054eb0" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
 </section>
 <section id="fonts" class="slide level2">
 <h2>Fonts</h2>
@@ -509,11 +533,15 @@
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family" class="uri">https://developer.mozilla.org/en-US/docs/Web/CSS/font-family</a></p>
 </div>
 </section>
-<section id="fonts-1" class="slide level2">
-<h2>Fonts</h2>
-<p>TODO: show examples and before after</p>
-</section>
-<section id="your-turn-1" class="slide level2">
+<section id="fonts-before" class="slide level2">
+<h2>Fonts before</h2>
+
+<img data-src="images/colors-after.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="fonts-after" class="slide level2">
+<h2>Fonts after</h2>
+
+<img data-src="images/fonts-after.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="your-turn-1" class="slide level2 exercise">
 <h2>Your Turn!</h2>
 <p>Open up your <code>_quarto.yml</code> file and experiment with the fonts</p>
 <ul>
@@ -522,6 +550,13 @@
 </ul>
 <p>generic families include</p>
 <p>serif, sans-serif, monospace, cursive, fantasy, system-ui, ui-serif, ui-sans-serif, ui-monospace, ui-rounded, and fangsong</p>
+<div id="timer_0ac276398b9a55b0bf685e2f56213c166c054eb0" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
 </section>
 <section id="sizes" class="slide level2">
 <h2>Sizes</h2>
@@ -555,11 +590,15 @@
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size">font sizes</a> &amp; <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/line-height">line height</a></p>
 </div>
 </section>
-<section id="sizes-1" class="slide level2">
-<h2>Sizes</h2>
-<p>TODO: show examples and before after</p>
-</section>
-<section id="your-turn-2" class="slide level2">
+<section id="sizes-before" class="slide level2">
+<h2>Sizes before</h2>
+
+<img data-src="images/fonts-after.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="sizes-after" class="slide level2">
+<h2>Sizes after</h2>
+
+<img data-src="images/sizes-after.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="your-turn-2" class="slide level2 exercise">
 <h2>Your Turn!</h2>
 <p>Open up your <code>_quarto.yml</code> file and experiment with the sizing</p>
 <ul>
@@ -567,6 +606,13 @@
 <li><p><code>fontsize</code></p></li>
 <li><p><code>linestretch</code></p></li>
 </ul>
+<div id="timer_0ac276398b9a55b0bf685e2f56213c166c054eb0" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
 </section></section>
 <section>
 <section id="publishing" class="title-slide slide level1 center">
@@ -575,31 +621,38 @@
 </section>
 <section id="show-the-world" class="slide level2">
 <h2>Show the world!</h2>
-<p>TODO: add fun image</p>
-<p>There are many different ways we can publish the our stuff. We will show <a href="https://quartopub.com/">Quarto Pub</a> here and now</p>
+<p>There are many different ways we can publish our stuff. We will show <a href="https://quartopub.com/">Quarto Pub</a> here and now</p>
 <p>Many different ways: <a href="https://quarto.org/docs/publishing/" class="uri">https://quarto.org/docs/publishing/</a></p>
 </section>
 <section id="quarto-pub" class="slide level2">
 <h2>Quarto Pub</h2>
 <p>We use the <code>quarto publish</code> commend, specifically <code>quarto publish quarto-pub</code></p>
+</section></section>
+<section>
+<section id="what-happens-next" class="title-slide slide level1 center">
+<h1>what happens next?</h1>
+
 </section>
-<section id="what-happens-next" class="slide level2">
-<h2>what happens next</h2>
-<p>TODO: add ¿pictures?</p>
-</section>
-<section id="your-turn-3" class="slide level2">
+<section id="your-turn-3" class="slide level2 exercise">
 <h2>Your Turn!</h2>
 <p>Make sure you are set up to use Quarto Pub, then run <code>quarto publish quarto-pub</code></p>
-</section>
-<section id="you-did-it" class="slide level2">
-<h2>You did it!</h2>
+<div id="timer_0ac276398b9a55b0bf685e2f56213c166c054eb0" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
+</section></section>
+<section id="you-did-it" class="title-slide slide level1 center">
+<h1>You did it!</h1>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
 </div>
-</section></section>
+</section>
     </div>
   </div>
 
