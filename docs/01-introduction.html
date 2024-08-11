@@ -11,9 +11,9 @@
 <script src="site_libs/quarto-contrib/qrcodejs-v1.0.0/qrcode.js"></script>
 <script src="site_libs/quarto-contrib/countdown-0.5.0/countdown.js"></script>
 <link href="site_libs/quarto-contrib/countdown-0.5.0/countdown.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.56">
+  <meta name="generator" content="quarto-1.4.554">
 
-  <title>Quarto Websites Workshop – introduction</title>
+  <title>Quarto Websites Workshop</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -344,10 +344,11 @@
 </div><div class="column" style="width:25%;">
 <div id="qrcode" class="qrcode"></div>
 <script type="text/javascript">
-var qrcode = new QRCode("qrcode", {"colorDark":"#000000","colorLight":"#ffffff","height":"250","width":"250","text":"https://pos.it/websites_24"});
+var qrcode = new QRCode("qrcode", {"colorLight":"#ffffff","colorDark":"#000000","width":"250","text":"https://pos.it/websites_24","height":"250"});
 </script>
     
-</div></div>
+</div>
+</div>
 </section>
 <section id="housekeeping" class="slide level2">
 <h2>Housekeeping</h2>
@@ -362,7 +363,7 @@ var qrcode = new QRCode("qrcode", {"colorDark":"#000000","colorLight":"#ffffff",
 <section id="breaks" class="slide level2">
 <h2>Breaks</h2>
 <p>Full schedule at: <a href="https://pos.it/websites_24">pos.it/websites_24</a></p>
-<table class="caption-top">
+<table>
 <thead>
 <tr class="header">
 <th>Time</th>
@@ -406,7 +407,8 @@ var qrcode = new QRCode("qrcode", {"colorDark":"#000000","colorLight":"#ffffff",
 <li>Written some Quarto extensions</li>
 <li>R software engineer</li>
 </ul>
-</div></div>
+</div>
+</div>
 </section>
 <section id="about-you" class="slide level2">
 <h2>About You</h2>
@@ -417,7 +419,7 @@ var qrcode = new QRCode("qrcode", {"colorDark":"#000000","colorLight":"#ffffff",
 <li>Professional affiliation</li>
 <li>What do you use Quarto for?</li>
 </ul>
-<div id="timer_bf14d9517f4bfb4625ad578c6b0984d2f340aab8" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_d883a476c1d4c51e38ccdc27137be12c45d94271" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
@@ -729,7 +731,18 @@ var qrcode = new QRCode("qrcode", {"colorDark":"#000000","colorLight":"#ffffff",
         }
         return false;
       }
-      const onCopySuccess = function(e) {
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        text: function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+      });
+      clipboard.on('success', function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -761,29 +774,7 @@ var qrcode = new QRCode("qrcode", {"colorDark":"#000000","colorLight":"#ffffff",
         }, 1000);
         // clear code selection
         e.clearSelection();
-      }
-      const getTextToCopy = function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-      }
-      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-        text: getTextToCopy
       });
-      clipboard.on('success', onCopySuccess);
-      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        // For code content inside modals, clipBoardJS needs to be initialized with a container option
-        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-          text: getTextToCopy,
-          container: window.document.getElementById('quarto-embedded-source-code-modal')
-        });
-        clipboardModal.on('success', onCopySuccess);
-      }
         var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
         var mailtoRegex = new RegExp(/^mailto:/);
           var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -791,7 +782,7 @@ var qrcode = new QRCode("qrcode", {"colorDark":"#000000","colorLight":"#ffffff",
             return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
         // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
         for (var i=0; i<links.length; i++) {
           const link = links[i];
           if (!isInternal(link.href)) {

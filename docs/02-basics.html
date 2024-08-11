@@ -10,9 +10,9 @@
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/quarto-contrib/countdown-0.5.0/countdown.js"></script>
 <link href="site_libs/quarto-contrib/countdown-0.5.0/countdown.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.56">
+  <meta name="generator" content="quarto-1.4.554">
 
-  <title>Quarto Websites Workshop – basics</title>
+  <title>Quarto Websites Workshop</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -43,7 +43,7 @@
     }
     @media print {
     pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
     }
     pre.numberSource code
       { counter-reset: source-line 0; }
@@ -71,7 +71,7 @@
     code span.at { color: #657422; } /* Attribute */
     code span.bn { color: #ad0000; } /* BaseN */
     code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.cf { color: #003b4f; } /* ControlFlow */
     code span.ch { color: #20794d; } /* Char */
     code span.cn { color: #8f5902; } /* Constant */
     code span.co { color: #5e5e5e; } /* Comment */
@@ -85,7 +85,7 @@
     code span.fu { color: #4758ab; } /* Function */
     code span.im { color: #00769e; } /* Import */
     code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.kw { color: #003b4f; } /* Keyword */
     code span.op { color: #5e5e5e; } /* Operator */
     code span.ot { color: #003b4f; } /* Other */
     code span.pp { color: #ad0000; } /* Preprocessor */
@@ -463,7 +463,8 @@
 <h3 id="whole-site">Whole site</h3>
 <p><strong>Build</strong> &gt; <strong>Render Website</strong></p>
 <p><img data-src="images/basics-rstudio-render-website.png"></p>
-</div></div>
+</div>
+</div>
 </div>
 <div id="tabset-1-2">
 <div class="columns">
@@ -480,7 +481,8 @@
 </div>
 <div class="sourceCode" id="cb4" data-filename="Terminal"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb4-1"><a aria-hidden="true" tabindex="-1"></a>quarto preview </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div></div>
+</div>
+</div>
 <p>Requires <a href="https://marketplace.visualstudio.com/items?itemName=quarto.quarto">Quarto Extension</a></p>
 </div>
 <div id="tabset-1-3">
@@ -501,7 +503,8 @@
 </div>
 <div class="sourceCode" id="cb6" data-filename="Terminal"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb6-1"><a aria-hidden="true" tabindex="-1"></a>quarto preview </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div></div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -516,7 +519,7 @@
 <li><p>Preview</p></li>
 <li><p>What else is in <code>index.qmd</code>? Can you match the contents of <code>index.qmd</code> with contents of the webpage?</p></li>
 </ol>
-<div id="timer_99c53766e53edf53541d16ba67e0136d763d98ba" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_fe029d3919219c216fdfb2db4d5848f83730b8a1" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
@@ -575,7 +578,8 @@ No peeking
 <li>Everything else is markdown content</li>
 </ol>
 <p>Use the visual editor (if you like)</p>
-</div></div>
+</div>
+</div>
 </section>
 <section id="about-pages" class="slide level2">
 <h2>About Pages</h2>
@@ -598,7 +602,7 @@ No peeking
 <li><p>Edit the links to point at your own profiles, or add different links.</p></li>
 <li><p>Experiment with <a href="https://quarto.org/docs/websites/website-about.html#image"><code>image-shape</code></a>.</p></li>
 </ol>
-<div id="timer_99c53766e53edf53541d16ba67e0136d763d98ba" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_fe029d3919219c216fdfb2db4d5848f83730b8a1" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
@@ -624,7 +628,8 @@ No peeking
 ├── _quarto.yml
 ├── index.qmd
 └── profile.jpg</code></pre>
-</div></div>
+</div>
+</div>
 <p>Use a path relative to <code>index.qmd</code></p>
 </section>
 <section id="image-1" class="slide level2">
@@ -646,13 +651,14 @@ No peeking
 ├── images/
 │   └──  profile.jpg
 └── index.qmd</code></pre>
-</div></div>
+</div>
+</div>
 <p>Use a path relative to <code>index.qmd</code></p>
 </section>
 <section id="your-turn-2" class="slide level2 exercise">
 <h2>Your Turn</h2>
 <p>Replace the image with one that reflects you or your site.</p>
-<div id="timer_99c53766e53edf53541d16ba67e0136d763d98ba" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_fe029d3919219c216fdfb2db4d5848f83730b8a1" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
@@ -943,7 +949,18 @@ No peeking
         }
         return false;
       }
-      const onCopySuccess = function(e) {
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        text: function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+      });
+      clipboard.on('success', function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -975,29 +992,7 @@ No peeking
         }, 1000);
         // clear code selection
         e.clearSelection();
-      }
-      const getTextToCopy = function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-      }
-      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-        text: getTextToCopy
       });
-      clipboard.on('success', onCopySuccess);
-      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        // For code content inside modals, clipBoardJS needs to be initialized with a container option
-        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-          text: getTextToCopy,
-          container: window.document.getElementById('quarto-embedded-source-code-modal')
-        });
-        clipboardModal.on('success', onCopySuccess);
-      }
         var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
         var mailtoRegex = new RegExp(/^mailto:/);
           var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -1005,7 +1000,7 @@ No peeking
             return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
         // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
         for (var i=0; i<links.length; i++) {
           const link = links[i];
           if (!isInternal(link.href)) {

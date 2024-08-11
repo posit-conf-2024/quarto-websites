@@ -60,7 +60,7 @@
     "href": "02-basics.html#preview",
     "title": "Quarto Websites Workshop",
     "section": "Preview",
-    "text": "Preview\n\nRStudioVS CodeTerminal\n\n\n\n\nCurrent page\n\nCmd/Ctrl + Shift + K\n\nWhole site\nBuild &gt; Render Website\n\n\n\n\n\n\nCurrent page\n\nCmd/Ctrl + Shift + K\n\nWhole site\nNo command, use Terminal:\n\n\nTerminal\n\nquarto preview \n\n\nRequires Quarto Extension\n\n\n\n\nCurrent page\n\n\nTerminal\n\nquarto preview index.qmd\n\n\nWhole site\n\n\nTerminal\n\nquarto preview"
+    "text": "Preview\n\nRStudioVS CodeTerminal\n\n\n\n\nCurrent page\n\nCmd/Ctrl + Shift + K\n\nWhole site\nBuild &gt; Render Website\n\n\n\n\n\n\n\nCurrent page\n\nCmd/Ctrl + Shift + K\n\nWhole site\nNo command, use Terminal:\n\n\nTerminal\n\nquarto preview \n\n\n\nRequires Quarto Extension\n\n\n\n\nCurrent page\n\n\nTerminal\n\nquarto preview index.qmd\n\n\nWhole site\n\n\nTerminal\n\nquarto preview"
   },
   {
     "objectID": "02-basics.html#your-turn",
@@ -102,14 +102,14 @@
     "href": "02-basics.html#image",
     "title": "Quarto Websites Workshop",
     "section": "image",
-    "text": "image\nUsed in about template, and social cards.\n\n\n\n\nindex.qmd\n\n---\nimage: profile.jpg\n---\n\n\nwebsite/\n├── _quarto.yml\n├── index.qmd\n└── profile.jpg\n\nUse a path relative to index.qmd"
+    "text": "image\nUsed in about template, and social cards.\n\n\n\n\nindex.qmd\n\n---\nimage: profile.jpg\n---\n\n\nwebsite/\n├── _quarto.yml\n├── index.qmd\n└── profile.jpg\n\n\nUse a path relative to index.qmd"
   },
   {
     "objectID": "02-basics.html#image-1",
     "href": "02-basics.html#image-1",
     "title": "Quarto Websites Workshop",
     "section": "image",
-    "text": "image\nUsed in about template, and social cards.\n\n\n\n\nindex.qmd\n\n---\nimage: images/profile.jpg\n---\n\n\nwebsite/\n├── _quarto.yml\n├── images/\n│   └──  profile.jpg\n└── index.qmd\n\nUse a path relative to index.qmd"
+    "text": "image\nUsed in about template, and social cards.\n\n\n\n\nindex.qmd\n\n---\nimage: images/profile.jpg\n---\n\n\nwebsite/\n├── _quarto.yml\n├── images/\n│   └──  profile.jpg\n└── index.qmd\n\n\nUse a path relative to index.qmd"
   },
   {
     "objectID": "02-basics.html#your-turn-2",
@@ -147,494 +147,242 @@
     "text": "Schedule\n\n\n\nTime\nTopic\nInstructor\n\n\n\n\n09:00 - 9:20\nIntroduction\nCharlotte\n\n\n09:20 - 9:50\nBasics\nCharlotte\n\n\n09:50 - 10:30\nStyle\nEmil\n\n\n10:30 - 11:00\nCoffee Break\n\n\n\n11:00 - 12:30\nNavigation\nCharlotte\n\n\n12:30 - 13:30\nLunch\n\n\n\n13:30 - 15:00\nCSS\nEmil\n\n\n15:00 - 15:30\nCoffee Break\n\n\n\n15:30 - 16:30\nListings\nCharlotte\n\n\n16:30 - 17:00\nRoundup\nEmil"
   },
   {
-    "objectID": "05-css.html#what-is-css",
-    "href": "05-css.html#what-is-css",
+    "objectID": "03-style.html#section",
+    "href": "03-style.html#section",
     "title": "Quarto Websites Workshop",
-    "section": "what is CSS",
-    "text": "what is CSS\n\nCascading Style Sheets is a style sheet language used for specifying the presentation and styling of a document"
+    "section": "",
+    "text": "We have a website!\n🎉🥳🎉"
   },
   {
-    "objectID": "05-css.html#html-syntax-in-5-minutes",
-    "href": "05-css.html#html-syntax-in-5-minutes",
+    "objectID": "03-style.html#section-1",
+    "href": "03-style.html#section-1",
     "title": "Quarto Websites Workshop",
-    "section": "HTML syntax in 5 minutes",
-    "text": "HTML syntax in 5 minutes\nHTML (HyperText Markup Language) is built on tags like\n&lt;html&gt;&lt;/html&gt; and &lt;div&gt;&lt;/div&gt;\nTags can be nested &lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;\n&lt;div&gt;\n  &lt;div&gt;&lt;/div&gt;\n  &lt;div&gt;&lt;/div&gt;\n&lt;/div&gt;"
+    "section": "",
+    "text": "They all look the same\n🌧️🙁🌧️\n\nBut wait!"
   },
   {
-    "objectID": "05-css.html#html-structure",
-    "href": "05-css.html#html-structure",
+    "objectID": "03-style.html#styling-with-quarto",
+    "href": "03-style.html#styling-with-quarto",
     "title": "Quarto Websites Workshop",
-    "section": "HTML structure",
-    "text": "HTML structure\n\n\nIs built around 3 main tags:\n\n&lt;html&gt;\n&lt;head&gt;\n&lt;body&gt;\n\n\n&lt;!DOCTYPE html&gt; \n&lt;html&gt;\n  &lt;head&gt;\n    &lt;link rel=\"stylesheet\" href=\"styles.css\"&gt;\n  &lt;/head&gt;\n\n  &lt;body&gt;\n    &lt;h1&gt;\n      I'm a header\n    &lt;/h1&gt;\n    &lt;p&gt;\n      Here is some text in a paragraph\n    &lt;/p&gt;\n  &lt;/body&gt;\n&lt;/html&gt;"
+    "section": "Styling with Quarto",
+    "text": "Styling with Quarto\nthe task of styling websites follows the pattern of diminishing returns\n\n\nEach unit change to the style, will lead to fewer improvements in the results\n\n\nWe can take the reverse, and apply a few changes for maximum results"
   },
   {
-    "objectID": "05-css.html#html-head",
-    "href": "05-css.html#html-head",
+    "objectID": "03-style.html#styling-using-yaml",
+    "href": "03-style.html#styling-using-yaml",
     "title": "Quarto Websites Workshop",
-    "section": "HTML head",
-    "text": "HTML head\ncontains:\n\nmeta information\nstyle sheets\nand sometimes scripts (mostly javascript)\n\n95% of this will be handled by Quarto for you"
+    "section": "Styling using yaml",
+    "text": "Styling using yaml\n\n\nWith Quarto html output we have a number of ways to style the site\n\nA number of basic options allows us to change colors, fonts, and SIZES\n\n\n\nhttps://quarto.org/docs/output-formats/html-themes.html#basic-options"
   },
   {
-    "objectID": "05-css.html#html-body",
-    "href": "05-css.html#html-body",
+    "objectID": "03-style.html#colors",
+    "href": "03-style.html#colors",
     "title": "Quarto Websites Workshop",
-    "section": "HTML body",
-    "text": "HTML body\n\nContains everything else"
+    "section": "Colors",
+    "text": "Colors\n\n\nfontcolor\n\nThe main color for text on the site\n\n\n\nlinkcolor\n\nColor of the links\n\n\n\nbackgroundcolor\n\nBackground color of the whole site\n\n\n\nmonobackgroundcolor\n\nbackground for code chunks"
   },
   {
-    "objectID": "05-css.html#common-html-tags",
-    "href": "05-css.html#common-html-tags",
+    "objectID": "03-style.html#what-is-a-color",
+    "href": "03-style.html#what-is-a-color",
     "title": "Quarto Websites Workshop",
-    "section": "Common HTML tags",
-    "text": "Common HTML tags\nHeaders\n&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;\nParagraph\n&lt;p&gt;\nlinks\n&lt;a&gt;\ngeneral div\n&lt;div&gt;\n\nHTML Element Reference - By Category"
+    "section": "What is a color?",
+    "text": "What is a color?\nWe can specify colors in many different ways using CSS\n\nnamed colors such as orange and lightskyblue\nRGB Hexadecimal, such as #FFA500 and #87CEFA\nUsing a color space\n\nrgb(214, 122, 127)\nhsl(30deg 82% 43%)\nhwb(152deg 0% 58% / 70%)\n\nand more\n\n\nhttps://developer.mozilla.org/en-US/docs/Web/CSS/color"
   },
   {
-    "objectID": "05-css.html#html-attributes",
-    "href": "05-css.html#html-attributes",
+    "objectID": "03-style.html#colors-before",
+    "href": "03-style.html#colors-before",
     "title": "Quarto Websites Workshop",
-    "section": "HTML attributes",
-    "text": "HTML attributes\nAll HTML elements can have attributes\nThey provide additional information about the elements\nAre always specified at the start-tag\nDone by using name-value pairs: name=\"value\"\n\n\nClasses and ids\n&lt;h1 class=\"title\" id=\"special-title\"&gt;\n\n\nImages source attribute\n&lt;img src=\"img_girl.jpg\"&gt;"
+    "section": "Colors before",
+    "text": "Colors before"
   },
   {
-    "objectID": "05-css.html#where-is-the-code-for-styling",
-    "href": "05-css.html#where-is-the-code-for-styling",
+    "objectID": "03-style.html#colors-after",
+    "href": "03-style.html#colors-after",
     "title": "Quarto Websites Workshop",
-    "section": "Where is the code for styling?",
-    "text": "Where is the code for styling?\n\ninline style\n\n&lt;h1 style=\"color:red;\"&gt;Welcome to styling 101&lt;/h1&gt;\n\nstyle.css\n\nLoaded in &lt;head&gt;\n&lt;link rel=\"stylesheet\" href=\"my-awesome-style.css\"&gt;"
+    "section": "Colors after",
+    "text": "Colors after"
   },
   {
-    "objectID": "05-css.html#how-we-use-css",
-    "href": "05-css.html#how-we-use-css",
+    "objectID": "03-style.html#your-turn",
+    "href": "03-style.html#your-turn",
     "title": "Quarto Websites Workshop",
-    "section": "How we use CSS",
-    "text": "How we use CSS\nIn its simplest form, we need to define 2 things\n\n\n\nselectors\nWhat needs to be styled\n\n\n\n\nAttributes\nHow it should be styled"
+    "section": "Your Turn!",
+    "text": "Your Turn!\nOpen up your _quarto.yml file and experiment with the colors\n\nfontcolor\nlinkcolor\nbackgroundcolor\nmonobackgroundcolor\n\n\n  \n    −\n    +\n \n 05:00"
   },
   {
-    "objectID": "05-css.html#selectors-1",
-    "href": "05-css.html#selectors-1",
+    "objectID": "03-style.html#fonts",
+    "href": "03-style.html#fonts",
     "title": "Quarto Websites Workshop",
-    "section": "Selectors",
-    "text": "Selectors\nby tags\nh1 {\n\n}\nby class\n.important {\n\n}\nby id\n#title-text {\n\n}\n\nhttps://www.w3schools.com/cssref/css_selectors.php"
+    "section": "Fonts",
+    "text": "Fonts\n\n\nmainfont\n\nThe main font for text on the site\n\n\n\nmonofont\n\nFont for code elements"
   },
   {
-    "objectID": "05-css.html#combining-selectors",
-    "href": "05-css.html#combining-selectors",
+    "objectID": "03-style.html#what-is-a-font",
+    "href": "03-style.html#what-is-a-font",
     "title": "Quarto Websites Workshop",
-    "section": "Combining selectors",
-    "text": "Combining selectors\nAll h1 and all h2\nh1, h2 {\n\n}\nAll headers\nh1, h2, h3, h4, h5, h6 {\n\n}\n\nhttps://www.w3schools.com/cssref/css_selectors.php"
+    "section": "What is a font?",
+    "text": "What is a font?\nA font family is specified either as a family name or as a generic name.\nIn the below example, \"Gill Sans\" is a family name, and sans-serif is a generic name.\n\"Gill Sans\", sans-serif\nFont specification works by having a fallback, so if \"Gill Sans\" isn’t available for the user, then sans-serif is used instead.\nWe will talk more later, about how we can load in new family names.\n\nhttps://developer.mozilla.org/en-US/docs/Web/CSS/font-family"
   },
   {
-    "objectID": "05-css.html#combining-selectors-1",
-    "href": "05-css.html#combining-selectors-1",
+    "objectID": "03-style.html#fonts-before",
+    "href": "03-style.html#fonts-before",
     "title": "Quarto Websites Workshop",
-    "section": "Combining selectors",
-    "text": "Combining selectors\nAll span in p\np span {\n\n}\nOnly &lt;span&gt;friend&lt;/span&gt; would be affected\n&lt;span&gt;Conversation&lt;/span&gt;\n&lt;p&gt;\nhello there my \n&lt;span&gt;friend&lt;/span&gt;\nhow are you doing\n&lt;/p&gt;\n\nhttps://www.w3schools.com/cssref/css_selectors.php"
+    "section": "Fonts before",
+    "text": "Fonts before"
   },
   {
-    "objectID": "05-css.html#combining-selectors-2",
-    "href": "05-css.html#combining-selectors-2",
+    "objectID": "03-style.html#fonts-after",
+    "href": "03-style.html#fonts-after",
     "title": "Quarto Websites Workshop",
-    "section": "Combining selectors",
-    "text": "Combining selectors\nall h2 1 level deep in .happy\n.happy &gt; h2\nOnly the first would be affected\n&lt;div class=\"happy\"&gt;\n  &lt;h2&gt;header&lt;/h2&gt;\n  &lt;div&gt;\n    &lt;h2&gt;header&lt;/h2&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\nhttps://www.w3schools.com/cssref/css_selectors.php"
+    "section": "Fonts after",
+    "text": "Fonts after"
   },
   {
-    "objectID": "05-css.html#combining-selectors-3",
-    "href": "05-css.html#combining-selectors-3",
+    "objectID": "03-style.html#your-turn-1",
+    "href": "03-style.html#your-turn-1",
     "title": "Quarto Websites Workshop",
-    "section": "Combining selectors",
-    "text": "Combining selectors\nall h2 elements with .happy class\nh2.happy\nOnly the second h2 would be affected\n&lt;div class=\"happy\"&gt;\n  &lt;h2&gt;header&lt;/h2&gt;\n  &lt;div&gt;\n    &lt;h2 class=\"happy\"&gt;header&lt;/h2&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\nhttps://www.w3schools.com/cssref/css_selectors.php"
+    "section": "Your Turn!",
+    "text": "Your Turn!\nOpen up your _quarto.yml file and experiment with the fonts\n\nmainfont\nmonofont\n\ngeneric families include\nserif, sans-serif, monospace, cursive, fantasy, system-ui, ui-serif, ui-sans-serif, ui-monospace, ui-rounded, and fangsong\n\n  \n    −\n    +\n \n 05:00"
   },
   {
-    "objectID": "05-css.html#your-turn",
-    "href": "05-css.html#your-turn",
+    "objectID": "03-style.html#sizes",
+    "href": "03-style.html#sizes",
     "title": "Quarto Websites Workshop",
-    "section": "Your turn",
-    "text": "Your turn\nOpen styles.scss file and do the following:\n\nChange styling of h1 and h2 elements\n\nat least change the color\n\nChange styling of text (p elements)\nChange styling of only the subtitle of the front page\nChange styling of buttons on front page"
+    "section": "Sizes",
+    "text": "Sizes\n\n\nmax-width\n\nWidth of the main text area of the pages\n\n\n\nfontsize\n\nBase font size for website\n\n\n\nlinestretch\n\nDistance between lines of text"
   },
   {
-    "objectID": "05-css.html#selectors-references",
-    "href": "05-css.html#selectors-references",
+    "objectID": "03-style.html#how-to-specify-sizes",
+    "href": "03-style.html#how-to-specify-sizes",
     "title": "Quarto Websites Workshop",
-    "section": "Selectors References",
-    "text": "Selectors References\nAs with anything web related, there are tons of resources online\nhttps://www.w3schools.com/cssref/css_selectors.php\nhttps://www.w3schools.com/css/css_selectors.asp\nhttps://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors\nhttps://www.freecodecamp.org/news/css-selectors-cheat-sheet-for-beginners/\nhttps://www.w3.org/TR/CSS21/selector.html%23id-selectors"
+    "section": "How to specify sizes",
+    "text": "How to specify sizes\nSpecifying a length in CSS can be done in dozens of ways,\n\nUsing pixel counts 18px or 100px\nCalculated font-size of an element, 1em should remain unchanged, 2em should double it\n\n\nfont sizes & line height"
   },
   {
-    "objectID": "05-css.html#pseudo-classes",
-    "href": "05-css.html#pseudo-classes",
+    "objectID": "03-style.html#sizes-before",
+    "href": "03-style.html#sizes-before",
     "title": "Quarto Websites Workshop",
-    "section": "Pseudo-classes",
-    "text": "Pseudo-classes\nModifies existing classes\n\n\nUser action\n\n:hover\n:active\n\na.navbar:hover {\n  color: blue;\n}\n\na.navbar:active {\n  color: darkblue;\n}\n\n\nhttps://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes"
+    "section": "Sizes before",
+    "text": "Sizes before"
   },
   {
-    "objectID": "05-css.html#pseudo-classes---tree-bases",
-    "href": "05-css.html#pseudo-classes---tree-bases",
+    "objectID": "03-style.html#sizes-after",
+    "href": "03-style.html#sizes-after",
     "title": "Quarto Websites Workshop",
-    "section": "Pseudo-classes - Tree bases",
-    "text": "Pseudo-classes - Tree bases\nCan do math to style only some elements\n\n:first-child\n:nth-of-type\n\np:first-child {\n  border: 2px solid blue;\n}\n\np:nth-of-type(2n+1) {\n  border: 2px solid orange;\n}\n\nhttps://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes"
+    "section": "Sizes after",
+    "text": "Sizes after"
   },
   {
-    "objectID": "05-css.html#pseudo-classes---fancy-selectors",
-    "href": "05-css.html#pseudo-classes---fancy-selectors",
+    "objectID": "03-style.html#your-turn-2",
+    "href": "03-style.html#your-turn-2",
     "title": "Quarto Websites Workshop",
-    "section": "Pseudo-classes - Fancy selectors",
-    "text": "Pseudo-classes - Fancy selectors\nOutside scope, but shows what can be done if you care to explore it\n\n:has()\n\n\nif h1 has a sibling h2 then set the bottom margin of h1 to 0.25rem\nh1:has(+ h2) {\n  margin-bottom: 0.25rem;\n}\n\n\nWhen the container has a child card hovered, select all the cards that aren’t hovered.\n.card-list:has(.card:hover) .card:not(:hover) {\n  filter: blur(4px)\n}\n\n\nhttps://bejamas.io/blog/learn-css-has-selector-by-examples-top-use-cases/"
+    "section": "Your Turn!",
+    "text": "Your Turn!\nOpen up your _quarto.yml file and experiment with the sizing\n\nmax-width\nfontsize\nlinestretch\n\n\n  \n    −\n    +\n \n 05:00"
   },
   {
-    "objectID": "05-css.html#your-turn-1",
-    "href": "05-css.html#your-turn-1",
+    "objectID": "03-style.html#show-the-world",
+    "href": "03-style.html#show-the-world",
     "title": "Quarto Websites Workshop",
-    "section": "Your turn",
-    "text": "Your turn\nOpen styles.scss file and do the following:\n\nFind an element that would benefit from having a pseudo-class\n\n:hover is a safe choice, but not the only one\n\nApply pseudo-class to said element"
+    "section": "Show the world!",
+    "text": "Show the world!\nThere are many different ways we can publish our stuff. We will show Quarto Pub here and now\nMany different ways: https://quarto.org/docs/publishing/"
   },
   {
-    "objectID": "05-css.html#cascading",
-    "href": "05-css.html#cascading",
+    "objectID": "03-style.html#quarto-pub",
+    "href": "03-style.html#quarto-pub",
     "title": "Quarto Websites Workshop",
-    "section": "Cascading",
-    "text": "Cascading\n\nStylesheets cascade — at a very simple level, this means that the origin, the cascade layer, and the order of CSS rules matter. When two rules from the same cascade layer apply and both have equal specificity, the one that is defined last in the stylesheet is the one that will be used.\n\nh1 looses to h1.title-class because h1.title-class is more specific\n\nhttps://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance"
+    "section": "Quarto Pub",
+    "text": "Quarto Pub\nWe use the quarto publish commend, specifically quarto publish quarto-pub"
   },
   {
-    "objectID": "05-css.html#attributes-1",
-    "href": "05-css.html#attributes-1",
+    "objectID": "03-style.html#your-turn-3",
+    "href": "03-style.html#your-turn-3",
     "title": "Quarto Websites Workshop",
-    "section": "Attributes",
-    "text": "Attributes\nThe attributes are instructions on how elements should look and behave.\n\nHow things look\n\ncolors\nsizes\nborder lines\netc\n\nHow elements are positioned to other elements\n\nLayout"
+    "section": "Your Turn!",
+    "text": "Your Turn!\nMake sure you are set up to use Quarto Pub, then run quarto publish quarto-pub\n\n  \n    −\n    +\n \n 05:00"
   },
   {
-    "objectID": "05-css.html#layout",
-    "href": "05-css.html#layout",
+    "objectID": "01-introduction.html#quarto-websites-welcome",
+    "href": "01-introduction.html#quarto-websites-welcome",
     "title": "Quarto Websites Workshop",
-    "section": "Layout",
-    "text": "Layout"
+    "section": "Quarto Websites: Welcome!",
+    "text": "Quarto Websites: Welcome!\n\n\nWiFi: Posit Conf 2024 Password: conf2024\nFind the materials at: pos.it/websites_24\nVerify the pre-work steps (details 👆):\n\nQuarto version 1.5\nYour IDE of choice\nAccount at Quarto Pub (if you want to publish)\nJoin the discord: #workshop-quarto-websites"
   },
   {
-    "objectID": "05-css.html#layout-1",
-    "href": "05-css.html#layout-1",
+    "objectID": "01-introduction.html#housekeeping",
+    "href": "01-introduction.html#housekeeping",
     "title": "Quarto Websites Workshop",
-    "section": "Layout",
-    "text": "Layout\n\nContent - The content of the box, where text and images appear\nPadding - Clears an area around the content. The padding is transparent\nBorder - A border that goes around the padding and content\nMargin - Clears an area outside the border. The margin is transparent"
+    "section": "Housekeeping",
+    "text": "Housekeeping\n\nThere are gender-neutral bathrooms located on levels 3, 4, 5, 6 & 7\nThere is a meditation/prayer room located in 503. Available Mon & Tues 7am - 7pm, and Wed 7am - 5pm.\nThe lactation room is located in 509, same timings as above.\nParticipants who do not wish to be photographed have red lanyards; please note everyone’s lanyard colors before taking a photo and respect their choices.\nThe Code of Conduct can be found at https://posit.co/code-of-conduct. Please review carefully. You can report Code of Conduct violations in person, by email, or by phone. Please see the policy linked above for contact information."
   },
   {
-    "objectID": "05-css.html#layout---content",
-    "href": "05-css.html#layout---content",
+    "objectID": "01-introduction.html#breaks",
+    "href": "01-introduction.html#breaks",
     "title": "Quarto Websites Workshop",
-    "section": "Layout - content",
-    "text": "Layout - content\nSize of the content is set using height and width\nValues are lengths\n\n10px\n2em\n\nor percentages\n\n40%\n100%"
+    "section": "Breaks",
+    "text": "Breaks\nFull schedule at: pos.it/websites_24\n\n\n\nTime\n\n\n\n\n\n10:30 - 11:00\nCoffee Break\n\n\n12:30 - 13:30\nLunch\n\n\n15:00 - 15:30\nCoffee Break\n\n\n17:00\nEND"
   },
   {
-    "objectID": "05-css.html#your-turn-2",
-    "href": "05-css.html#your-turn-2",
+    "objectID": "01-introduction.html#about-us",
+    "href": "01-introduction.html#about-us",
     "title": "Quarto Websites Workshop",
-    "section": "Your turn",
-    "text": "Your turn\nOpen styles.scss file and do the following:\n\nFind an element\n\nimages or text\n\nChange the height and width"
+    "section": "About Us",
+    "text": "About Us\n\n\nCharlotte Wickham\n\nQuarto user for 2+ years\nQuarto website user for 1.5+ years\nStatistics + R background\n\n\nEmil Hvitfeldt\n\nQuarto user for 2+ years\nWritten some Quarto extensions\nR software engineer"
   },
   {
-    "objectID": "05-css.html#layout---padding",
-    "href": "05-css.html#layout---padding",
+    "objectID": "01-introduction.html#about-you",
+    "href": "01-introduction.html#about-you",
     "title": "Quarto Websites Workshop",
-    "section": "Layout - padding",
-    "text": "Layout - padding\nyou can set the about of padding with\n\npadding or\npadding-bottom, padding-left, padding-right, and padding-top\n\nValues are lengths or percentages.\npadding is used as a shorthand\n\nhttps://www.w3schools.com/css/css_padding.asp"
+    "section": "About You",
+    "text": "About You\nYour Turn\nIntroduce yourself to your neighbors:\n\nName\nProfessional affiliation\nWhat do you use Quarto for?\n\n\n  \n    −\n    +\n \n 04:00"
   },
   {
-    "objectID": "05-css.html#layout---padding-1",
-    "href": "05-css.html#layout---padding-1",
+    "objectID": "01-introduction.html#meeting-you-where-you-are",
+    "href": "01-introduction.html#meeting-you-where-you-are",
     "title": "Quarto Websites Workshop",
-    "section": "Layout - padding",
-    "text": "Layout - padding\nFollowing are equivalent\n\n\nh1 {\n  padding: 10px;\n}\n\nh1 {\n  padding-bottom: 10px;\n  padding-left: 10px;\n  padding-right: 10px;\n  padding-top: 10px;\n  }\n\n\nhttps://www.w3schools.com/css/css_padding.asp"
+    "section": "Meeting you where you are",
+    "text": "Meeting you where you are\n\nYou’ve used Quarto for single documents\nYou are comfortable editing, saving and previewing files in your IDE\nYou want to build a website"
   },
   {
-    "objectID": "05-css.html#layout---padding-2",
-    "href": "05-css.html#layout---padding-2",
+    "objectID": "01-introduction.html#why-quarto-for-websites",
+    "href": "01-introduction.html#why-quarto-for-websites",
     "title": "Quarto Websites Workshop",
-    "section": "Layout - padding",
-    "text": "Layout - padding\nFollowing are equivalent\n\n\nh1 {\n  padding: 10px 20px;\n}\n\nh1 {\n  padding-bottom: 10px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n  }\n\n\nhttps://www.w3schools.com/css/css_padding.asp"
+    "section": "Why Quarto for Websites?",
+    "text": "Why Quarto for Websites?\n\nYou don’t need to learn anything new for page content\nYou get nice website features out of the box: GitHub links, social cards, navigation, etc.\nA lot of customization available via YAML options\nCustomize style as much (or as little) as you want"
   },
   {
-    "objectID": "05-css.html#layout---padding-3",
-    "href": "05-css.html#layout---padding-3",
+    "objectID": "01-introduction.html#our-goal",
+    "href": "01-introduction.html#our-goal",
     "title": "Quarto Websites Workshop",
-    "section": "Layout - padding",
-    "text": "Layout - padding\nFollowing are equivalent\n\n\nh1 {\n  padding: 10px 20px 30px;\n}\n\nh1 {\n  padding-bottom: 30px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n  }\n\n\nhttps://www.w3schools.com/css/css_padding.asp"
+    "section": "Our Goal",
+    "text": "Our Goal\n\nYou walk away with a website that reflects you both in content and style."
   },
   {
-    "objectID": "05-css.html#layout---padding-4",
-    "href": "05-css.html#layout---padding-4",
+    "objectID": "01-introduction.html#our-goal-1",
+    "href": "01-introduction.html#our-goal-1",
     "title": "Quarto Websites Workshop",
-    "section": "Layout - padding",
-    "text": "Layout - padding\nFollowing are equivalent (clock-wise)\n\n\nh1 {\n  padding: 10px 20px 30px 40px;\n}\n\nh1 {\n  padding-bottom: 30px;\n  padding-left: 40px;\n  padding-right: 20px;\n  padding-top: 10px;\n  }\n\n\nhttps://www.w3schools.com/css/css_padding.asp"
+    "section": "Our Goal",
+    "text": "Our Goal\nAlong the way you’ll learn how to:\n\nUse a template to get started quickly\nCreate a landing page using about templates\nUse YAML options to customize the style of your website\nAdd navigational elements to help visitors find your content\nCustomize the appearance of your site with CSS and SCSS\nGenerate lists of content automatically with listings"
   },
   {
-    "objectID": "05-css.html#your-turn-3",
-    "href": "05-css.html#your-turn-3",
+    "objectID": "01-introduction.html#workshop-structure",
+    "href": "01-introduction.html#workshop-structure",
     "title": "Quarto Websites Workshop",
-    "section": "Your turn",
-    "text": "Your turn\nContinue with element from before\n\nChange the 4 values of padding and see what happens"
+    "section": "Workshop structure",
+    "text": "Workshop structure\n\nMy turn: Lecture segments + live coding\nYour Turn: Practice exercises for you"
   },
   {
-    "objectID": "05-css.html#layout---border",
-    "href": "05-css.html#layout---border",
+    "objectID": "01-introduction.html#how-to-get-help",
+    "href": "01-introduction.html#how-to-get-help",
     "title": "Quarto Websites Workshop",
-    "section": "Layout - border",
-    "text": "Layout - border\nAre styled as\n\n\nh2 {\n  border: 2px solid #32a1ce;\n}\n\nh2 {\n  border-color: #32a1ce;\n  border-style: solid;\n  border-width: 2px;\n}\n\n\nhttps://developer.mozilla.org/en-US/docs/Web/CSS/border"
+    "section": "How to get help?",
+    "text": "How to get help?\n\nRaise your color post-it note\nAsk in Discord\nTalk to us during breaks or your-turns"
   },
   {
-    "objectID": "05-css.html#layout---margin",
-    "href": "05-css.html#layout---margin",
-    "title": "Quarto Websites Workshop",
-    "section": "Layout - margin",
-    "text": "Layout - margin\nworks the same as padding\n\n\nh1 {\n  margin: 10px 20px 30px;\n}\n\nh1 {\n  margin-bottom: 30px;\n  margin-left: 20px;\n  margin-right: 20px;\n  margin-top: 10px;\n  }\n\n\nhttps://www.w3schools.com/css/css_margin.asp"
-  },
-  {
-    "objectID": "05-css.html#your-turn-4",
-    "href": "05-css.html#your-turn-4",
-    "title": "Quarto Websites Workshop",
-    "section": "Your turn",
-    "text": "Your turn\nContinue with element from before\n\nChange the 4 values of margin and see what happens"
-  },
-  {
-    "objectID": "05-css.html#css-grid",
-    "href": "05-css.html#css-grid",
-    "title": "Quarto Websites Workshop",
-    "section": "CSS grid",
-    "text": "CSS grid\n\n\nSlightly outside scope, but is useful to know that it exists\n\nElements are styled as columns and rows\n\nA complete Guide to CSS Grid\nCSS Grid Generator"
-  },
-  {
-    "objectID": "05-css.html#css-flexbox",
-    "href": "05-css.html#css-flexbox",
-    "title": "Quarto Websites Workshop",
-    "section": "CSS flexbox",
-    "text": "CSS flexbox\nSlightly outside scope, but is useful to know that it exists\n\nA flex container expands items to fill available free space or shrinks them to prevent overflow.\n\nA complete Guide to Flexbox"
-  },
-  {
-    "objectID": "05-css.html#absolute-positioning",
-    "href": "05-css.html#absolute-positioning",
-    "title": "Quarto Websites Workshop",
-    "section": "Absolute positioning",
-    "text": "Absolute positioning\nSetting\n\nposition: relative; to parent\nposition: absolute; to child\n\nthen set location using top, left, right, and bottom\n&lt;div style=\"position: relative;\"&gt;\n  &lt;img style=\"position: absolute; left: 10%; top: 25%;\"&gt;\n&lt;/div&gt;\nCan be nice to use, but can be an anti-pattern if used too much"
-  },
-  {
-    "objectID": "05-css.html#centering-in-css",
-    "href": "05-css.html#centering-in-css",
-    "title": "Quarto Websites Workshop",
-    "section": "Centering in CSS",
-    "text": "Centering in CSS\nA common joke in programming\nHas been solved for a while\nhttp://howtocenterincss.com/"
-  },
-  {
-    "objectID": "05-css.html#what-is-sassscss",
-    "href": "05-css.html#what-is-sassscss",
-    "title": "Quarto Websites Workshop",
-    "section": "What is SASS/SCSS",
-    "text": "What is SASS/SCSS\nSASS (CSS with superpowers), is an extension of CSS\nSCSS is one of the syntaxes, the one we will use\n\nhttps://sass-lang.com/"
-  },
-  {
-    "objectID": "05-css.html#why-use-sass",
-    "href": "05-css.html#why-use-sass",
-    "title": "Quarto Websites Workshop",
-    "section": "Why use SASS?",
-    "text": "Why use SASS?\n\nCSS Compatible\nFeature Rich\nMature\n\n\nhttps://sass-lang.com/"
-  },
-  {
-    "objectID": "05-css.html#why-use-sass-1",
-    "href": "05-css.html#why-use-sass-1",
-    "title": "Quarto Websites Workshop",
-    "section": "Why use SASS?",
-    "text": "Why use SASS?\nCSS but with variables, nested rules, mixins, functions and more\n\n\nthe SCSS file will compile to CSS which browsers understand\nQuarto will do all of this for you"
-  },
-  {
-    "objectID": "05-css.html#sass-variables",
-    "href": "05-css.html#sass-variables",
-    "title": "Quarto Websites Workshop",
-    "section": "SASS variables",
-    "text": "SASS variables\nvariables (much like in R and Python) are a way to store a value to use later, done to reduce repetition\n\n\nusing the syntax: $variable-name: value;\n\n\nh2 {\n  color: #32a1ce;\n}\n\n$favorite-blue: #32a1ce;\n\nh2 {\n  color: $favorite-blue;\n}"
-  },
-  {
-    "objectID": "05-css.html#your-turn-5",
-    "href": "05-css.html#your-turn-5",
-    "title": "Quarto Websites Workshop",
-    "section": "Your Turn",
-    "text": "Your Turn\n-Open styles.scss and\n\nuse a SASS variable to define h1 and h2 colors\nconsider what other things we could use variables for"
-  },
-  {
-    "objectID": "05-css.html#sass-nested-rules",
-    "href": "05-css.html#sass-nested-rules",
-    "title": "Quarto Websites Workshop",
-    "section": "SASS nested rules",
-    "text": "SASS nested rules\nsyntactic way to organize your style sheets\n\n\nh2 {\n  color: #32a1ce;\n\n  a {\n    color: #055778;\n  }\n}\n\nh2 {\n  color: #32a1ce;\n}\n\nh2 a {\n  color: #055778;\n}\n\nCan be a even better improvement wth the right IDE settings\n\nhttps://sass-lang.com/documentation/style-rules/#nesting"
-  },
-  {
-    "objectID": "05-css.html#sass-nested-rules-1",
-    "href": "05-css.html#sass-nested-rules-1",
-    "title": "Quarto Websites Workshop",
-    "section": "SASS nested rules",
-    "text": "SASS nested rules\nSelector Combinators works too\n\n\nh2 {\n  color: #32a1ce;\n\n  &gt; a {\n    color: #055778;\n  }\n}\n\nh2 {\n  color: #32a1ce;\n}\n\nh2 &gt; a {\n  color: #055778;\n}\n\n\nhttps://sass-lang.com/documentation/style-rules/#nesting"
-  },
-  {
-    "objectID": "05-css.html#sass-nested-rules-2",
-    "href": "05-css.html#sass-nested-rules-2",
-    "title": "Quarto Websites Workshop",
-    "section": "SASS nested rules",
-    "text": "SASS nested rules\nAdd organization to styling\n.speech {\n  background-color: $theme-grey;\n  padding: 1em;\n  margin-bottom: 1em;\n  border-radius: 15px;\n  border-style: solid;\n  border-width: 5px;\n\n  img {\n    margin-bottom: -0.5em;\n    padding-right: 0.5em;\n    transform: scaleX(-1);\n  }\n\n  &.right {\n    text-align: right;\n\n\n    img {\n      padding-left: 0.5em;\n      transform: scaleX(1);\n    }\n  }\n\n  &.pink {\n    background-color: $theme-pink;\n    border-color: darken($theme-pink, 20%);\n  }\n  &.brown {\n    background-color: $theme-brown;\n    border-color: darken($theme-brown, 20%);\n  }\n  &.blue {\n    background-color: $theme-blue;\n    border-color: darken($theme-blue, 20%);\n  }\n  &.purple {\n    background-color: $theme-purple;\n    border-color: darken($theme-purple, 20%);\n  }\n}\n\nhttps://sass-lang.com/documentation/style-rules/#nesting"
-  },
-  {
-    "objectID": "05-css.html#your-turn-6",
-    "href": "05-css.html#your-turn-6",
-    "title": "Quarto Websites Workshop",
-    "section": "Your Turn",
-    "text": "Your Turn\n-Open styles.scss and\n\nrewrite your existing styles to use nested rules"
-  },
-  {
-    "objectID": "05-css.html#sass-mixins",
-    "href": "05-css.html#sass-mixins",
-    "title": "Quarto Websites Workshop",
-    "section": "SASS mixins",
-    "text": "SASS mixins\nAvoid duplication of style\n\n\n@mixin padding-small {\n  padding-bottom: 10px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n}\n\nh2 {\n  @include padding-small;\n  color: #32a1ce;\n}\n\nh3 {\n  @include padding-small;\n  color: #32cebc;\n}\n\nh4 {\n  @include padding-small;\n  color: #83ce32;\n}\n\nh2 {\n  padding-bottom: 10px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n  color: #32a1ce;\n}\n\nh3 {\n  padding-bottom: 10px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n  color: #32cebc;\n}\n\nh4 {\n  padding-bottom: 10px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n  color: #83ce32;\n}\n\n\nhttps://sass-lang.com/documentation/at-rules/mixin/"
-  },
-  {
-    "objectID": "05-css.html#your-turn-7",
-    "href": "05-css.html#your-turn-7",
-    "title": "Quarto Websites Workshop",
-    "section": "Your Turn",
-    "text": "Your Turn\n-Open styles.scss and\n\nuse a SASS mixins to reduce complexity in your styles"
-  },
-  {
-    "objectID": "05-css.html#sass-functions",
-    "href": "05-css.html#sass-functions",
-    "title": "Quarto Websites Workshop",
-    "section": "SASS functions",
-    "text": "SASS functions\nMany different built-in functions\n\n\n$favorite-blue: #32a1ce;\n\nh2 {\n  color: $favorite-blue;\n\n  &gt; a {\n    color: darken($favorite-blue);\n  }\n}\n\nh2 {\n  color: #32a1ce;\n}\n\nh2 &gt; a {\n  color: #055778;\n}\n\n\nhttps://sass-lang.com/documentation/modules/"
-  },
-  {
-    "objectID": "05-css.html#your-turn-8",
-    "href": "05-css.html#your-turn-8",
-    "title": "Quarto Websites Workshop",
-    "section": "Your Turn",
-    "text": "Your Turn\n-Open styles.scss and\n\nuse a SASS color function to make the colors of h1 and h2 different"
-  },
-  {
-    "objectID": "05-css.html#design-principles",
-    "href": "05-css.html#design-principles",
-    "title": "Quarto Websites Workshop",
-    "section": "Design principles",
-    "text": "Design principles\nWe will assume you have good content, and it is ordered appropriately with different pages and navigation\n\n\nWhat principles can we employ to make the most out of your website\n\n\n\nIf the user thinks “I wonder which button to click”, something bad happened"
-  },
-  {
-    "objectID": "05-css.html#what-is-its-purpose",
-    "href": "05-css.html#what-is-its-purpose",
-    "title": "Quarto Websites Workshop",
-    "section": "What is its purpose?",
-    "text": "What is its purpose?\nWhen designing a website we have to keep the audience in mind\nIt all depends on the audience and how you want them to interact with it\n\n\nacademic websites will be different than business sites\n\n\n\n\n\nAcademic\nInformation\n\nBusiness\nCall to action"
-  },
-  {
-    "objectID": "05-css.html#hicks-law",
-    "href": "05-css.html#hicks-law",
-    "title": "Quarto Websites Workshop",
-    "section": "Hick’s Law",
-    "text": "Hick’s Law\n\nEvery additional choice increases the time required to make a decision.\n\n\n\nA reminder to keep it simple\nMake it easy for your users to find what they want"
-  },
-  {
-    "objectID": "05-css.html#readding-patterns",
-    "href": "05-css.html#readding-patterns",
-    "title": "Quarto Websites Workshop",
-    "section": "Readding Patterns",
-    "text": "Readding Patterns\n\n\nF-shaped and Z-shaped\n\nMake sure all content follows a natural order"
-  },
-  {
-    "objectID": "05-css.html#readding-patterns---headers-and-footers",
-    "href": "05-css.html#readding-patterns---headers-and-footers",
-    "title": "Quarto Websites Workshop",
-    "section": "Readding Patterns - headers and footers",
-    "text": "Readding Patterns - headers and footers\nDiscussion:\nKnowing what we know now, what elements are good to place in the header and footer?"
-  },
-  {
-    "objectID": "05-css.html#negative-space",
-    "href": "05-css.html#negative-space",
-    "title": "Quarto Websites Workshop",
-    "section": "Negative Space",
-    "text": "Negative Space\nYou don’t need to fill all the screen real estate\nwe typically also have a limited text width for ease of reading"
-  },
-  {
-    "objectID": "05-css.html#negative-space-1",
-    "href": "05-css.html#negative-space-1",
-    "title": "Quarto Websites Workshop",
-    "section": "Negative Space",
-    "text": "Negative Space"
-  },
-  {
-    "objectID": "05-css.html#negative-space-2",
-    "href": "05-css.html#negative-space-2",
-    "title": "Quarto Websites Workshop",
-    "section": "Negative Space",
-    "text": "Negative Space"
-  },
-  {
-    "objectID": "05-css.html#consistent-design",
-    "href": "05-css.html#consistent-design",
-    "title": "Quarto Websites Workshop",
-    "section": "Consistent Design",
-    "text": "Consistent Design\nWe look at similarities and differences, if an element looks different than the rest, we are going to assume that it matters\nusing principled styling will alleviate many of these problems"
-  },
-  {
-    "objectID": "05-css.html#choosing-colors",
-    "href": "05-css.html#choosing-colors",
-    "title": "Quarto Websites Workshop",
-    "section": "Choosing colors",
-    "text": "Choosing colors\nThe colors can come from a lot of different places\n\ncorporate guidelines\nyou\nfrom online inspiration (Pinterest)"
-  },
-  {
-    "objectID": "05-css.html#setting-up-a-color-theme",
-    "href": "05-css.html#setting-up-a-color-theme",
-    "title": "Quarto Websites Workshop",
-    "section": "Setting up a color theme",
-    "text": "Setting up a color theme\nWe can create a color palette in SASS by using a set of environment variables.\n$theme-white: #FFFFFF;\n$theme-black: #222222;\n$theme-blue: #5538f8;\n$theme-red: #df4747;\nThese will then be used throughout the\n$link-color: $theme-blue;\n\n$$sidebar-hl: lighten($theme-blue, 0.5);"
-  },
-  {
-    "objectID": "05-css.html#your-turn-9",
-    "href": "05-css.html#your-turn-9",
-    "title": "Quarto Websites Workshop",
-    "section": "Your turn",
-    "text": "Your turn\nOpen styles.scss then\n\nfind a color theme\nadd colors as SASS variables\nUse SASS variables"
-  },
-  {
-    "objectID": "05-css.html#using-color-on-websites",
-    "href": "05-css.html#using-color-on-websites",
-    "title": "Quarto Websites Workshop",
-    "section": "Using color on websites",
-    "text": "Using color on websites\nBe mindful when using colors\n60-30-10 rule\n60% - Primary color\n\ntypically background\n\n30% - Secondary color\n\ntext and elements\n\n10% - Accent color\n\nhighlights, buttons"
-  },
-  {
-    "objectID": "05-css.html#deviations",
-    "href": "05-css.html#deviations",
-    "title": "Quarto Websites Workshop",
-    "section": "60-30-10 deviations",
-    "text": "60-30-10 deviations\nAs with all things, this is not a hard and fast rule.\nyou can use fewer or more colors\n\nhttps://codegoda.io/\n\nnotice that they use their colors carefully and consistently"
-  },
-  {
-    "objectID": "05-css.html#choosing-fonts",
-    "href": "05-css.html#choosing-fonts",
-    "title": "Quarto Websites Workshop",
-    "section": "Choosing fonts",
-    "text": "Choosing fonts\nUse readable and web-friendly fonts - common fonts are by definition readable as they are familiar - fonts are designed to be used in different areas, optimize for web fonts - don’t pick too many fonts"
-  },
-  {
-    "objectID": "05-css.html#maintaining-accessibility",
-    "href": "05-css.html#maintaining-accessibility",
-    "title": "Quarto Websites Workshop",
-    "section": "Maintaining accessibility",
-    "text": "Maintaining accessibility\nWhat is web accessibility?\n\nWeb accessibility is the practice of creating websites that are usable for all visitors regardless of a disability or impairment. To fulfill web accessibility best practices, you must create a site that complies with certain design and development guidelines that ensure your site is set up to accommodate folks with disabilities. This ensures that all users have the same or similar experience regardless of ability.\n\n\nhttps://blog.hubspot.com/website/web-accessibility"
-  },
-  {
-    "objectID": "05-css.html#maintaining-accessibility-1",
-    "href": "05-css.html#maintaining-accessibility-1",
-    "title": "Quarto Websites Workshop",
-    "section": "Maintaining accessibility",
-    "text": "Maintaining accessibility\nHow do we do it?\n\nAvoid blinking/flashing content\nMaintain high color contrast when needed\n\nhttps://colourcontrast.cc/\ncolor contrast varies based on font size\n\nAdd alt-text to elements\nEnsure complete functionality via the keyboard\n\nshould be handled by Quarto"
-  },
-  {
-    "objectID": "05-css.html#your-turn-10",
-    "href": "05-css.html#your-turn-10",
-    "title": "Quarto Websites Workshop",
-    "section": "Your turn",
-    "text": "Your turn\nOpen styles.scss then\n\nmake temporary changes to the colors, sizes and fonts that would go against accessibility advice to see how the experience gets worse"
+    "objectID": "LICENSE.html#creative-commons-attribution-sharealike-4.0-international-public-license",
+    "href": "LICENSE.html#creative-commons-attribution-sharealike-4.0-international-public-license",
+    "title": "Attribution-ShareAlike 4.0 International",
+    "section": "Creative Commons Attribution-ShareAlike 4.0 International Public License",
+    "text": "Creative Commons Attribution-ShareAlike 4.0 International Public License\nBy exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-ShareAlike 4.0 International Public License (“Public License”). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.\n\nSection 1 – Definitions.\n\nAdapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.\nAdapter’s License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.\nBY-SA Compatible License means a license listed at creativecommons.org/compatiblelicenses, approved by Creative Commons as essentially the equivalent of this Public License.\nCopyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.\nEffective Technological Measures means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.\nExceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.\nLicense Elements means the license attributes listed in the name of a Creative Commons Public License. The License Elements of this Public License are Attribution and ShareAlike.\nLicensed Material means the artistic or literary work, database, or other material to which the Licensor applied this Public License.\nLicensed Rights means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.\nLicensor means the individual(s) or entity(ies) granting rights under this Public License.\nShare means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.\nSui Generis Database Rights means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.\nYou means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.\n\n\n\nSection 2 – Scope.\n\nLicense grant.\n\nSubject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:\nA. reproduce and Share the Licensed Material, in whole or in part; and\nB. produce, reproduce, and Share Adapted Material.\nExceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.\nTerm. The term of this Public License is specified in Section 6(a).\nMedia and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a)(4) never produces Adapted Material.\nDownstream recipients.\nA. Offer from the Licensor – Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.\nB. __Additional offer from the Licensor – Adapted Material. Every recipient of Adapted Material from You automatically receives an offer from the Licensor to exercise the Licensed Rights in the Adapted Material under the conditions of the Adapter’s License You apply.\nC. No downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.\nNo endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).\n\nOther rights.\n\nMoral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.\nPatent and trademark rights are not licensed under this Public License.\nTo the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties.\n\n\n\n\nSection 3 – License Conditions.\nYour exercise of the Licensed Rights is expressly made subject to the following conditions.\n\nAttribution.\n\nIf You Share the Licensed Material (including in modified form), You must:\nA. retain the following if it is supplied by the Licensor with the Licensed Material:\n\nidentification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);\na copyright notice;\na notice that refers to this Public License;\na notice that refers to the disclaimer of warranties;\na URI or hyperlink to the Licensed Material to the extent reasonably practicable;\n\nB. indicate if You modified the Licensed Material and retain an indication of any previous modifications; and\nC. indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.\nYou may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.\nIf requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.\n\nShareAlike.\n\nIn addition to the conditions in Section 3(a), if You Share Adapted Material You produce, the following conditions also apply.\n\nThe Adapter’s License You apply must be a Creative Commons license with the same License Elements, this version or later, or a BY-SA Compatible License.\nYou must include the text of, or the URI or hyperlink to, the Adapter’s License You apply. You may satisfy this condition in any reasonable manner based on the medium, means, and context in which You Share Adapted Material.\nYou may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, Adapted Material that restrict exercise of the rights granted under the Adapter’s License You apply.\n\n\n\nSection 4 – Sui Generis Database Rights.\nWhere the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:\n\nfor the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database;\nif You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material, including for purposes of Section 3(b); and\nYou must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.\n\nFor the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.\n\n\nSection 5 – Disclaimer of Warranties and Limitation of Liability.\n\nUnless otherwise separately undertaken by the Licensor, to the extent possible, the Licensor offers the Licensed Material as-is and as-available, and makes no representations or warranties of any kind concerning the Licensed Material, whether express, implied, statutory, or other. This includes, without limitation, warranties of title, merchantability, fitness for a particular purpose, non-infringement, absence of latent or other defects, accuracy, or the presence or absence of errors, whether or not known or discoverable. Where disclaimers of warranties are not allowed in full or in part, this disclaimer may not apply to You.\nTo the extent possible, in no event will the Licensor be liable to You on any legal theory (including, without limitation, negligence) or otherwise for any direct, special, indirect, incidental, consequential, punitive, exemplary, or other losses, costs, expenses, or damages arising out of this Public License or use of the Licensed Material, even if the Licensor has been advised of the possibility of such losses, costs, expenses, or damages. Where a limitation of liability is not allowed in full or in part, this limitation may not apply to You.\nThe disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.\n\n\n\nSection 6 – Term and Termination.\n\nThis Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.\nWhere Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:\n\nautomatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or\nupon express reinstatement by the Licensor.\n\nFor the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.\nFor the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.\nSections 1, 5, 6, 7, and 8 survive termination of this Public License.\n\n\n\nSection 7 – Other Terms and Conditions.\n\nThe Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.\nAny arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.t stated herein are separate from and independent of the terms and conditions of this Public License.\n\n\n\nSection 8 – Interpretation.\n\nFor the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.\nTo the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.\nNo term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.\nNothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.\n\n\nCreative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one of its public licenses to material it publishes and in those instances will be considered the “Licensor.” Except for the limited purpose of indicating that material is shared under a Creative Commons public license or as otherwise permitted by the Creative Commons policies published at creativecommons.org/policies, Creative Commons does not authorize the use of the trademark “Creative Commons” or any other trademark or logo of Creative Commons without its prior written consent including, without limitation, in connection with any unauthorized modifications to any of its public licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the avoidance of doubt, this paragraph does not form part of the public licenses.\nCreative Commons may be contacted at creativecommons.org"
   },
   {
     "objectID": "04-navigation.html#before-we-proceed",
@@ -662,7 +410,7 @@
     "href": "04-navigation.html#index.html-is-special",
     "title": "Quarto Websites Workshop",
     "section": "index.html is special",
-    "text": "index.html is special\n\n\nFile location\nindex.qmd\ntalks/index.qmd\n\nURL\n{ site url }\n{ site url }/talks\n\nindex.qmd (or .md, or .ipynb) -&gt; index.html\nindex.html acts like a default page for the site or directory."
+    "text": "index.html is special\n\n\nFile location\nindex.qmd\ntalks/index.qmd\n\nURL\n{ site url }\n{ site url }/talks\n\n\nindex.qmd (or .md, or .ipynb) -&gt; index.html\nindex.html acts like a default page for the site or directory."
   },
   {
     "objectID": "04-navigation.html#you-arent-limited-to-.html",
@@ -690,7 +438,7 @@
     "href": "04-navigation.html#in-text-links",
     "title": "Quarto Websites Workshop",
     "section": "In-text Links",
-    "text": "In-text Links\n\n\nUse relative paths\nUse .qmd rather than .html\n\n\n\nindex.qmd\n\nI occasionally give [talks](talks.qmd).\n\nYou might like to look at \nmy projects [projects](projects/)\n\n\n\n\n\n\nUse / to refer to site root\n\n\n\nprojects/index.qmd\n\nYou might also be interested \nin my [talks](/talks.qmd) \n\n\n\nhttps://quarto.org/docs/websites/#linking"
+    "text": "In-text Links\n\n\nUse relative paths\nUse .qmd rather than .html\n\n\n\nindex.qmd\n\nI occasionally give [talks](talks.qmd).\n\nYou might like to look at \nmy projects [projects](projects/)\n\n\n\n\n\n\n\nUse / to refer to site root\n\n\n\nprojects/index.qmd\n\nYou might also be interested \nin my [talks](/talks.qmd) \n\n\n\n\nhttps://quarto.org/docs/websites/#linking"
   },
   {
     "objectID": "04-navigation.html#navigation-bar",
@@ -711,21 +459,21 @@
     "href": "04-navigation.html#navigation-items",
     "title": "Quarto Websites Workshop",
     "section": "Navigation Items",
-    "text": "Navigation Items\n\n\nA path:\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    right:\n      - talks.qmd\n\n\nA nav item object:\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    right:\n      - href: talks.qmd\n        text: Speaking\n        icon: megaphone\n\n\nIf you don’t have text, add aria-label\nOptions for icon: Bootstrap Icons"
+    "text": "Navigation Items\n\n\nA path:\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    right:\n      - talks.qmd\n\n\nA nav item object:\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    right:\n      - href: talks.qmd\n        text: Speaking\n        icon: megaphone\n\n\n\nIf you don’t have text, add aria-label\nOptions for icon: Bootstrap Icons"
   },
   {
     "objectID": "04-navigation.html#navigation-bar-links",
     "href": "04-navigation.html#navigation-bar-links",
     "title": "Quarto Websites Workshop",
     "section": "Navigation Bar Links",
-    "text": "Navigation Bar Links\nUse navigation items in left, right and tools\n\n\n\n\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    right: \n      - talks.qmd\n    left:\n      - text: Home\n        href: index.qmd\n        icon: house-door-fill\n    tools: \n      - icon: github\n        href: https://github.com/cwickham\n\n\n\nhttps://quarto.org/docs/websites/website-navigation.html#top-navigation"
+    "text": "Navigation Bar Links\nUse navigation items in left, right and tools\n\n\n\n\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    right: \n      - talks.qmd\n    left:\n      - text: Home\n        href: index.qmd\n        icon: house-door-fill\n    tools: \n      - icon: github\n        href: https://github.com/cwickham\n\n\n\n\nhttps://quarto.org/docs/websites/website-navigation.html#top-navigation"
   },
   {
     "objectID": "04-navigation.html#navigation-bar-options",
     "href": "04-navigation.html#navigation-bar-options",
     "title": "Quarto Websites Workshop",
     "section": "Navigation Bar Options",
-    "text": "Navigation Bar Options\nOther customization: title, logo, search\n\n\n\n\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    title: cwick.co.nz \n    logo: logo.png\n    search: true\n    right: \n      - talks.qmd\n    left:\n      - text: Home\n        href: index.qmd\n        icon: house-door-fill\n    tools: \n      - icon: github\n        href: https://github.com/cwickham\n\n\n\nhttps://quarto.org/docs/websites/website-navigation.html#top-navigation"
+    "text": "Navigation Bar Options\nOther customization: title, logo, search\n\n\n\n\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    title: cwick.co.nz \n    logo: logo.png\n    search: true\n    right: \n      - talks.qmd\n    left:\n      - text: Home\n        href: index.qmd\n        icon: house-door-fill\n    tools: \n      - icon: github\n        href: https://github.com/cwickham\n\n\n\n\nhttps://quarto.org/docs/websites/website-navigation.html#top-navigation"
   },
   {
     "objectID": "04-navigation.html#your-turn-2",
@@ -868,249 +616,494 @@
     "text": "Your Turn\nWork on your site: add pages, edit navigation, add/edit content.\nWe are here to help. Publish a new version before lunch.\n\n  \n    −\n    +\n \n 10:00"
   },
   {
-    "objectID": "LICENSE.html#creative-commons-attribution-sharealike-4.0-international-public-license",
-    "href": "LICENSE.html#creative-commons-attribution-sharealike-4.0-international-public-license",
-    "title": "Attribution-ShareAlike 4.0 International",
-    "section": "Creative Commons Attribution-ShareAlike 4.0 International Public License",
-    "text": "Creative Commons Attribution-ShareAlike 4.0 International Public License\nBy exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-ShareAlike 4.0 International Public License (“Public License”). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.\n\nSection 1 – Definitions.\n\nAdapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.\nAdapter’s License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.\nBY-SA Compatible License means a license listed at creativecommons.org/compatiblelicenses, approved by Creative Commons as essentially the equivalent of this Public License.\nCopyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.\nEffective Technological Measures means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.\nExceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.\nLicense Elements means the license attributes listed in the name of a Creative Commons Public License. The License Elements of this Public License are Attribution and ShareAlike.\nLicensed Material means the artistic or literary work, database, or other material to which the Licensor applied this Public License.\nLicensed Rights means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.\nLicensor means the individual(s) or entity(ies) granting rights under this Public License.\nShare means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.\nSui Generis Database Rights means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.\nYou means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.\n\n\n\nSection 2 – Scope.\n\nLicense grant.\n\nSubject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:\nA. reproduce and Share the Licensed Material, in whole or in part; and\nB. produce, reproduce, and Share Adapted Material.\nExceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.\nTerm. The term of this Public License is specified in Section 6(a).\nMedia and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a)(4) never produces Adapted Material.\nDownstream recipients.\nA. Offer from the Licensor – Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.\nB. __Additional offer from the Licensor – Adapted Material. Every recipient of Adapted Material from You automatically receives an offer from the Licensor to exercise the Licensed Rights in the Adapted Material under the conditions of the Adapter’s License You apply.\nC. No downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.\nNo endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).\n\nOther rights.\n\nMoral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.\nPatent and trademark rights are not licensed under this Public License.\nTo the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties.\n\n\n\n\nSection 3 – License Conditions.\nYour exercise of the Licensed Rights is expressly made subject to the following conditions.\n\nAttribution.\n\nIf You Share the Licensed Material (including in modified form), You must:\nA. retain the following if it is supplied by the Licensor with the Licensed Material:\n\nidentification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);\na copyright notice;\na notice that refers to this Public License;\na notice that refers to the disclaimer of warranties;\na URI or hyperlink to the Licensed Material to the extent reasonably practicable;\n\nB. indicate if You modified the Licensed Material and retain an indication of any previous modifications; and\nC. indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.\nYou may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.\nIf requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.\n\nShareAlike.\n\nIn addition to the conditions in Section 3(a), if You Share Adapted Material You produce, the following conditions also apply.\n\nThe Adapter’s License You apply must be a Creative Commons license with the same License Elements, this version or later, or a BY-SA Compatible License.\nYou must include the text of, or the URI or hyperlink to, the Adapter’s License You apply. You may satisfy this condition in any reasonable manner based on the medium, means, and context in which You Share Adapted Material.\nYou may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, Adapted Material that restrict exercise of the rights granted under the Adapter’s License You apply.\n\n\n\nSection 4 – Sui Generis Database Rights.\nWhere the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:\n\nfor the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database;\nif You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material, including for purposes of Section 3(b); and\nYou must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.\n\nFor the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.\n\n\nSection 5 – Disclaimer of Warranties and Limitation of Liability.\n\nUnless otherwise separately undertaken by the Licensor, to the extent possible, the Licensor offers the Licensed Material as-is and as-available, and makes no representations or warranties of any kind concerning the Licensed Material, whether express, implied, statutory, or other. This includes, without limitation, warranties of title, merchantability, fitness for a particular purpose, non-infringement, absence of latent or other defects, accuracy, or the presence or absence of errors, whether or not known or discoverable. Where disclaimers of warranties are not allowed in full or in part, this disclaimer may not apply to You.\nTo the extent possible, in no event will the Licensor be liable to You on any legal theory (including, without limitation, negligence) or otherwise for any direct, special, indirect, incidental, consequential, punitive, exemplary, or other losses, costs, expenses, or damages arising out of this Public License or use of the Licensed Material, even if the Licensor has been advised of the possibility of such losses, costs, expenses, or damages. Where a limitation of liability is not allowed in full or in part, this limitation may not apply to You.\nThe disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.\n\n\n\nSection 6 – Term and Termination.\n\nThis Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.\nWhere Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:\n\nautomatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or\nupon express reinstatement by the Licensor.\n\nFor the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.\nFor the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.\nSections 1, 5, 6, 7, and 8 survive termination of this Public License.\n\n\n\nSection 7 – Other Terms and Conditions.\n\nThe Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.\nAny arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.t stated herein are separate from and independent of the terms and conditions of this Public License.\n\n\n\nSection 8 – Interpretation.\n\nFor the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.\nTo the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.\nNo term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.\nNothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.\n\n\nCreative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one of its public licenses to material it publishes and in those instances will be considered the “Licensor.” Except for the limited purpose of indicating that material is shared under a Creative Commons public license or as otherwise permitted by the Creative Commons policies published at creativecommons.org/policies, Creative Commons does not authorize the use of the trademark “Creative Commons” or any other trademark or logo of Creative Commons without its prior written consent including, without limitation, in connection with any unauthorized modifications to any of its public licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the avoidance of doubt, this paragraph does not form part of the public licenses.\nCreative Commons may be contacted at creativecommons.org"
+    "objectID": "05-css.html#what-is-css",
+    "href": "05-css.html#what-is-css",
+    "title": "Quarto Websites Workshop",
+    "section": "what is CSS",
+    "text": "what is CSS\n\nCascading Style Sheets is a style sheet language used for specifying the presentation and styling of a document"
   },
   {
-    "objectID": "01-introduction.html#quarto-websites-welcome",
-    "href": "01-introduction.html#quarto-websites-welcome",
+    "objectID": "05-css.html#html-syntax-in-5-minutes",
+    "href": "05-css.html#html-syntax-in-5-minutes",
     "title": "Quarto Websites Workshop",
-    "section": "Quarto Websites: Welcome!",
-    "text": "Quarto Websites: Welcome!\n\n\nWiFi: Posit Conf 2024 Password: conf2024\nFind the materials at: pos.it/websites_24\nVerify the pre-work steps (details 👆):\n\nQuarto version 1.5\nYour IDE of choice\nAccount at Quarto Pub (if you want to publish)\nJoin the discord: #workshop-quarto-websites"
+    "section": "HTML syntax in 5 minutes",
+    "text": "HTML syntax in 5 minutes\nHTML (HyperText Markup Language) is built on tags like\n&lt;html&gt;&lt;/html&gt; and &lt;div&gt;&lt;/div&gt;\nTags can be nested &lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;\n&lt;div&gt;\n  &lt;div&gt;&lt;/div&gt;\n  &lt;div&gt;&lt;/div&gt;\n&lt;/div&gt;"
   },
   {
-    "objectID": "01-introduction.html#housekeeping",
-    "href": "01-introduction.html#housekeeping",
+    "objectID": "05-css.html#html-structure",
+    "href": "05-css.html#html-structure",
     "title": "Quarto Websites Workshop",
-    "section": "Housekeeping",
-    "text": "Housekeeping\n\nThere are gender-neutral bathrooms located on levels 3, 4, 5, 6 & 7\nThere is a meditation/prayer room located in 503. Available Mon & Tues 7am - 7pm, and Wed 7am - 5pm.\nThe lactation room is located in 509, same timings as above.\nParticipants who do not wish to be photographed have red lanyards; please note everyone’s lanyard colors before taking a photo and respect their choices.\nThe Code of Conduct can be found at https://posit.co/code-of-conduct. Please review carefully. You can report Code of Conduct violations in person, by email, or by phone. Please see the policy linked above for contact information."
+    "section": "HTML structure",
+    "text": "HTML structure\n\n\nIs built around 3 main tags:\n\n&lt;html&gt;\n&lt;head&gt;\n&lt;body&gt;\n\n\n&lt;!DOCTYPE html&gt; \n&lt;html&gt;\n  &lt;head&gt;\n    &lt;link rel=\"stylesheet\" href=\"styles.css\"&gt;\n  &lt;/head&gt;\n\n  &lt;body&gt;\n    &lt;h1&gt;\n      I'm a header\n    &lt;/h1&gt;\n    &lt;p&gt;\n      Here is some text in a paragraph\n    &lt;/p&gt;\n  &lt;/body&gt;\n&lt;/html&gt;"
   },
   {
-    "objectID": "01-introduction.html#breaks",
-    "href": "01-introduction.html#breaks",
+    "objectID": "05-css.html#html-head",
+    "href": "05-css.html#html-head",
     "title": "Quarto Websites Workshop",
-    "section": "Breaks",
-    "text": "Breaks\nFull schedule at: pos.it/websites_24\n\n\n\nTime\n\n\n\n\n\n10:30 - 11:00\nCoffee Break\n\n\n12:30 - 13:30\nLunch\n\n\n15:00 - 15:30\nCoffee Break\n\n\n17:00\nEND"
+    "section": "HTML head",
+    "text": "HTML head\ncontains:\n\nmeta information\nstyle sheets\nand sometimes scripts (mostly javascript)\n\n95% of this will be handled by Quarto for you"
   },
   {
-    "objectID": "01-introduction.html#about-us",
-    "href": "01-introduction.html#about-us",
+    "objectID": "05-css.html#html-body",
+    "href": "05-css.html#html-body",
     "title": "Quarto Websites Workshop",
-    "section": "About Us",
-    "text": "About Us\n\n\nCharlotte Wickham\n\nQuarto user for 2+ years\nQuarto website user for 1.5+ years\nStatistics + R background\n\n\nEmil Hvitfeldt\n\nQuarto user for 2+ years\nWritten some Quarto extensions\nR software engineer"
+    "section": "HTML body",
+    "text": "HTML body\n\nContains everything else"
   },
   {
-    "objectID": "01-introduction.html#about-you",
-    "href": "01-introduction.html#about-you",
+    "objectID": "05-css.html#common-html-tags",
+    "href": "05-css.html#common-html-tags",
     "title": "Quarto Websites Workshop",
-    "section": "About You",
-    "text": "About You\nYour Turn\nIntroduce yourself to your neighbors:\n\nName\nProfessional affiliation\nWhat do you use Quarto for?\n\n\n  \n    −\n    +\n \n 04:00"
+    "section": "Common HTML tags",
+    "text": "Common HTML tags\nHeaders\n&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;\nParagraph\n&lt;p&gt;\nlinks\n&lt;a&gt;\ngeneral div\n&lt;div&gt;\n\nHTML Element Reference - By Category"
   },
   {
-    "objectID": "01-introduction.html#meeting-you-where-you-are",
-    "href": "01-introduction.html#meeting-you-where-you-are",
+    "objectID": "05-css.html#html-attributes",
+    "href": "05-css.html#html-attributes",
     "title": "Quarto Websites Workshop",
-    "section": "Meeting you where you are",
-    "text": "Meeting you where you are\n\nYou’ve used Quarto for single documents\nYou are comfortable editing, saving and previewing files in your IDE\nYou want to build a website"
+    "section": "HTML attributes",
+    "text": "HTML attributes\nAll HTML elements can have attributes\nThey provide additional information about the elements\nAre always specified at the start-tag\nDone by using name-value pairs: name=\"value\"\n\n\nClasses and ids\n&lt;h1 class=\"title\" id=\"special-title\"&gt;\n\n\nImages source attribute\n&lt;img src=\"img_girl.jpg\"&gt;"
   },
   {
-    "objectID": "01-introduction.html#why-quarto-for-websites",
-    "href": "01-introduction.html#why-quarto-for-websites",
+    "objectID": "05-css.html#where-is-the-code-for-styling",
+    "href": "05-css.html#where-is-the-code-for-styling",
     "title": "Quarto Websites Workshop",
-    "section": "Why Quarto for Websites?",
-    "text": "Why Quarto for Websites?\n\nYou don’t need to learn anything new for page content\nYou get nice website features out of the box: GitHub links, social cards, navigation, etc.\nA lot of customization available via YAML options\nCustomize style as much (or as little) as you want"
+    "section": "Where is the code for styling?",
+    "text": "Where is the code for styling?\n\ninline style\n\n&lt;h1 style=\"color:red;\"&gt;Welcome to styling 101&lt;/h1&gt;\n\nstyle.css\n\nLoaded in &lt;head&gt;\n&lt;link rel=\"stylesheet\" href=\"my-awesome-style.css\"&gt;"
   },
   {
-    "objectID": "01-introduction.html#our-goal",
-    "href": "01-introduction.html#our-goal",
+    "objectID": "05-css.html#how-we-use-css",
+    "href": "05-css.html#how-we-use-css",
     "title": "Quarto Websites Workshop",
-    "section": "Our Goal",
-    "text": "Our Goal\n\nYou walk away with a website that reflects you both in content and style."
+    "section": "How we use CSS",
+    "text": "How we use CSS\nIn its simplest form, we need to define 2 things\n\n\n\nselectors\nWhat needs to be styled\n\n\n\n\nAttributes\nHow it should be styled"
   },
   {
-    "objectID": "01-introduction.html#our-goal-1",
-    "href": "01-introduction.html#our-goal-1",
+    "objectID": "05-css.html#selectors-1",
+    "href": "05-css.html#selectors-1",
     "title": "Quarto Websites Workshop",
-    "section": "Our Goal",
-    "text": "Our Goal\nAlong the way you’ll learn how to:\n\nUse a template to get started quickly\nCreate a landing page using about templates\nUse YAML options to customize the style of your website\nAdd navigational elements to help visitors find your content\nCustomize the appearance of your site with CSS and SCSS\nGenerate lists of content automatically with listings"
+    "section": "Selectors",
+    "text": "Selectors\nby tags\nh1 {\n\n}\nby class\n.important {\n\n}\nby id\n#title-text {\n\n}\n\nhttps://www.w3schools.com/cssref/css_selectors.php"
   },
   {
-    "objectID": "01-introduction.html#workshop-structure",
-    "href": "01-introduction.html#workshop-structure",
+    "objectID": "05-css.html#combining-selectors",
+    "href": "05-css.html#combining-selectors",
     "title": "Quarto Websites Workshop",
-    "section": "Workshop structure",
-    "text": "Workshop structure\n\nMy turn: Lecture segments + live coding\nYour Turn: Practice exercises for you"
+    "section": "Combining selectors",
+    "text": "Combining selectors\nAll h1 and all h2\nh1, h2 {\n\n}\nAll headers\nh1, h2, h3, h4, h5, h6 {\n\n}\n\nhttps://www.w3schools.com/cssref/css_selectors.php"
   },
   {
-    "objectID": "01-introduction.html#how-to-get-help",
-    "href": "01-introduction.html#how-to-get-help",
+    "objectID": "05-css.html#combining-selectors-1",
+    "href": "05-css.html#combining-selectors-1",
     "title": "Quarto Websites Workshop",
-    "section": "How to get help?",
-    "text": "How to get help?\n\nRaise your color post-it note\nAsk in Discord\nTalk to us during breaks or your-turns"
+    "section": "Combining selectors",
+    "text": "Combining selectors\nAll span in p\np span {\n\n}\nOnly &lt;span&gt;friend&lt;/span&gt; would be affected\n&lt;span&gt;Conversation&lt;/span&gt;\n&lt;p&gt;\nhello there my \n&lt;span&gt;friend&lt;/span&gt;\nhow are you doing\n&lt;/p&gt;\n\nhttps://www.w3schools.com/cssref/css_selectors.php"
   },
   {
-    "objectID": "03-style.html#we-have-a-website-and-we-are-happy-with-it",
-    "href": "03-style.html#we-have-a-website-and-we-are-happy-with-it",
+    "objectID": "05-css.html#combining-selectors-2",
+    "href": "05-css.html#combining-selectors-2",
     "title": "Quarto Websites Workshop",
-    "section": "We have a website and we are happy with it!",
-    "text": "We have a website and we are happy with it!\nTODO: insert fun celebratory image"
+    "section": "Combining selectors",
+    "text": "Combining selectors\nall h2 1 level deep in .happy\n.happy &gt; h2\nOnly the first would be affected\n&lt;div class=\"happy\"&gt;\n  &lt;h2&gt;header&lt;/h2&gt;\n  &lt;div&gt;\n    &lt;h2&gt;header&lt;/h2&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\nhttps://www.w3schools.com/cssref/css_selectors.php"
   },
   {
-    "objectID": "03-style.html#they-all-look-the-same",
-    "href": "03-style.html#they-all-look-the-same",
+    "objectID": "05-css.html#combining-selectors-3",
+    "href": "05-css.html#combining-selectors-3",
     "title": "Quarto Websites Workshop",
-    "section": "They all look the same",
-    "text": "They all look the same\nTODO: insert sad-ish image here\nTODO: add “BUT wait” caption as incremental effect"
+    "section": "Combining selectors",
+    "text": "Combining selectors\nall h2 elements with .happy class\nh2.happy\nOnly the second h2 would be affected\n&lt;div class=\"happy\"&gt;\n  &lt;h2&gt;header&lt;/h2&gt;\n  &lt;div&gt;\n    &lt;h2 class=\"happy\"&gt;header&lt;/h2&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\nhttps://www.w3schools.com/cssref/css_selectors.php"
   },
   {
-    "objectID": "03-style.html#styling-with-quarto",
-    "href": "03-style.html#styling-with-quarto",
+    "objectID": "05-css.html#your-turn",
+    "href": "05-css.html#your-turn",
     "title": "Quarto Websites Workshop",
-    "section": "Styling with Quarto",
-    "text": "Styling with Quarto\nthe task of styling websites follows the pattern of diminishing returns\n\nEach unit change to the style, will lead to fewer improvements in the results\n\nWe can take the reverse, and apply a few changes for maximum results"
+    "section": "Your turn",
+    "text": "Your turn\nOpen styles.scss file and do the following:\n\nChange styling of h1 and h2 elements\n\nat least change the color\n\nChange styling of text (p elements)\nChange styling of only the subtitle of the front page\nChange styling of buttons on front page\n\n\n  \n    −\n    +\n \n 05:00"
   },
   {
-    "objectID": "03-style.html#styling-using-yaml",
-    "href": "03-style.html#styling-using-yaml",
+    "objectID": "05-css.html#selectors-references",
+    "href": "05-css.html#selectors-references",
     "title": "Quarto Websites Workshop",
-    "section": "Styling using yaml",
-    "text": "Styling using yaml\nWith Quarto html output we have a number of ways to style the site\nA number of basic options allows us to change colors, fonts, and **sizes\n\nhttps://quarto.org/docs/output-formats/html-themes.html#basic-options"
+    "section": "Selectors References",
+    "text": "Selectors References\nAs with anything web related, there are tons of resources online\nhttps://www.w3schools.com/cssref/css_selectors.php\nhttps://www.w3schools.com/css/css_selectors.asp\nhttps://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors\nhttps://www.freecodecamp.org/news/css-selectors-cheat-sheet-for-beginners/\nhttps://www.w3.org/TR/CSS21/selector.html%23id-selectors"
   },
   {
-    "objectID": "03-style.html#colors-fonts-sizes",
-    "href": "03-style.html#colors-fonts-sizes",
+    "objectID": "05-css.html#pseudo-classes",
+    "href": "05-css.html#pseudo-classes",
     "title": "Quarto Websites Workshop",
-    "section": "colors, fonts, sizes",
-    "text": "colors, fonts, sizes\nTODO: diagram/picture of a web page, with relevant areas highlighted"
+    "section": "Pseudo-classes",
+    "text": "Pseudo-classes\nModifies existing classes\n\n\nUser action\n\n:hover\n:active\n\na.navbar:hover {\n  color: blue;\n}\n\na.navbar:active {\n  color: darkblue;\n}\n\n\nhttps://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes"
   },
   {
-    "objectID": "03-style.html#colors",
-    "href": "03-style.html#colors",
+    "objectID": "05-css.html#pseudo-classes---tree-bases",
+    "href": "05-css.html#pseudo-classes---tree-bases",
     "title": "Quarto Websites Workshop",
-    "section": "Colors",
-    "text": "Colors\n\n\nfontcolor\n\nThe main color for text on the site\n\n\n\nlinkcolor\n\nColor of the links\n\n\n\nbackgroundcolor\n\nBackground color of the whole site\n\n\n\nmonobackgroundcolor\n\nbackground for code chunks"
+    "section": "Pseudo-classes - Tree bases",
+    "text": "Pseudo-classes - Tree bases\nCan do math to style only some elements\n\n:first-child\n:nth-of-type\n\np:first-child {\n  border: 2px solid blue;\n}\n\np:nth-of-type(2n+1) {\n  border: 2px solid orange;\n}\n\nhttps://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes"
   },
   {
-    "objectID": "03-style.html#what-is-a-color",
-    "href": "03-style.html#what-is-a-color",
+    "objectID": "05-css.html#pseudo-classes---fancy-selectors",
+    "href": "05-css.html#pseudo-classes---fancy-selectors",
     "title": "Quarto Websites Workshop",
-    "section": "What is a color?",
-    "text": "What is a color?\nWe can specify colors in many different ways using CSS\n\nnamed colors such as orange and lightskyblue\nRGB Hexadecimal, such as #FFA500 and #87CEFA\nUsing a color space\n\nrgb(214, 122, 127)\nhsl(30deg 82% 43%)\nhwb(152deg 0% 58% / 70%)\n\nand more\n\n\nhttps://developer.mozilla.org/en-US/docs/Web/CSS/color"
+    "section": "Pseudo-classes - Fancy selectors",
+    "text": "Pseudo-classes - Fancy selectors\nOutside scope, but shows what can be done if you care to explore it\n\n:has()\n\n\nif h1 has a sibling h2 then set the bottom margin of h1 to 0.25rem\nh1:has(+ h2) {\n  margin-bottom: 0.25rem;\n}\n\n\nWhen the container has a child card hovered, select all the cards that aren’t hovered.\n.card-list:has(.card:hover) .card:not(:hover) {\n  filter: blur(4px)\n}\n\n\nhttps://bejamas.io/blog/learn-css-has-selector-by-examples-top-use-cases/"
   },
   {
-    "objectID": "03-style.html#colors-1",
-    "href": "03-style.html#colors-1",
+    "objectID": "05-css.html#your-turn-1",
+    "href": "05-css.html#your-turn-1",
     "title": "Quarto Websites Workshop",
-    "section": "Colors",
-    "text": "Colors\nTODO: show examples and before after"
+    "section": "Your turn",
+    "text": "Your turn\nOpen styles.scss file and do the following:\n\nFind an element that would benefit from having a pseudo-class\n\n:hover is a safe choice, but not the only one\n\nApply pseudo-class to said element\n\n\n  \n    −\n    +\n \n 02:00"
   },
   {
-    "objectID": "03-style.html#your-turn",
-    "href": "03-style.html#your-turn",
+    "objectID": "05-css.html#cascading",
+    "href": "05-css.html#cascading",
     "title": "Quarto Websites Workshop",
-    "section": "Your Turn!",
-    "text": "Your Turn!\nOpen up your _quarto.yml file and experiment with the colors\n\nfontcolor\nlinkcolor\nbackgroundcolor\nmonobackgroundcolor"
+    "section": "Cascading",
+    "text": "Cascading\n\nStylesheets cascade — at a very simple level, this means that the origin, the cascade layer, and the order of CSS rules matter. When two rules from the same cascade layer apply and both have equal specificity, the one that is defined last in the stylesheet is the one that will be used.\n\nh1 looses to h1.title-class because h1.title-class is more specific\n\nhttps://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance"
   },
   {
-    "objectID": "03-style.html#fonts",
-    "href": "03-style.html#fonts",
+    "objectID": "05-css.html#attributes-1",
+    "href": "05-css.html#attributes-1",
     "title": "Quarto Websites Workshop",
-    "section": "Fonts",
-    "text": "Fonts\n\n\nmainfont\n\nThe main font for text on the site\n\n\n\nmonofont\n\nFont for code elements"
+    "section": "Attributes",
+    "text": "Attributes\nThe attributes are instructions on how elements should look and behave.\n\nHow things look\n\ncolors\nsizes\nborder lines\netc\n\nHow elements are positioned to other elements\n\nLayout"
   },
   {
-    "objectID": "03-style.html#what-is-a-font",
-    "href": "03-style.html#what-is-a-font",
+    "objectID": "05-css.html#layout",
+    "href": "05-css.html#layout",
     "title": "Quarto Websites Workshop",
-    "section": "What is a font?",
-    "text": "What is a font?\nA font family is specified either as a family name or as a generic name.\nIn the below example, \"Gill Sans\" is a family name, and sans-serif is a generic name.\n\"Gill Sans\", sans-serif\nFont specification works by having a fallback, so if \"Gill Sans\" isn’t available for the user, then sans-serif is used instead.\nWe will talk more later, about how we can load in new family names.\n\nhttps://developer.mozilla.org/en-US/docs/Web/CSS/font-family"
+    "section": "Layout",
+    "text": "Layout"
   },
   {
-    "objectID": "03-style.html#fonts-1",
-    "href": "03-style.html#fonts-1",
+    "objectID": "05-css.html#layout-1",
+    "href": "05-css.html#layout-1",
     "title": "Quarto Websites Workshop",
-    "section": "Fonts",
-    "text": "Fonts\nTODO: show examples and before after"
+    "section": "Layout",
+    "text": "Layout\n\nContent - The content of the box, where text and images appear\nPadding - Clears an area around the content. The padding is transparent\nBorder - A border that goes around the padding and content\nMargin - Clears an area outside the border. The margin is transparent"
   },
   {
-    "objectID": "03-style.html#your-turn-1",
-    "href": "03-style.html#your-turn-1",
+    "objectID": "05-css.html#layout---content",
+    "href": "05-css.html#layout---content",
     "title": "Quarto Websites Workshop",
-    "section": "Your Turn!",
-    "text": "Your Turn!\nOpen up your _quarto.yml file and experiment with the fonts\n\nmainfont\nmonofont\n\ngeneric families include\nserif, sans-serif, monospace, cursive, fantasy, system-ui, ui-serif, ui-sans-serif, ui-monospace, ui-rounded, and fangsong"
+    "section": "Layout - content",
+    "text": "Layout - content\nSize of the content is set using height and width\nValues are lengths\n\n10px\n2em\n\nor percentages\n\n40%\n100%"
   },
   {
-    "objectID": "03-style.html#sizes",
-    "href": "03-style.html#sizes",
+    "objectID": "05-css.html#your-turn-2",
+    "href": "05-css.html#your-turn-2",
     "title": "Quarto Websites Workshop",
-    "section": "Sizes",
-    "text": "Sizes\n\n\nmax-width\n\nWidth of the main text area of the pages\n\n\n\nfontsize\n\nBase font size for website\n\n\n\nlinestretch\n\nDistance between lines of text"
+    "section": "Your turn",
+    "text": "Your turn\nOpen styles.scss file and do the following:\n\nFind an element\n\nimages or text\n\nChange the height and width\n\n\n  \n    −\n    +\n \n 02:00"
   },
   {
-    "objectID": "03-style.html#how-to-specify-sizes",
-    "href": "03-style.html#how-to-specify-sizes",
+    "objectID": "05-css.html#layout---padding",
+    "href": "05-css.html#layout---padding",
     "title": "Quarto Websites Workshop",
-    "section": "How to specify sizes",
-    "text": "How to specify sizes\nSpecifying a length in CSS can be done in dozens of ways,\n\nUsing pixel counts 18px or 100px\nCalculated font-size of an element, 1em should remain unchanged, 2em should double it\n\n\nfont sizes & line height"
+    "section": "Layout - padding",
+    "text": "Layout - padding\nyou can set the about of padding with\n\npadding or\npadding-bottom, padding-left, padding-right, and padding-top\n\nValues are lengths or percentages.\npadding is used as a shorthand\n\nhttps://www.w3schools.com/css/css_padding.asp"
   },
   {
-    "objectID": "03-style.html#sizes-1",
-    "href": "03-style.html#sizes-1",
+    "objectID": "05-css.html#layout---padding-1",
+    "href": "05-css.html#layout---padding-1",
     "title": "Quarto Websites Workshop",
-    "section": "Sizes",
-    "text": "Sizes\nTODO: show examples and before after"
+    "section": "Layout - padding",
+    "text": "Layout - padding\nFollowing are equivalent\n\n\nh1 {\n  padding: 10px;\n}\n\nh1 {\n  padding-bottom: 10px;\n  padding-left: 10px;\n  padding-right: 10px;\n  padding-top: 10px;\n  }\n\n\n\nhttps://www.w3schools.com/css/css_padding.asp"
   },
   {
-    "objectID": "03-style.html#your-turn-2",
-    "href": "03-style.html#your-turn-2",
+    "objectID": "05-css.html#layout---padding-2",
+    "href": "05-css.html#layout---padding-2",
     "title": "Quarto Websites Workshop",
-    "section": "Your Turn!",
-    "text": "Your Turn!\nOpen up your _quarto.yml file and experiment with the sizing\n\nmax-width\nfontsize\nlinestretch"
+    "section": "Layout - padding",
+    "text": "Layout - padding\nFollowing are equivalent\n\n\nh1 {\n  padding: 10px 20px;\n}\n\nh1 {\n  padding-bottom: 10px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n  }\n\n\n\nhttps://www.w3schools.com/css/css_padding.asp"
   },
   {
-    "objectID": "03-style.html#show-the-world",
-    "href": "03-style.html#show-the-world",
+    "objectID": "05-css.html#layout---padding-3",
+    "href": "05-css.html#layout---padding-3",
     "title": "Quarto Websites Workshop",
-    "section": "Show the world!",
-    "text": "Show the world!\nTODO: add fun image\nThere are many different ways we can publish the our stuff. We will show Quarto Pub here and now\nMany different ways: https://quarto.org/docs/publishing/"
+    "section": "Layout - padding",
+    "text": "Layout - padding\nFollowing are equivalent\n\n\nh1 {\n  padding: 10px 20px 30px;\n}\n\nh1 {\n  padding-bottom: 30px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n  }\n\n\n\nhttps://www.w3schools.com/css/css_padding.asp"
   },
   {
-    "objectID": "03-style.html#quarto-pub",
-    "href": "03-style.html#quarto-pub",
+    "objectID": "05-css.html#layout---padding-4",
+    "href": "05-css.html#layout---padding-4",
     "title": "Quarto Websites Workshop",
-    "section": "Quarto Pub",
-    "text": "Quarto Pub\nWe use the quarto publish commend, specifically quarto publish quarto-pub"
+    "section": "Layout - padding",
+    "text": "Layout - padding\nFollowing are equivalent (clock-wise)\n\n\nh1 {\n  padding: 10px 20px 30px 40px;\n}\n\nh1 {\n  padding-bottom: 30px;\n  padding-left: 40px;\n  padding-right: 20px;\n  padding-top: 10px;\n  }\n\n\n\nhttps://www.w3schools.com/css/css_padding.asp"
   },
   {
-    "objectID": "03-style.html#what-happens-next",
-    "href": "03-style.html#what-happens-next",
+    "objectID": "05-css.html#your-turn-3",
+    "href": "05-css.html#your-turn-3",
     "title": "Quarto Websites Workshop",
-    "section": "what happens next",
-    "text": "what happens next\nTODO: add ¿pictures?"
+    "section": "Your turn",
+    "text": "Your turn\nContinue with element from before\n\nChange the 4 values of padding and see what happens\n\n\n  \n    −\n    +\n \n 02:00"
   },
   {
-    "objectID": "03-style.html#your-turn-3",
-    "href": "03-style.html#your-turn-3",
+    "objectID": "05-css.html#layout---border",
+    "href": "05-css.html#layout---border",
     "title": "Quarto Websites Workshop",
-    "section": "Your Turn!",
-    "text": "Your Turn!\nMake sure you are set up to use Quarto Pub, then run quarto publish quarto-pub"
+    "section": "Layout - border",
+    "text": "Layout - border\nAre styled as\n\n\nh2 {\n  border: 2px solid #32a1ce;\n}\n\nh2 {\n  border-color: #32a1ce;\n  border-style: solid;\n  border-width: 2px;\n}\n\n\n\nhttps://developer.mozilla.org/en-US/docs/Web/CSS/border"
   },
   {
-    "objectID": "03-style.html#you-did-it",
-    "href": "03-style.html#you-did-it",
+    "objectID": "05-css.html#layout---margin",
+    "href": "05-css.html#layout---margin",
     "title": "Quarto Websites Workshop",
-    "section": "You did it!",
-    "text": "You did it!"
+    "section": "Layout - margin",
+    "text": "Layout - margin\nworks the same as padding\n\n\nh1 {\n  margin: 10px 20px 30px;\n}\n\nh1 {\n  margin-bottom: 30px;\n  margin-left: 20px;\n  margin-right: 20px;\n  margin-top: 10px;\n  }\n\n\n\nhttps://www.w3schools.com/css/css_margin.asp"
   },
   {
-    "objectID": "todo.html",
-    "href": "todo.html",
+    "objectID": "05-css.html#your-turn-4",
+    "href": "05-css.html#your-turn-4",
     "title": "Quarto Websites Workshop",
-    "section": "",
-    "text": "Change .bash to .default\nAdd countdown timers to Your Turns\nCheck for any updates from the old repo\nSet up posit.cloud\nPractice workflow in the cloud\nPractice first section\nAdd some inspirational examples\n\nMore Quarto webpages: - https://www.cynthiahqy.com - https://stubner.me"
+    "section": "Your turn",
+    "text": "Your turn\nContinue with element from before\n\nChange the 4 values of margin and see what happens\n\n\n  \n    −\n    +\n \n 02:00"
+  },
+  {
+    "objectID": "05-css.html#css-grid",
+    "href": "05-css.html#css-grid",
+    "title": "Quarto Websites Workshop",
+    "section": "CSS grid",
+    "text": "CSS grid\n\n\nSlightly outside scope, but is useful to know that it exists\n\nElements are styled as columns and rows\n\nA complete Guide to CSS Grid\nCSS Grid Generator"
+  },
+  {
+    "objectID": "05-css.html#css-flexbox",
+    "href": "05-css.html#css-flexbox",
+    "title": "Quarto Websites Workshop",
+    "section": "CSS flexbox",
+    "text": "CSS flexbox\nSlightly outside scope, but is useful to know that it exists\n\nA flex container expands items to fill available free space or shrinks them to prevent overflow.\n\nA complete Guide to Flexbox"
+  },
+  {
+    "objectID": "05-css.html#absolute-positioning",
+    "href": "05-css.html#absolute-positioning",
+    "title": "Quarto Websites Workshop",
+    "section": "Absolute positioning",
+    "text": "Absolute positioning\nSetting\n\nposition: relative; to parent\nposition: absolute; to child\n\nthen set location using top, left, right, and bottom\n&lt;div style=\"position: relative;\"&gt;\n  &lt;img style=\"position: absolute; left: 10%; top: 25%;\"&gt;\n&lt;/div&gt;\nCan be nice to use, but can be an anti-pattern if used too much"
+  },
+  {
+    "objectID": "05-css.html#centering-in-css",
+    "href": "05-css.html#centering-in-css",
+    "title": "Quarto Websites Workshop",
+    "section": "Centering in CSS",
+    "text": "Centering in CSS\nA common joke in programming\nHas been solved for a while\nhttp://howtocenterincss.com/"
+  },
+  {
+    "objectID": "05-css.html#what-is-sassscss",
+    "href": "05-css.html#what-is-sassscss",
+    "title": "Quarto Websites Workshop",
+    "section": "What is SASS/SCSS",
+    "text": "What is SASS/SCSS\nSASS (CSS with superpowers), is an extension of CSS\nSCSS is one of the syntaxes, the one we will use\n\nhttps://sass-lang.com/"
+  },
+  {
+    "objectID": "05-css.html#why-use-sass",
+    "href": "05-css.html#why-use-sass",
+    "title": "Quarto Websites Workshop",
+    "section": "Why use SASS?",
+    "text": "Why use SASS?\n\nCSS Compatible\nFeature Rich\nMature\n\n\nhttps://sass-lang.com/"
+  },
+  {
+    "objectID": "05-css.html#why-use-sass-1",
+    "href": "05-css.html#why-use-sass-1",
+    "title": "Quarto Websites Workshop",
+    "section": "Why use SASS?",
+    "text": "Why use SASS?\nCSS but with variables, nested rules, mixins, functions and more\n\n\nthe SCSS file will compile to CSS which browsers understand\nQuarto will do all of this for you"
+  },
+  {
+    "objectID": "05-css.html#sass-variables",
+    "href": "05-css.html#sass-variables",
+    "title": "Quarto Websites Workshop",
+    "section": "SASS variables",
+    "text": "SASS variables\nvariables (much like in R and Python) are a way to store a value to use later, done to reduce repetition\n\n\nusing the syntax: $variable-name: value;\n\n\nh2 {\n  color: #32a1ce;\n}\n\n$favorite-blue: #32a1ce;\n\nh2 {\n  color: $favorite-blue;\n}"
+  },
+  {
+    "objectID": "05-css.html#your-turn-5",
+    "href": "05-css.html#your-turn-5",
+    "title": "Quarto Websites Workshop",
+    "section": "Your turn",
+    "text": "Your turn\n-Open styles.scss and\n\nuse a SASS variable to define h1 and h2 colors\nconsider what other things we could use variables for\n\n\n  \n    −\n    +\n \n 03:00"
+  },
+  {
+    "objectID": "05-css.html#sass-nested-rules",
+    "href": "05-css.html#sass-nested-rules",
+    "title": "Quarto Websites Workshop",
+    "section": "SASS nested rules",
+    "text": "SASS nested rules\nsyntactic way to organize your style sheets\n\n\nh2 {\n  color: #32a1ce;\n\n  a {\n    color: #055778;\n  }\n}\n\nh2 {\n  color: #32a1ce;\n}\n\nh2 a {\n  color: #055778;\n}\n\n\nCan be a even better improvement wth the right IDE settings\n\nhttps://sass-lang.com/documentation/style-rules/#nesting"
+  },
+  {
+    "objectID": "05-css.html#sass-nested-rules-1",
+    "href": "05-css.html#sass-nested-rules-1",
+    "title": "Quarto Websites Workshop",
+    "section": "SASS nested rules",
+    "text": "SASS nested rules\nSelector Combinators works too\n\n\nh2 {\n  color: #32a1ce;\n\n  &gt; a {\n    color: #055778;\n  }\n}\n\nh2 {\n  color: #32a1ce;\n}\n\nh2 &gt; a {\n  color: #055778;\n}\n\n\n\nhttps://sass-lang.com/documentation/style-rules/#nesting"
+  },
+  {
+    "objectID": "05-css.html#sass-nested-rules-2",
+    "href": "05-css.html#sass-nested-rules-2",
+    "title": "Quarto Websites Workshop",
+    "section": "SASS nested rules",
+    "text": "SASS nested rules\nAdd organization to styling\n.speech {\n  background-color: $theme-grey;\n  padding: 1em;\n  margin-bottom: 1em;\n  border-radius: 15px;\n  border-style: solid;\n  border-width: 5px;\n\n  img {\n    margin-bottom: -0.5em;\n    padding-right: 0.5em;\n    transform: scaleX(-1);\n  }\n\n  &.right {\n    text-align: right;\n\n\n    img {\n      padding-left: 0.5em;\n      transform: scaleX(1);\n    }\n  }\n\n  &.pink {\n    background-color: $theme-pink;\n    border-color: darken($theme-pink, 20%);\n  }\n  &.brown {\n    background-color: $theme-brown;\n    border-color: darken($theme-brown, 20%);\n  }\n  &.blue {\n    background-color: $theme-blue;\n    border-color: darken($theme-blue, 20%);\n  }\n  &.purple {\n    background-color: $theme-purple;\n    border-color: darken($theme-purple, 20%);\n  }\n}\n\nhttps://sass-lang.com/documentation/style-rules/#nesting"
+  },
+  {
+    "objectID": "05-css.html#your-turn-6",
+    "href": "05-css.html#your-turn-6",
+    "title": "Quarto Websites Workshop",
+    "section": "Your turn",
+    "text": "Your turn\n-Open styles.scss and\n\nrewrite your existing styles to use nested rules\n\n\n  \n    −\n    +\n \n 02:00"
+  },
+  {
+    "objectID": "05-css.html#sass-mixins",
+    "href": "05-css.html#sass-mixins",
+    "title": "Quarto Websites Workshop",
+    "section": "SASS mixins",
+    "text": "SASS mixins\nAvoid duplication of style\n\n\n@mixin padding-small {\n  padding-bottom: 10px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n}\n\nh2 {\n  @include padding-small;\n  color: #32a1ce;\n}\n\nh3 {\n  @include padding-small;\n  color: #32cebc;\n}\n\nh4 {\n  @include padding-small;\n  color: #83ce32;\n}\n\nh2 {\n  padding-bottom: 10px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n  color: #32a1ce;\n}\n\nh3 {\n  padding-bottom: 10px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n  color: #32cebc;\n}\n\nh4 {\n  padding-bottom: 10px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n  color: #83ce32;\n}\n\n\n\nhttps://sass-lang.com/documentation/at-rules/mixin/"
+  },
+  {
+    "objectID": "05-css.html#your-turn-7",
+    "href": "05-css.html#your-turn-7",
+    "title": "Quarto Websites Workshop",
+    "section": "Your turn",
+    "text": "Your turn\n-Open styles.scss and\n\nuse a SASS mixins to reduce complexity in your styles\n\n\n  \n    −\n    +\n \n 02:00"
+  },
+  {
+    "objectID": "05-css.html#sass-functions",
+    "href": "05-css.html#sass-functions",
+    "title": "Quarto Websites Workshop",
+    "section": "SASS functions",
+    "text": "SASS functions\nMany different built-in functions\n\n\n$favorite-blue: #32a1ce;\n\nh2 {\n  color: $favorite-blue;\n\n  &gt; a {\n    color: darken($favorite-blue);\n  }\n}\n\nh2 {\n  color: #32a1ce;\n}\n\nh2 &gt; a {\n  color: #055778;\n}\n\n\n\nhttps://sass-lang.com/documentation/modules/"
+  },
+  {
+    "objectID": "05-css.html#your-turn-8",
+    "href": "05-css.html#your-turn-8",
+    "title": "Quarto Websites Workshop",
+    "section": "Your turn",
+    "text": "Your turn\n-Open styles.scss and\n\nuse a SASS color function to make the colors of h1 and h2 different\n\n\n  \n    −\n    +\n \n 03:00"
+  },
+  {
+    "objectID": "05-css.html#design-principles",
+    "href": "05-css.html#design-principles",
+    "title": "Quarto Websites Workshop",
+    "section": "Design principles",
+    "text": "Design principles\nWe will assume you have good content, and it is ordered appropriately with different pages and navigation\n\n\nWhat principles can we employ to make the most out of your website\n\n\n\nIf the user thinks “I wonder which button to click”, something bad happened"
+  },
+  {
+    "objectID": "05-css.html#what-is-its-purpose",
+    "href": "05-css.html#what-is-its-purpose",
+    "title": "Quarto Websites Workshop",
+    "section": "What is its purpose?",
+    "text": "What is its purpose?\nWhen designing a website we have to keep the audience in mind\nIt all depends on the audience and how you want them to interact with it\n\n\nacademic websites will be different than business sites\n\n\n\n\n\nAcademic\nInformation\n\nBusiness\nCall to action"
+  },
+  {
+    "objectID": "05-css.html#hicks-law",
+    "href": "05-css.html#hicks-law",
+    "title": "Quarto Websites Workshop",
+    "section": "Hick’s Law",
+    "text": "Hick’s Law\n\nEvery additional choice increases the time required to make a decision.\n\n\n\nA reminder to keep it simple\nMake it easy for your users to find what they want"
+  },
+  {
+    "objectID": "05-css.html#readding-patterns",
+    "href": "05-css.html#readding-patterns",
+    "title": "Quarto Websites Workshop",
+    "section": "Readding Patterns",
+    "text": "Readding Patterns\n\n\nF-shaped and Z-shaped\n\nMake sure all content follows a natural order"
+  },
+  {
+    "objectID": "05-css.html#readding-patterns---headers-and-footers",
+    "href": "05-css.html#readding-patterns---headers-and-footers",
+    "title": "Quarto Websites Workshop",
+    "section": "Readding Patterns - headers and footers",
+    "text": "Readding Patterns - headers and footers\nDiscussion:\nKnowing what we know now, what elements are good to place in the header and footer?"
+  },
+  {
+    "objectID": "05-css.html#negative-space",
+    "href": "05-css.html#negative-space",
+    "title": "Quarto Websites Workshop",
+    "section": "Negative Space",
+    "text": "Negative Space\nYou don’t need to fill all the screen real estate\nwe typically also have a limited text width for ease of reading"
+  },
+  {
+    "objectID": "05-css.html#negative-space-1",
+    "href": "05-css.html#negative-space-1",
+    "title": "Quarto Websites Workshop",
+    "section": "Negative Space",
+    "text": "Negative Space"
+  },
+  {
+    "objectID": "05-css.html#negative-space-2",
+    "href": "05-css.html#negative-space-2",
+    "title": "Quarto Websites Workshop",
+    "section": "Negative Space",
+    "text": "Negative Space"
+  },
+  {
+    "objectID": "05-css.html#consistent-design",
+    "href": "05-css.html#consistent-design",
+    "title": "Quarto Websites Workshop",
+    "section": "Consistent Design",
+    "text": "Consistent Design\nWe look at similarities and differences, if an element looks different than the rest, we are going to assume that it matters\nusing principled styling will alleviate many of these problems"
+  },
+  {
+    "objectID": "05-css.html#choosing-colors",
+    "href": "05-css.html#choosing-colors",
+    "title": "Quarto Websites Workshop",
+    "section": "Choosing colors",
+    "text": "Choosing colors\nThe colors can come from a lot of different places\n\ncorporate guidelines\nyou\nfrom online inspiration (Pinterest)"
+  },
+  {
+    "objectID": "05-css.html#setting-up-a-color-theme",
+    "href": "05-css.html#setting-up-a-color-theme",
+    "title": "Quarto Websites Workshop",
+    "section": "Setting up a color theme",
+    "text": "Setting up a color theme\nWe can create a color palette in SASS by using a set of environment variables.\n$theme-white: #FFFFFF;\n$theme-black: #222222;\n$theme-blue: #5538f8;\n$theme-red: #df4747;\nThese will then be used throughout the\n$link-color: $theme-blue;\n\n$$sidebar-hl: lighten($theme-blue, 0.5);"
+  },
+  {
+    "objectID": "05-css.html#your-turn-9",
+    "href": "05-css.html#your-turn-9",
+    "title": "Quarto Websites Workshop",
+    "section": "Your turn",
+    "text": "Your turn\nOpen styles.scss then\n\nfind a color theme\nadd colors as SASS variables\nUse SASS variables\n\n\n  \n    −\n    +\n \n 05:00"
+  },
+  {
+    "objectID": "05-css.html#using-color-on-websites",
+    "href": "05-css.html#using-color-on-websites",
+    "title": "Quarto Websites Workshop",
+    "section": "Using color on websites",
+    "text": "Using color on websites\nBe mindful when using colors\n60-30-10 rule\n60% - Primary color\n\ntypically background\n\n30% - Secondary color\n\ntext and elements\n\n10% - Accent color\n\nhighlights, buttons"
+  },
+  {
+    "objectID": "05-css.html#deviations",
+    "href": "05-css.html#deviations",
+    "title": "Quarto Websites Workshop",
+    "section": "60-30-10 deviations",
+    "text": "60-30-10 deviations\nAs with all things, this is not a hard and fast rule.\nyou can use fewer or more colors\n\nhttps://codegoda.io/\n\nnotice that they use their colors carefully and consistently"
+  },
+  {
+    "objectID": "05-css.html#choosing-fonts",
+    "href": "05-css.html#choosing-fonts",
+    "title": "Quarto Websites Workshop",
+    "section": "Choosing fonts",
+    "text": "Choosing fonts\nUse readable and web-friendly fonts\n\ncommon fonts are by definition readable as they are familiar\nfonts are designed to be used in different areas, optimize for web fonts\ndon’t pick too many fonts"
+  },
+  {
+    "objectID": "05-css.html#maintaining-accessibility",
+    "href": "05-css.html#maintaining-accessibility",
+    "title": "Quarto Websites Workshop",
+    "section": "Maintaining accessibility",
+    "text": "Maintaining accessibility\nWhat is web accessibility?\n\nWeb accessibility is the practice of creating websites that are usable for all visitors regardless of a disability or impairment. To fulfill web accessibility best practices, you must create a site that complies with certain design and development guidelines that ensure your site is set up to accommodate folks with disabilities. This ensures that all users have the same or similar experience regardless of ability.\n\n\nhttps://blog.hubspot.com/website/web-accessibility"
+  },
+  {
+    "objectID": "05-css.html#maintaining-accessibility-1",
+    "href": "05-css.html#maintaining-accessibility-1",
+    "title": "Quarto Websites Workshop",
+    "section": "Maintaining accessibility",
+    "text": "Maintaining accessibility\nHow do we do it?\n\nAvoid blinking/flashing content\nMaintain high color contrast when needed\n\nhttps://colourcontrast.cc/\ncolor contrast varies based on font size\n\nAdd alt-text to elements\nEnsure complete functionality via the keyboard\n\nshould be handled by Quarto"
+  },
+  {
+    "objectID": "05-css.html#your-turn-10",
+    "href": "05-css.html#your-turn-10",
+    "title": "Quarto Websites Workshop",
+    "section": "Your turn",
+    "text": "Your turn\nOpen styles.scss then\n\nmake temporary changes to the colors, sizes and fonts that would go against accessibility advice to see how the experience gets worse\n\n\n  \n    −\n    +\n \n 04:00"
   },
   {
     "objectID": "about.html",

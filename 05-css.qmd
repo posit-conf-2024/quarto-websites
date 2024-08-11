@@ -14,7 +14,7 @@ code-line-numbers: false
 
 ## what is CSS
 
-::: r-stack
+:::: r-stack
 
 [**C**ascading **S**tyle **S**heets is a style sheet language used for specifying the presentation and styling of a document]{.fragment}
 
@@ -41,8 +41,8 @@ Tags can be nested `<div><div></div><div></div></div>`
 
 ## HTML structure
 
-::: {.columns}
-::: {.column}
+:::: {.columns}
+:::: {.column}
 
 Is built around 3 main tags:
 
@@ -50,7 +50,7 @@ Is built around 3 main tags:
 - `<head>`
 - `<body>`
 :::
-::: {.column}
+:::: {.column}
 
 ```html
 <!DOCTYPE html> 
@@ -106,7 +106,7 @@ general div
 
 `<div>`
 
-::: footer
+:::: footer
 [HTML Element Reference - By Category](https://www.w3schools.com/tags/ref_byfunc.asp)
 :::
 
@@ -122,7 +122,7 @@ Done by using name-value pairs: `name="value"`
 
 <br>
 
-::: fragment
+:::: fragment
 
 Classes and ids
 
@@ -130,7 +130,7 @@ Classes and ids
 
 :::
 
-::: fragment
+:::: fragment
 
 Images source attribute
 
@@ -156,7 +156,7 @@ In its simplest form, we need to define 2 things
 
 <br>
 
-::: fragment
+:::: fragment
 
 ### selectors
 
@@ -165,7 +165,7 @@ What needs to be styled
 
 <br>
 
-::: fragment
+:::: fragment
 
 ### Attributes
 
@@ -198,7 +198,7 @@ by id
 }
 ```
 
-::: footer
+:::: footer
 https://www.w3schools.com/cssref/css_selectors.php
 :::
 
@@ -220,7 +220,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 ```
 
-::: footer
+:::: footer
 https://www.w3schools.com/cssref/css_selectors.php
 :::
 
@@ -245,7 +245,7 @@ how are you doing
 </p>
 ```
 
-::: footer
+:::: footer
 https://www.w3schools.com/cssref/css_selectors.php
 :::
 
@@ -269,7 +269,7 @@ Only the first would be affected
 </div>
 ```
 
-::: footer
+:::: footer
 https://www.w3schools.com/cssref/css_selectors.php
 :::
 
@@ -292,11 +292,11 @@ Only the second `h2` would be affected
 </div>
 ```
 
-::: footer
+:::: footer
 https://www.w3schools.com/cssref/css_selectors.php
 :::
 
-## Your turn
+## Your turn {.exercise}
 
 Open `styles.scss` file and do the following:
 
@@ -305,6 +305,8 @@ Open `styles.scss` file and do the following:
 - Change styling of text (`p` elements)
 - Change styling of only the subtitle of the front page
 - Change styling of buttons on front page
+
+{{< countdown "5:00" >}}
 
 ## Selectors References
 
@@ -324,7 +326,7 @@ As with anything web related, there are tons of resources online
 
 Modifies existing classes
 
-::: fragment
+:::: fragment
 ### User action
 
 - `:hover`
@@ -341,7 +343,7 @@ a.navbar:active {
 ```
 :::
 
-::: footer
+:::: footer
 <https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes>
 :::
 
@@ -362,7 +364,7 @@ p:nth-of-type(2n+1) {
 }
 ```
 
-::: footer
+:::: footer
 <https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes>
 :::
 
@@ -372,7 +374,7 @@ Outside scope, but shows what can be done if you care to explore it
 
 - `:has()`
 
-::: fragment
+:::: fragment
 
 if `h1` has a sibling `h2` then set the bottom margin of `h1` to `0.25rem`
 
@@ -384,7 +386,7 @@ h1:has(+ h2) {
 
 :::
 
-::: fragment
+:::: fragment
 
 When the container has a child card hovered, select all the cards that aren’t hovered.
 
@@ -396,11 +398,11 @@ When the container has a child card hovered, select all the cards that aren’t 
 
 :::
 
-::: footer
+:::: footer
 <https://bejamas.io/blog/learn-css-has-selector-by-examples-top-use-cases/>
 :::
 
-## Your turn
+## Your turn {.exercise}
 
 Open `styles.scss` file and do the following:
 
@@ -408,13 +410,15 @@ Open `styles.scss` file and do the following:
     - `:hover` is a safe choice, but not the only one
 2. Apply pseudo-class to said element
 
+{{< countdown "2:00" >}}
+
 ## Cascading
 
 > Stylesheets cascade — at a very simple level, this means that the origin, the cascade layer, and the order of CSS rules matter. When two rules from the same cascade layer apply and both have **equal specificity**, the one that is **defined last** in the stylesheet is the one that will be used.
 
 `h1` looses to `h1.title-class` because `h1.title-class` is more specific
 
-::: footer
+:::: footer
 <https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance>
 :::
 
@@ -456,13 +460,15 @@ Values are [lengths](https://developer.mozilla.org/en-US/docs/Web/CSS/length)
 - `40%`
 - `100%`
 
-## Your turn
+## Your turn {.exercise}
 
 Open `styles.scss` file and do the following:
 
 1. Find an element
     - images or text
 2. Change the `height` and `width`
+
+{{< countdown "2:00" >}}
 
 ## Layout - padding
 
@@ -476,7 +482,7 @@ Values are [lengths](https://developer.mozilla.org/en-US/docs/Web/CSS/length) or
 
 `padding` is used as a shorthand
 
-::: footer
+:::: footer
 <https://www.w3schools.com/css/css_padding.asp>
 :::
 
@@ -484,8 +490,8 @@ Values are [lengths](https://developer.mozilla.org/en-US/docs/Web/CSS/length) or
 
 Following are equivalent 
 
-::: {.columns}
-::: {.column}
+:::: {.columns}
+:::: {.column}
 ```css
 h1 {
   padding: 10px;
@@ -493,7 +499,7 @@ h1 {
 ```
 :::
 
-::: {.column}
+:::: {.column}
 ```css
 h1 {
   padding-bottom: 10px;
@@ -505,7 +511,7 @@ h1 {
 :::
 :::
 
-::: footer
+:::: footer
 <https://www.w3schools.com/css/css_padding.asp>
 :::
 
@@ -513,8 +519,8 @@ h1 {
 
 Following are equivalent 
 
-::: {.columns}
-::: {.column}
+:::: {.columns}
+:::: {.column}
 ```css
 h1 {
   padding: 10px 20px;
@@ -522,7 +528,7 @@ h1 {
 ```
 :::
 
-::: {.column}
+:::: {.column}
 ```css
 h1 {
   padding-bottom: 10px;
@@ -534,7 +540,7 @@ h1 {
 :::
 :::
 
-::: footer
+:::: footer
 <https://www.w3schools.com/css/css_padding.asp>
 :::
 
@@ -542,8 +548,8 @@ h1 {
 
 Following are equivalent 
 
-::: {.columns}
-::: {.column}
+:::: {.columns}
+:::: {.column}
 ```css
 h1 {
   padding: 10px 20px 30px;
@@ -551,7 +557,7 @@ h1 {
 ```
 :::
 
-::: {.column}
+:::: {.column}
 ```css
 h1 {
   padding-bottom: 30px;
@@ -563,7 +569,7 @@ h1 {
 :::
 :::
 
-::: footer
+:::: footer
 <https://www.w3schools.com/css/css_padding.asp>
 :::
 
@@ -571,8 +577,8 @@ h1 {
 
 Following are equivalent (clock-wise)
 
-::: {.columns}
-::: {.column}
+:::: {.columns}
+:::: {.column}
 ```css
 h1 {
   padding: 10px 20px 30px 40px;
@@ -580,7 +586,7 @@ h1 {
 ```
 :::
 
-::: {.column}
+:::: {.column}
 ```css
 h1 {
   padding-bottom: 30px;
@@ -592,22 +598,24 @@ h1 {
 :::
 :::
 
-::: footer
+:::: footer
 <https://www.w3schools.com/css/css_padding.asp>
 :::
 
-## Your turn
+## Your turn {.exercise}
 
 Continue with element from before
 
 1. Change the 4 values of `padding` and see what happens
 
+{{< countdown "2:00" >}}
+
 ## Layout - border
 
 Are styled as
 
-::: {.columns}
-::: {.column}
+:::: {.columns}
+:::: {.column}
 ```css
 h2 {
   border: 2px solid #32a1ce;
@@ -615,7 +623,7 @@ h2 {
 ```
 :::
 
-::: {.column}
+:::: {.column}
 ```css
 h2 {
   border-color: #32a1ce;
@@ -626,7 +634,7 @@ h2 {
 :::
 :::
 
-::: footer
+:::: footer
 <https://developer.mozilla.org/en-US/docs/Web/CSS/border>
 :::
 
@@ -634,8 +642,8 @@ h2 {
 
 works the same as padding
 
-::: {.columns}
-::: {.column}
+:::: {.columns}
+:::: {.column}
 ```css
 h1 {
   margin: 10px 20px 30px;
@@ -643,7 +651,7 @@ h1 {
 ```
 :::
 
-::: {.column}
+:::: {.column}
 ```css
 h1 {
   margin-bottom: 30px;
@@ -655,20 +663,22 @@ h1 {
 :::
 :::
 
-::: footer
+:::: footer
 <https://www.w3schools.com/css/css_margin.asp>
 :::
 
-## Your turn
+## Your turn {.exercise}
 
 Continue with element from before
 
 1. Change the 4 values of `margin` and see what happens
 
+{{< countdown "2:00" >}}
+
 ## CSS grid
 
-::: {.columns}
-::: {.column}
+:::: {.columns}
+:::: {.column}
 Slightly outside scope, but is useful to know that it exists
 
 <br> 
@@ -681,7 +691,7 @@ Elements are styled as columns and rows
 
 [CSS Grid Generator](https://cssgrid-generator.netlify.app/)
 :::
-::: {.column}
+:::: {.column}
 ![](images/css-grid.png)
 :::
 :::
@@ -725,7 +735,7 @@ SASS (CSS with superpowers), is an extension of CSS
 
 SCSS is one of the syntaxes, the one we will use
 
-::: footer
+:::: footer
 <https://sass-lang.com/>
 :::
 
@@ -735,7 +745,7 @@ SCSS is one of the syntaxes, the one we will use
 - Feature Rich
 - Mature
 
-::: footer
+:::: footer
 <https://sass-lang.com/>
 :::
 
@@ -745,7 +755,7 @@ CSS but with variables, nested rules, mixins, functions and more
 
 <br>
 
-::: fragment
+:::: fragment
 the SCSS file will compile to CSS which browsers understand
 
 Quarto will do all of this for you
@@ -757,12 +767,12 @@ variables (much like in R and Python) are a way to store a value to use later, d
 
 <br>
 
-::: fragment
+:::: fragment
 
 using the syntax: `$variable-name: value;`
 
-::: {.columns}
-::: {.column}
+:::: {.columns}
+:::: {.column}
 ```css
 h2 {
   color: #32a1ce;
@@ -770,7 +780,7 @@ h2 {
 ```
 :::
 
-::: {.column}
+:::: {.column}
 ```scss
 $favorite-blue: #32a1ce;
 
@@ -783,19 +793,21 @@ h2 {
 
 :::
 
-## Your Turn
+## Your turn {.exercise}
 
 -Open `styles.scss` and 
 
 - use a SASS variable to define `h1` and `h2` colors
 - consider what other things we could use variables for
 
+{{< countdown "3:00" >}}
+
 ## SASS nested rules
 
 syntactic way to organize your style sheets
 
-::: {.columns}
-::: {.column}
+:::: {.columns}
+:::: {.column}
 ```scss
 h2 {
   color: #32a1ce;
@@ -807,7 +819,7 @@ h2 {
 ```
 :::
 
-::: {.column}
+:::: {.column}
 ```css
 h2 {
   color: #32a1ce;
@@ -822,7 +834,7 @@ h2 a {
 
 Can be a even better improvement wth the right IDE settings
 
-::: footer
+:::: footer
 <https://sass-lang.com/documentation/style-rules/#nesting>
 :::
 
@@ -830,8 +842,8 @@ Can be a even better improvement wth the right IDE settings
 
 Selector Combinators works too
 
-::: {.columns}
-::: {.column}
+:::: {.columns}
+:::: {.column}
 ```scss
 h2 {
   color: #32a1ce;
@@ -843,7 +855,7 @@ h2 {
 ```
 :::
 
-::: {.column}
+:::: {.column}
 ```css
 h2 {
   color: #32a1ce;
@@ -856,7 +868,7 @@ h2 > a {
 :::
 :::
 
-::: footer
+:::: footer
 <https://sass-lang.com/documentation/style-rules/#nesting>
 :::
 
@@ -907,22 +919,24 @@ Add organization to styling
   }
 }
 ```
-::: footer
+:::: footer
 <https://sass-lang.com/documentation/style-rules/#nesting>
 :::
 
-## Your Turn
+## Your turn {.exercise}
 
 -Open `styles.scss` and 
 
 - rewrite your existing styles to use nested rules
 
+{{< countdown "2:00" >}}
+
 ## SASS mixins
 
 Avoid duplication of style
 
-::: {.columns}
-::: {.column}
+:::: {.columns}
+:::: {.column}
 ```scss
 @mixin padding-small {
   padding-bottom: 10px;
@@ -948,7 +962,7 @@ h4 {
 ```
 :::
 
-::: {.column}
+:::: {.column}
 ```css
 h2 {
   padding-bottom: 10px;
@@ -977,22 +991,24 @@ h4 {
 :::
 :::
 
-::: footer
+:::: footer
 <https://sass-lang.com/documentation/at-rules/mixin/>
 :::
 
-## Your Turn
+## Your turn {.exercise}
 
 -Open `styles.scss` and 
 
 - use a SASS mixins to reduce complexity in your styles
 
+{{< countdown "2:00" >}}
+
 ## SASS functions
 
 Many different built-in functions
 
-::: {.columns}
-::: {.column}
+:::: {.columns}
+:::: {.column}
 ```scss
 $favorite-blue: #32a1ce;
 
@@ -1006,7 +1022,7 @@ h2 {
 ```
 :::
 
-::: {.column}
+:::: {.column}
 
 
 ```scss
@@ -1021,15 +1037,17 @@ h2 > a {
 :::
 :::
 
-::: footer
+:::: footer
 <https://sass-lang.com/documentation/modules/>
 :::
 
-## Your Turn
+## Your turn {.exercise}
 
 -Open `styles.scss` and 
 
 - use a SASS color function to make the colors of `h1` and `h2` different
+
+{{< countdown "3:00" >}}
 
 ## Design principles 
 
@@ -1037,13 +1055,13 @@ We will assume you have good content, and it is ordered appropriately with diffe
 
 <br>
 
-::: fragment
+:::: fragment
 What principles can we employ to make the most out of your website
 :::
 
 <br>
 
-::: fragment
+:::: fragment
 If the user thinks "I wonder which button to click", something bad happened
 :::
 
@@ -1055,20 +1073,20 @@ It all depends on the audience and how you want them to interact with it
 
 <br>
 
-::: fragment
+:::: fragment
 academic websites will be different than business sites
 :::
 
 <br>
 
-::: fragment
-::: {.columns}
-::: {.column}
+:::: fragment
+:::: {.columns}
+:::: {.column}
 **Academic**
 
 Information
 :::
-::: {.column}
+:::: {.column}
 **Business**
 
 Call to action
@@ -1091,7 +1109,7 @@ Call to action
 
 <br>
 
-::: fragment
+:::: fragment
 A reminder to keep it simple
 
 Make it easy for your users to find what they want
@@ -1099,17 +1117,17 @@ Make it easy for your users to find what they want
 
 ## Readding Patterns
 
-::: {.columns}
-::: {.column}
+:::: {.columns}
+:::: {.column}
 F-shaped and Z-shaped
 
 <br>
 
 Make sure all content follows a natural order
 :::
-::: {.column}
+:::: {.column}
 
-::: r-stack
+:::: r-stack
 
 ![](images/f-shaped.png){.fragment}
 
@@ -1172,13 +1190,16 @@ $link-color: $theme-blue;
 $$sidebar-hl: lighten($theme-blue, 0.5);
 ```
 
-## Your turn
+## Your turn {.exercise}
 
 Open `styles.scss` then
 
 - find a color theme
 - add colors as SASS variables
 - Use SASS variables
+
+
+{{< countdown "5:00" >}}
 
 ## Using color on websites
 
@@ -1211,6 +1232,7 @@ notice that they use their colors carefully and consistently
 ## Choosing fonts
 
 Use readable and web-friendly fonts
+
 - common fonts are by definition readable as they are familiar
 - fonts are designed to be used in different areas, optimize for web fonts
 - don't pick too many fonts
@@ -1221,7 +1243,7 @@ What is web accessibility?
 
 > Web accessibility is the practice of creating websites that are usable for all visitors regardless of a disability or impairment. To fulfill web accessibility best practices, you must create a site that complies with certain design and development guidelines that ensure your site is set up to accommodate folks with disabilities. This ensures that all users have the same or similar experience regardless of ability.
 
-::: footer
+:::: footer
 <https://blog.hubspot.com/website/web-accessibility>
 :::
 
@@ -1239,8 +1261,10 @@ How do we do it?
 -  Ensure complete functionality via the keyboard
     - should be handled by Quarto
 
-## Your turn
+## Your turn {.exercise}
 
 Open `styles.scss` then
 
 - make temporary changes to the colors, sizes and fonts that would go against accessibility advice to see how the experience gets worse
+
+{{< countdown "4:00" >}}

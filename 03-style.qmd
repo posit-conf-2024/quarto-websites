@@ -8,42 +8,61 @@ format:
       - "all-the-js-code.html"
 echo: false
 code-line-numbers: false
+editor:
+  render-on-save: true
 ---
 
 # Styling
 
-## We have a website and we are happy with it!
+## 
 
-TODO: insert fun celebratory image
+:::: {.r-fit-text style="text-align: center;"}
 
-## They all look the same
+We have a website!
 
-TODO: insert sad-ish image here
+🎉🥳🎉
+:::
 
-TODO: add "BUT wait" caption as incremental effect
+## 
+
+:::: {.r-fit-text style="text-align: center;"}
+
+They all look the same
+
+🌧️🙁🌧️
+
+:::: fragment
+But wait!
+:::
+:::
 
 ## Styling with Quarto
 
 the task of styling websites follows the pattern of **diminishing returns**
 
+<br>
+
 > Each unit change to the style, will lead to fewer improvements in the results
+
+<br>
 
 We can take the reverse, and apply a few changes for maximum results
 
 ## Styling using yaml
 
+:::: {.columns}
+:::: {.column}
 With Quarto [html output](https://quarto.org/docs/output-formats/html-themes.html) we have a number of ways to style the site
+:::
+:::: {.column}
+A number of basic options allows us to change **colors**, *fonts*, and **SIZES**
 
-A number of basic options allows us to change **colors**, **fonts**, and ***sizes*
-
-::: footer
-
-<https://quarto.org/docs/output-formats/html-themes.html#basic-options>
+:::
 :::
 
-## colors, fonts, sizes
-
-TODO: diagram/picture of a web page, with relevant areas highlighted
+:::: footer
+<https://quarto.org/docs/output-formats/html-themes.html#basic-options>
+:::
 
 ## Colors
 
@@ -88,16 +107,19 @@ We can specify colors in many different ways using CSS
 
 - and more
 
-::: footer
-
+:::: footer
 <https://developer.mozilla.org/en-US/docs/Web/CSS/color>
 :::
 
-## Colors
+## Colors before
 
-TODO: show examples and before after
+![](images/colors-before.png){fig-align="center"}
 
-## Your Turn!
+## Colors after
+
+![](images/colors-after.png){fig-align="center"}
+
+## Your Turn! {.exercise}
 
 Open up your `_quarto.yml` file and experiment with the colors
 
@@ -108,6 +130,8 @@ Open up your `_quarto.yml` file and experiment with the colors
 - `backgroundcolor`
 
 - `monobackgroundcolor`
+
+{{< countdown "5:00" >}}
 
 ## Fonts
 
@@ -137,16 +161,19 @@ Font specification works by having a fallback, so if `"Gill Sans"` isn't availab
 
 We will talk more later, about how we can load in new family names.
 
-::: footer
-
+:::: footer
 <https://developer.mozilla.org/en-US/docs/Web/CSS/font-family>
 :::
 
-## Fonts
+## Fonts before
 
-TODO: show examples and before after
+![](images/colors-after.png){fig-align="center"}
 
-## Your Turn!
+## Fonts after
+
+![](images/fonts-after.png){fig-align="center"}
+
+## Your Turn! {.exercise}
 
 Open up your `_quarto.yml` file and experiment with the fonts
 
@@ -157,6 +184,8 @@ Open up your `_quarto.yml` file and experiment with the fonts
 generic families include
 
 serif, sans-serif, monospace, cursive, fantasy, system-ui, ui-serif, ui-sans-serif, ui-monospace, ui-rounded, and fangsong
+
+{{< countdown "5:00" >}}
 
 ## Sizes
 
@@ -186,16 +215,19 @@ Specifying a length in CSS can be done in dozens of ways,
 
 - Calculated font-size of an element, `1em` should remain unchanged, `2em` should double it
 
-::: footer
-
+:::: footer
 [font sizes](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size) & [line height](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height)
 :::
 
-## Sizes
+## Sizes before
 
-TODO: show examples and before after
+![](images/fonts-after.png){fig-align="center"}
 
-## Your Turn!
+## Sizes after
+
+![](images/sizes-after.png){fig-align="center"}
+
+## Your Turn! {.exercise}
 
 Open up your `_quarto.yml` file and experiment with the sizing
 
@@ -205,13 +237,13 @@ Open up your `_quarto.yml` file and experiment with the sizing
 
 - `linestretch`
 
+{{< countdown "5:00" >}}
+
 # Publishing
 
 ## Show the world!
 
-TODO: add fun image
-
-There are many different ways we can publish the our stuff. We will show [Quarto Pub](https://quartopub.com/) here and now
+There are many different ways we can publish our stuff. We will show [Quarto Pub](https://quartopub.com/) here and now
 
 Many different ways: <https://quarto.org/docs/publishing/>
 
@@ -219,12 +251,12 @@ Many different ways: <https://quarto.org/docs/publishing/>
 
 We use the `quarto publish` commend, specifically `quarto publish quarto-pub`
 
-## what happens next
+# what happens next?
 
-TODO: add ¿pictures?
-
-## Your Turn!
+## Your Turn! {.exercise}
 
 Make sure you are set up to use Quarto Pub, then run `quarto publish quarto-pub`
 
-## You did it!
+{{< countdown "5:00" >}}
+
+# You did it!
