@@ -103,6 +103,8 @@ categories:
     -   What makes this a blog?
     -   What would you change if this was a gallery of your projects?
 
+{{< countdown 10:00 >}}
+
 ## Default
 
 ![](images/listings-default.png)
@@ -260,6 +262,8 @@ listing:
 
 4. Brainstorm:  What could you use a listing for on your own site?
 
+{{< countdown 10:00 >}}
+
 ## Advanced Customization
 
 Example: <https://www.andrewheiss.com/teaching/>  
@@ -410,3 +414,5 @@ Define how item in `items` should be generated
 3. Add the page to your site navigation
 
 4. Clean up any template listing pages/files/folders you don't want
+
+{{< countdown 10:00 >}}

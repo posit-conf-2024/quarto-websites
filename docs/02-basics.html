@@ -474,7 +474,13 @@
 <p>Cmd/Ctrl + Shift + K</p>
 </div><div class="column">
 <h3 id="whole-site-1">Whole site</h3>
-<p><strong>Quarto: Render Project</strong></p>
+<p>No command, use Terminal:</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Terminal</strong></pre>
+</div>
+<div class="sourceCode" id="cb4" data-filename="Terminal"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb4-1"><a aria-hidden="true" tabindex="-1"></a>quarto preview </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </div>
 </div>
 <p>Requires <a href="https://marketplace.visualstudio.com/items?itemName=quarto.quarto">Quarto Extension</a></p>
@@ -487,7 +493,7 @@
 <div class="code-with-filename-file">
 <pre><strong>Terminal</strong></pre>
 </div>
-<div class="sourceCode" id="cb4" data-filename="Terminal"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb4-1"><a aria-hidden="true" tabindex="-1"></a>quarto preview index.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5" data-filename="Terminal"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb5-1"><a aria-hidden="true" tabindex="-1"></a>quarto preview index.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="column">
 <h3 id="whole-site-2">Whole site</h3>
@@ -495,7 +501,7 @@
 <div class="code-with-filename-file">
 <pre><strong>Terminal</strong></pre>
 </div>
-<div class="sourceCode" id="cb5" data-filename="Terminal"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb5-1"><a aria-hidden="true" tabindex="-1"></a>quarto preview </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6" data-filename="Terminal"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb6-1"><a aria-hidden="true" tabindex="-1"></a>quarto preview </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -506,14 +512,14 @@
 <section id="your-turn" class="slide level2 exercise">
 <h2>Your Turn</h2>
 <ol type="1">
-<li><p>Get the starter template</p></li>
+<li><p>Get the starter template. (<em>On Posit Cloud? Skip this step.</em>)</p></li>
 <li><p>Open <code>index.qmd</code></p></li>
 <li><p>Preview <code>index.qmd</code></p></li>
 <li><p>Edit <code>title</code> and <code>subtitle</code> in the <code>index.qmd</code> YAML to reflect your site</p></li>
-<li><p>Previews</p></li>
+<li><p>Preview</p></li>
 <li><p>What else is in <code>index.qmd</code>? Can you match the contents of <code>index.qmd</code> with contents of the webpage?</p></li>
 </ol>
-<div id="timer_2c84a6966a89944febb078962e17ee61f42f224a" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_fe029d3919219c216fdfb2db4d5848f83730b8a1" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
@@ -538,31 +544,31 @@ No peeking
 <div class="code-with-filename-file">
 <pre><strong>index.qmd</strong></pre>
 </div>
-<div class="sourceCode" id="cb6" data-filename="index.qmd"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
-<span id="cb6-2"><a aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Alicia"</span></span>
-<span id="cb6-3"><a aria-hidden="true" tabindex="-1"></a><span class="fu">subtitle</span><span class="kw">:</span><span class="at"> </span><span class="st">"Data Scientist"</span></span>
-<span id="cb6-4"><a aria-hidden="true" tabindex="-1"></a><span class="co"># `profile.jpg` photo by Jan Tinneberg on https://unsplash.com</span></span>
-<span id="cb6-5"><a aria-hidden="true" tabindex="-1"></a><span class="fu">image</span><span class="kw">:</span><span class="at"> profile.jpg</span></span>
-<span id="cb6-6"><a aria-hidden="true" tabindex="-1"></a><span class="fu">about</span><span class="kw">:</span><span class="co"> # https://quarto.org/docs/websites/website-about.html</span></span>
-<span id="cb6-7"><a aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">template</span><span class="kw">:</span><span class="at"> jolla</span></span>
-<span id="cb6-8"><a aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">links</span><span class="kw">:</span></span>
-<span id="cb6-9"><a aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> github</span></span>
-<span id="cb6-10"><a aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Github</span></span>
-<span id="cb6-11"><a aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://github.com</span></span>
-<span id="cb6-12"><a aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> linkedin</span></span>
-<span id="cb6-13"><a aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">text</span><span class="kw">:</span><span class="at"> LinkedIn</span></span>
-<span id="cb6-14"><a aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://linkedin.com</span></span>
-<span id="cb6-15"><a aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
-<span id="cb6-16"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-17"><a aria-hidden="true" tabindex="-1"></a><span class="at">A little bit about me and my life.</span></span>
-<span id="cb6-18"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-19"><a aria-hidden="true" tabindex="-1"></a><span class="co">## Education</span></span>
-<span id="cb6-20"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-21"><a aria-hidden="true" tabindex="-1"></a><span class="at">University of XYZ, City \| Location \| Sept 20XX - June 20XX</span></span>
-<span id="cb6-22"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-23"><a aria-hidden="true" tabindex="-1"></a><span class="co">## Experience</span></span>
-<span id="cb6-24"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-25"><a aria-hidden="true" tabindex="-1"></a><span class="at">Workplace \| Job title \| April 20XX - present</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7" data-filename="index.qmd"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><a aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb7-2"><a aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Alicia"</span></span>
+<span id="cb7-3"><a aria-hidden="true" tabindex="-1"></a><span class="fu">subtitle</span><span class="kw">:</span><span class="at"> </span><span class="st">"Data Scientist"</span></span>
+<span id="cb7-4"><a aria-hidden="true" tabindex="-1"></a><span class="co"># `profile.jpg` photo by Jan Tinneberg on https://unsplash.com</span></span>
+<span id="cb7-5"><a aria-hidden="true" tabindex="-1"></a><span class="fu">image</span><span class="kw">:</span><span class="at"> profile.jpg</span></span>
+<span id="cb7-6"><a aria-hidden="true" tabindex="-1"></a><span class="fu">about</span><span class="kw">:</span><span class="co"> # https://quarto.org/docs/websites/website-about.html</span></span>
+<span id="cb7-7"><a aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">template</span><span class="kw">:</span><span class="at"> jolla</span></span>
+<span id="cb7-8"><a aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">links</span><span class="kw">:</span></span>
+<span id="cb7-9"><a aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> github</span></span>
+<span id="cb7-10"><a aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Github</span></span>
+<span id="cb7-11"><a aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://github.com</span></span>
+<span id="cb7-12"><a aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> linkedin</span></span>
+<span id="cb7-13"><a aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">text</span><span class="kw">:</span><span class="at"> LinkedIn</span></span>
+<span id="cb7-14"><a aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://linkedin.com</span></span>
+<span id="cb7-15"><a aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb7-16"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-17"><a aria-hidden="true" tabindex="-1"></a><span class="at">A little bit about me and my life.</span></span>
+<span id="cb7-18"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-19"><a aria-hidden="true" tabindex="-1"></a><span class="co">## Education</span></span>
+<span id="cb7-20"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-21"><a aria-hidden="true" tabindex="-1"></a><span class="at">University of XYZ, City \| Location \| Sept 20XX - June 20XX</span></span>
+<span id="cb7-22"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-23"><a aria-hidden="true" tabindex="-1"></a><span class="co">## Experience</span></span>
+<span id="cb7-24"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-25"><a aria-hidden="true" tabindex="-1"></a><span class="at">Workplace \| Job title \| April 20XX - present</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="column">
 <p>Webpages are like any other Quarto document:</p>
@@ -579,10 +585,10 @@ No peeking
 <h2>About Pages</h2>
 <p>Special pages controlled by the <code>about</code> key in YAML.</p>
 <p>Content and YAML values are combined using a template:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><a aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
-<span id="cb7-2"><a aria-hidden="true" tabindex="-1"></a><span class="fu">about</span><span class="kw">:</span></span>
-<span id="cb7-3"><a aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">template</span><span class="kw">:</span><span class="at"> jolla</span></span>
-<span id="cb7-4"><a aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb8-1"><a aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb8-2"><a aria-hidden="true" tabindex="-1"></a><span class="fu">about</span><span class="kw">:</span></span>
+<span id="cb8-3"><a aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">template</span><span class="kw">:</span><span class="at"> jolla</span></span>
+<span id="cb8-4"><a aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Templates: <code>jolla</code>, <code>trestles</code>, <code>solana</code>, <code>marquee</code>, or <code>broadside</code></p>
 <div class="footer">
 <p>https://quarto.org/docs/websites/website-about.html</p>
@@ -596,6 +602,13 @@ No peeking
 <li><p>Edit the links to point at your own profiles, or add different links.</p></li>
 <li><p>Experiment with <a href="https://quarto.org/docs/websites/website-about.html#image"><code>image-shape</code></a>.</p></li>
 </ol>
+<div id="timer_fe029d3919219c216fdfb2db4d5848f83730b8a1" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">04</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
 </section>
 <section id="image" class="slide level2">
 <h2><code>image</code></h2>
@@ -606,9 +619,9 @@ No peeking
 <div class="code-with-filename-file">
 <pre><strong>index.qmd</strong></pre>
 </div>
-<div class="sourceCode" id="cb8" data-filename="index.qmd"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb8-1"><a aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
-<span id="cb8-2"><a aria-hidden="true" tabindex="-1"></a><span class="fu">image</span><span class="kw">:</span><span class="at"> profile.jpg</span></span>
-<span id="cb8-3"><a aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9" data-filename="index.qmd"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb9-1"><a aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb9-2"><a aria-hidden="true" tabindex="-1"></a><span class="fu">image</span><span class="kw">:</span><span class="at"> profile.jpg</span></span>
+<span id="cb9-3"><a aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="column">
 <pre><code>website/
@@ -628,9 +641,9 @@ No peeking
 <div class="code-with-filename-file">
 <pre><strong>index.qmd</strong></pre>
 </div>
-<div class="sourceCode" id="cb10" data-filename="index.qmd"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb10-1"><a aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
-<span id="cb10-2"><a aria-hidden="true" tabindex="-1"></a><span class="fu">image</span><span class="kw">:</span><span class="at"> images/profile.jpg</span></span>
-<span id="cb10-3"><a aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11" data-filename="index.qmd"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb11-1"><a aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb11-2"><a aria-hidden="true" tabindex="-1"></a><span class="fu">image</span><span class="kw">:</span><span class="at"> images/profile.jpg</span></span>
+<span id="cb11-3"><a aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="column">
 <pre><code>website/
@@ -645,6 +658,13 @@ No peeking
 <section id="your-turn-2" class="slide level2 exercise">
 <h2>Your Turn</h2>
 <p>Replace the image with one that reflects you or your site.</p>
+<div id="timer_fe029d3919219c216fdfb2db4d5848f83730b8a1" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">04</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
 </section>
 <section id="website-structure" class="slide level2">
 <h2>Website Structure</h2>
@@ -661,21 +681,21 @@ No peeking
 <div class="code-with-filename-file">
 <pre><strong>_quarto.yml</strong></pre>
 </div>
-<div class="sourceCode" id="cb12" data-filename="_quarto.yml" data-code-line-numbers="|1-2|4-14|15-18"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb12-1"><a></a><span class="fu">project</span><span class="kw">:</span></span>
-<span id="cb12-2"><a></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
-<span id="cb12-3"><a></a></span>
-<span id="cb12-4"><a></a><span class="fu">website</span><span class="kw">:</span></span>
-<span id="cb12-5"><a></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Home"</span></span>
-<span id="cb12-6"><a></a><span class="at">  </span><span class="fu">open-graph</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span><span class="co"> # https://quarto.org/docs/websites/website-tools.html#open-graph</span></span>
-<span id="cb12-7"><a></a><span class="at">  </span><span class="fu">page-footer</span><span class="kw">:</span><span class="at"> </span><span class="st">"Made with ❤️ and Quarto"</span></span>
-<span id="cb12-8"><a></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
-<span id="cb12-9"><a></a><span class="at">    </span><span class="fu">right</span><span class="kw">:</span></span>
-<span id="cb12-10"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Home</span></span>
-<span id="cb12-11"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.qmd</span></span>
-<span id="cb12-12"><a></a></span>
-<span id="cb12-13"><a></a><span class="fu">format</span><span class="kw">:</span></span>
-<span id="cb12-14"><a></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
-<span id="cb12-15"><a></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">cosmo</span><span class="kw">,</span><span class="at"> styles.scss</span><span class="kw">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13" data-filename="_quarto.yml" data-code-line-numbers="|1-2|4-14|15-18"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb13-1"><a></a><span class="fu">project</span><span class="kw">:</span></span>
+<span id="cb13-2"><a></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
+<span id="cb13-3"><a></a></span>
+<span id="cb13-4"><a></a><span class="fu">website</span><span class="kw">:</span></span>
+<span id="cb13-5"><a></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Home"</span></span>
+<span id="cb13-6"><a></a><span class="at">  </span><span class="fu">open-graph</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span><span class="co"> # https://quarto.org/docs/websites/website-tools.html#open-graph</span></span>
+<span id="cb13-7"><a></a><span class="at">  </span><span class="fu">page-footer</span><span class="kw">:</span><span class="at"> </span><span class="st">"Made with ❤️ and Quarto"</span></span>
+<span id="cb13-8"><a></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
+<span id="cb13-9"><a></a><span class="at">    </span><span class="fu">right</span><span class="kw">:</span></span>
+<span id="cb13-10"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Home</span></span>
+<span id="cb13-11"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.qmd</span></span>
+<span id="cb13-12"><a></a></span>
+<span id="cb13-13"><a></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb13-14"><a></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb13-15"><a></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">cosmo</span><span class="kw">,</span><span class="at"> styles.scss</span><span class="kw">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 <div class="quarto-auto-generated-content">

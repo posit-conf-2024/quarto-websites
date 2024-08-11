@@ -11,7 +11,7 @@
     "href": "prework.html#required-software",
     "title": "Pre-workshop Instructions",
     "section": "Required Software",
-    "text": "Required Software\n\nQuarto: v1.5\nOne of the following IDEs:\n\nRStudio\nVS Code and the VS Code Quarto Extension"
+    "text": "Required Software\n\nQuarto: v1.5\nOne of the following IDEs:\n\nRStudio\nVS Code and the VS Code Quarto Extension\n\n\nIf you have any trouble with the software requirements, we will have a Posit Cloud workspace available with everything you need already installed. We’ll share the link to join on the day."
   },
   {
     "objectID": "prework.html#optional-publishing-accounts",
@@ -21,18 +21,18 @@
     "text": "Optional Publishing Accounts\nTo publish your website you’ll need an account on one of Quarto’s publishing venues:\n\n(Recommended) Quarto Pub\nGitHub only if you are already a Git/GitHub user"
   },
   {
-    "objectID": "prework.html#join-the-workshop-discord-channel",
-    "href": "prework.html#join-the-workshop-discord-channel",
-    "title": "Pre-workshop Instructions",
-    "section": "Join the Workshop Discord Channel",
-    "text": "Join the Workshop Discord Channel\nThe Discord server will be available after August 8th:\n\npos.it/conf-event-portal: Login\nClick on “Join Discord, the virtual networking platform!”\nBrowse Channels -&gt; #workshop-quarto-websites"
-  },
-  {
     "objectID": "prework.html#preparation",
     "href": "prework.html#preparation",
     "title": "Pre-workshop Instructions",
     "section": "Preparation",
     "text": "Preparation\nThere are a few things you might like to collect before arriving:\n\nAn photo/image you would like on your home page\nA paragraph about who you are (or what your site is about)\n\nA list of projects, talks, classes, or publications\nAny existing Quarto documents you would like to include in your site"
+  },
+  {
+    "objectID": "prework.html#join-the-workshop-discord-channel",
+    "href": "prework.html#join-the-workshop-discord-channel",
+    "title": "Pre-workshop Instructions",
+    "section": "Join the Workshop Discord Channel",
+    "text": "Join the Workshop Discord Channel\nThe Discord server will be available after August 8th:\n\npos.it/conf-event-portal: Login\nClick on “Join Discord, the virtual networking platform!”\nBrowse Channels -&gt; #workshop-quarto-websites"
   },
   {
     "objectID": "02-basics.html#start-with-a-template",
@@ -60,14 +60,14 @@
     "href": "02-basics.html#preview",
     "title": "Quarto Websites Workshop",
     "section": "Preview",
-    "text": "Preview\n\nRStudioVS CodeTerminal\n\n\n\n\nCurrent page\n\nCmd/Ctrl + Shift + K\n\nWhole site\nBuild &gt; Render Website\n\n\n\n\n\n\n\nCurrent page\n\nCmd/Ctrl + Shift + K\n\nWhole site\nQuarto: Render Project\n\n\nRequires Quarto Extension\n\n\n\n\nCurrent page\n\n\nTerminal\n\nquarto preview index.qmd\n\n\nWhole site\n\n\nTerminal\n\nquarto preview"
+    "text": "Preview\n\nRStudioVS CodeTerminal\n\n\n\n\nCurrent page\n\nCmd/Ctrl + Shift + K\n\nWhole site\nBuild &gt; Render Website\n\n\n\n\n\n\n\nCurrent page\n\nCmd/Ctrl + Shift + K\n\nWhole site\nNo command, use Terminal:\n\n\nTerminal\n\nquarto preview \n\n\n\nRequires Quarto Extension\n\n\n\n\nCurrent page\n\n\nTerminal\n\nquarto preview index.qmd\n\n\nWhole site\n\n\nTerminal\n\nquarto preview"
   },
   {
     "objectID": "02-basics.html#your-turn",
     "href": "02-basics.html#your-turn",
     "title": "Quarto Websites Workshop",
     "section": "Your Turn",
-    "text": "Your Turn\n\nGet the starter template\nOpen index.qmd\nPreview index.qmd\nEdit title and subtitle in the index.qmd YAML to reflect your site\nPreviews\nWhat else is in index.qmd? Can you match the contents of index.qmd with contents of the webpage?\n\n\n  \n    −\n    +\n \n 05:00"
+    "text": "Your Turn\n\nGet the starter template. (On Posit Cloud? Skip this step.)\nOpen index.qmd\nPreview index.qmd\nEdit title and subtitle in the index.qmd YAML to reflect your site\nPreview\nWhat else is in index.qmd? Can you match the contents of index.qmd with contents of the webpage?\n\n\n  \n    −\n    +\n \n 05:00"
   },
   {
     "objectID": "02-basics.html#index.qmd-components",
@@ -95,7 +95,7 @@
     "href": "02-basics.html#your-turn-1",
     "title": "Quarto Websites Workshop",
     "section": "Your Turn",
-    "text": "Your Turn\n\nEdit the content in index.qmd to reflect you.\nTry different templates and pick one.\nEdit the links to point at your own profiles, or add different links.\nExperiment with image-shape."
+    "text": "Your Turn\n\nEdit the content in index.qmd to reflect you.\nTry different templates and pick one.\nEdit the links to point at your own profiles, or add different links.\nExperiment with image-shape.\n\n\n  \n    −\n    +\n \n 04:00"
   },
   {
     "objectID": "02-basics.html#image",
@@ -116,7 +116,7 @@
     "href": "02-basics.html#your-turn-2",
     "title": "Quarto Websites Workshop",
     "section": "Your Turn",
-    "text": "Your Turn\nReplace the image with one that reflects you or your site."
+    "text": "Your Turn\nReplace the image with one that reflects you or your site.\n\n  \n    −\n    +\n \n 04:00"
   },
   {
     "objectID": "02-basics.html#website-structure",
@@ -147,18 +147,18 @@
     "text": "Schedule\n\n\n\nTime\nTopic\nInstructor\n\n\n\n\n09:00 - 9:20\nIntroduction\nCharlotte\n\n\n09:20 - 9:50\nBasics\nCharlotte\n\n\n09:50 - 10:30\nStyle\nEmil\n\n\n10:30 - 11:00\nCoffee Break\n\n\n\n11:00 - 12:30\nNavigation\nCharlotte\n\n\n12:30 - 13:30\nLunch\n\n\n\n13:30 - 15:00\nCSS\nEmil\n\n\n15:00 - 15:30\nCoffee Break\n\n\n\n15:30 - 16:30\nListings\nCharlotte\n\n\n16:30 - 17:00\nRoundup\nEmil"
   },
   {
-    "objectID": "03-style.html#we-have-a-website-and-we-are-happy-with-it",
-    "href": "03-style.html#we-have-a-website-and-we-are-happy-with-it",
+    "objectID": "03-style.html#section",
+    "href": "03-style.html#section",
     "title": "Quarto Websites Workshop",
-    "section": "We have a website and we are happy with it!",
-    "text": "We have a website and we are happy with it!\nTODO: insert fun celebratory image"
+    "section": "",
+    "text": "We have a website!\n🎉🥳🎉"
   },
   {
-    "objectID": "03-style.html#they-all-look-the-same",
-    "href": "03-style.html#they-all-look-the-same",
+    "objectID": "03-style.html#section-1",
+    "href": "03-style.html#section-1",
     "title": "Quarto Websites Workshop",
-    "section": "They all look the same",
-    "text": "They all look the same\nTODO: insert sad-ish image here\nTODO: add “BUT wait” caption as incremental effect"
+    "section": "",
+    "text": "They all look the same\n🌧️🙁🌧️\n\nBut wait!"
   },
   {
     "objectID": "03-style.html#styling-with-quarto",
@@ -175,13 +175,6 @@
     "text": "Styling using yaml\n\n\nWith Quarto html output we have a number of ways to style the site\n\nA number of basic options allows us to change colors, fonts, and SIZES\n\n\n\nhttps://quarto.org/docs/output-formats/html-themes.html#basic-options"
   },
   {
-    "objectID": "03-style.html#colors-fonts-sizes",
-    "href": "03-style.html#colors-fonts-sizes",
-    "title": "Quarto Websites Workshop",
-    "section": "colors, fonts, sizes",
-    "text": "colors, fonts, sizes\nTODO: diagram/picture of a web page, with relevant areas highlighted"
-  },
-  {
     "objectID": "03-style.html#colors",
     "href": "03-style.html#colors",
     "title": "Quarto Websites Workshop",
@@ -196,11 +189,18 @@
     "text": "What is a color?\nWe can specify colors in many different ways using CSS\n\nnamed colors such as orange and lightskyblue\nRGB Hexadecimal, such as #FFA500 and #87CEFA\nUsing a color space\n\nrgb(214, 122, 127)\nhsl(30deg 82% 43%)\nhwb(152deg 0% 58% / 70%)\n\nand more\n\n\nhttps://developer.mozilla.org/en-US/docs/Web/CSS/color"
   },
   {
-    "objectID": "03-style.html#colors-1",
-    "href": "03-style.html#colors-1",
+    "objectID": "03-style.html#colors-before",
+    "href": "03-style.html#colors-before",
     "title": "Quarto Websites Workshop",
-    "section": "Colors",
-    "text": "Colors\nTODO: show examples and before after"
+    "section": "Colors before",
+    "text": "Colors before"
+  },
+  {
+    "objectID": "03-style.html#colors-after",
+    "href": "03-style.html#colors-after",
+    "title": "Quarto Websites Workshop",
+    "section": "Colors after",
+    "text": "Colors after"
   },
   {
     "objectID": "03-style.html#your-turn",
@@ -224,11 +224,18 @@
     "text": "What is a font?\nA font family is specified either as a family name or as a generic name.\nIn the below example, \"Gill Sans\" is a family name, and sans-serif is a generic name.\n\"Gill Sans\", sans-serif\nFont specification works by having a fallback, so if \"Gill Sans\" isn’t available for the user, then sans-serif is used instead.\nWe will talk more later, about how we can load in new family names.\n\nhttps://developer.mozilla.org/en-US/docs/Web/CSS/font-family"
   },
   {
-    "objectID": "03-style.html#fonts-1",
-    "href": "03-style.html#fonts-1",
+    "objectID": "03-style.html#fonts-before",
+    "href": "03-style.html#fonts-before",
     "title": "Quarto Websites Workshop",
-    "section": "Fonts",
-    "text": "Fonts\nTODO: show examples and before after"
+    "section": "Fonts before",
+    "text": "Fonts before"
+  },
+  {
+    "objectID": "03-style.html#fonts-after",
+    "href": "03-style.html#fonts-after",
+    "title": "Quarto Websites Workshop",
+    "section": "Fonts after",
+    "text": "Fonts after"
   },
   {
     "objectID": "03-style.html#your-turn-1",
@@ -252,11 +259,18 @@
     "text": "How to specify sizes\nSpecifying a length in CSS can be done in dozens of ways,\n\nUsing pixel counts 18px or 100px\nCalculated font-size of an element, 1em should remain unchanged, 2em should double it\n\n\nfont sizes & line height"
   },
   {
-    "objectID": "03-style.html#sizes-1",
-    "href": "03-style.html#sizes-1",
+    "objectID": "03-style.html#sizes-before",
+    "href": "03-style.html#sizes-before",
     "title": "Quarto Websites Workshop",
-    "section": "Sizes",
-    "text": "Sizes\nTODO: show examples and before after"
+    "section": "Sizes before",
+    "text": "Sizes before"
+  },
+  {
+    "objectID": "03-style.html#sizes-after",
+    "href": "03-style.html#sizes-after",
+    "title": "Quarto Websites Workshop",
+    "section": "Sizes after",
+    "text": "Sizes after"
   },
   {
     "objectID": "03-style.html#your-turn-2",
@@ -280,25 +294,11 @@
     "text": "Quarto Pub\nWe use the quarto publish commend, specifically quarto publish quarto-pub"
   },
   {
-    "objectID": "03-style.html#what-happens-next",
-    "href": "03-style.html#what-happens-next",
-    "title": "Quarto Websites Workshop",
-    "section": "what happens next",
-    "text": "what happens next\nTODO: add ¿pictures?"
-  },
-  {
     "objectID": "03-style.html#your-turn-3",
     "href": "03-style.html#your-turn-3",
     "title": "Quarto Websites Workshop",
     "section": "Your Turn!",
     "text": "Your Turn!\nMake sure you are set up to use Quarto Pub, then run quarto publish quarto-pub\n\n  \n    −\n    +\n \n 05:00"
-  },
-  {
-    "objectID": "03-style.html#you-did-it",
-    "href": "03-style.html#you-did-it",
-    "title": "Quarto Websites Workshop",
-    "section": "You did it!",
-    "text": "You did it!"
   },
   {
     "objectID": "01-introduction.html#quarto-websites-welcome",
@@ -333,7 +333,7 @@
     "href": "01-introduction.html#about-you",
     "title": "Quarto Websites Workshop",
     "section": "About You",
-    "text": "About You\nYour Turn\nIntroduce yourself to your neighbors:\n\nName\nProfessional affiliation\nWhat do you use Quarto for?"
+    "text": "About You\nYour Turn\nIntroduce yourself to your neighbors:\n\nName\nProfessional affiliation\nWhat do you use Quarto for?\n\n\n  \n    −\n    +\n \n 04:00"
   },
   {
     "objectID": "01-introduction.html#meeting-you-where-you-are",
@@ -431,7 +431,7 @@
     "href": "04-navigation.html#your-turn",
     "title": "Quarto Websites Workshop",
     "section": "Your Turn",
-    "text": "Your Turn\nAdd a new page to your site:\n\nThink about the URL first\nCreate the page file in the appropriate location\nAdd some content"
+    "text": "Your Turn\nAdd a new page to your site:\n\nThink about the URL first\nCreate the page file in the appropriate location\nAdd some content\n\n\n  \n    −\n    +\n \n 05:00"
   },
   {
     "objectID": "04-navigation.html#in-text-links",
@@ -480,14 +480,14 @@
     "href": "04-navigation.html#your-turn-2",
     "title": "Quarto Websites Workshop",
     "section": "Your Turn",
-    "text": "Your Turn\n\nCustomize your navigation bar title\nExperiment with the position of your links in the navbar: left, right or a mix\nAdd at least one item to tools in your navbar"
+    "text": "Your Turn\n\nCustomize your navigation bar title\nExperiment with the position of your links in the navbar: left, right or a mix\nAdd at least one item to tools in your navbar\n\n\n  \n    −\n    +\n \n 05:00"
   },
   {
     "objectID": "04-navigation.html#your-turn-3",
     "href": "04-navigation.html#your-turn-3",
     "title": "Quarto Websites Workshop",
     "section": "Your Turn",
-    "text": "Your Turn\nBrainstorm with your neighbor: What elements on this page allow the user to navigate the site?\n\n…\n\n\nhttps://quarto.org/docs/websites/website-navigation.html#top-navigation"
+    "text": "Your Turn\nBrainstorm with your neighbor: What elements on this page allow the user to navigate the site?\n\n…\n\n\n  \n    −\n    +\n \n 05:00\n \n\nhttps://quarto.org/docs/websites/website-navigation.html#top-navigation"
   },
   {
     "objectID": "04-navigation.html#navigation-elements",
@@ -550,7 +550,7 @@
     "href": "04-navigation.html#your-turn-4",
     "title": "Quarto Websites Workshop",
     "section": "Your Turn",
-    "text": "Your Turn\nHere’s three different navigation options for the same set of content:\n\nAutomatically generated side navigation\nEverything in top navigation\nHybrid navigation\n\nPick one, and discuss the pros and cons with your neighbor.\n(Done? Expand your conversation to another option or another neighbor)"
+    "text": "Your Turn\nHere’s three different navigation options for the same set of content:\n\nAutomatically generated side navigation\nEverything in top navigation\nHybrid navigation\n\nPick one, and discuss the pros and cons with your neighbor.\n(Done? Expand your conversation to another option or another neighbor)\n\n  \n    −\n    +\n \n 05:00"
   },
   {
     "objectID": "04-navigation.html#pro-and-cons",
@@ -613,7 +613,7 @@
     "href": "04-navigation.html#your-turn-5",
     "title": "Quarto Websites Workshop",
     "section": "Your Turn",
-    "text": "Your Turn\nWork on your site: add pages, edit navigation, add/edit content.\nWe are here to help. Publish a new version before lunch."
+    "text": "Your Turn\nWork on your site: add pages, edit navigation, add/edit content.\nWe are here to help. Publish a new version before lunch.\n\n  \n    −\n    +\n \n 10:00"
   },
   {
     "objectID": "05-css.html#what-is-css",
@@ -1152,7 +1152,7 @@
     "href": "06-listings.html#your-turn",
     "title": "Quarto Websites Workshop",
     "section": "Your Turn",
-    "text": "Your Turn\n\n(Repeat) Make a new page blog/index.qmd which is a listing\nExperiment with type and categories:\n\ntype: grid or table\ncategories: true, unnumbered, cloud\n\nOther listing options\nDiscuss with your neighbor:\n\nWhat makes this a blog?\nWhat would you change if this was a gallery of your projects?"
+    "text": "Your Turn\n\n(Repeat) Make a new page blog/index.qmd which is a listing\nExperiment with type and categories:\n\ntype: grid or table\ncategories: true, unnumbered, cloud\n\nOther listing options\nDiscuss with your neighbor:\n\nWhat makes this a blog?\nWhat would you change if this was a gallery of your projects?\n\n\n\n  \n    −\n    +\n \n 10:00"
   },
   {
     "objectID": "06-listings.html#default",
@@ -1243,7 +1243,7 @@
     "href": "06-listings.html#your-turn-1",
     "title": "Quarto Websites Workshop",
     "section": "Your Turn",
-    "text": "Your Turn\n\nSwitch to type: table\nOmit the image field from the listing\nChange the name of the “Categories” column to “Skills”\nBrainstorm: What could you use a listing for on your own site?"
+    "text": "Your Turn\n\nSwitch to type: table\nOmit the image field from the listing\nChange the name of the “Categories” column to “Skills”\nBrainstorm: What could you use a listing for on your own site?\n\n\n  \n    −\n    +\n \n 10:00"
   },
   {
     "objectID": "06-listings.html#advanced-customization",
@@ -1278,62 +1278,6 @@
     "href": "06-listings.html#your-turn-2",
     "title": "Quarto Websites Workshop",
     "section": "Your Turn",
-    "text": "Your Turn\nAdd a listing page to your site:\n\nCreate a page to house the listing\nEither:\n\npopulate a .yml file with a couple of items (use projects/project.yml as a template), or\ncreate some placeholder .qmd files.\n\nAdd the page to your site navigation\nClean up any template listing pages/files/folders you don’t want"
-  },
-  {
-    "objectID": "03-style.html#section",
-    "href": "03-style.html#section",
-    "title": "Quarto Websites Workshop",
-    "section": "",
-    "text": "We have a website!\n🎉🥳🎉"
-  },
-  {
-    "objectID": "03-style.html#section-1",
-    "href": "03-style.html#section-1",
-    "title": "Quarto Websites Workshop",
-    "section": "",
-    "text": "They all look the same\n🌧️🙁🌧️\n\nBut wait!"
-  },
-  {
-    "objectID": "03-style.html#colors-before",
-    "href": "03-style.html#colors-before",
-    "title": "Quarto Websites Workshop",
-    "section": "Colors before",
-    "text": "Colors before"
-  },
-  {
-    "objectID": "03-style.html#colors-after",
-    "href": "03-style.html#colors-after",
-    "title": "Quarto Websites Workshop",
-    "section": "Colors after",
-    "text": "Colors after"
-  },
-  {
-    "objectID": "03-style.html#fonts-before",
-    "href": "03-style.html#fonts-before",
-    "title": "Quarto Websites Workshop",
-    "section": "Fonts before",
-    "text": "Fonts before"
-  },
-  {
-    "objectID": "03-style.html#fonts-after",
-    "href": "03-style.html#fonts-after",
-    "title": "Quarto Websites Workshop",
-    "section": "Fonts after",
-    "text": "Fonts after"
-  },
-  {
-    "objectID": "03-style.html#sizes-before",
-    "href": "03-style.html#sizes-before",
-    "title": "Quarto Websites Workshop",
-    "section": "Sizes before",
-    "text": "Sizes before"
-  },
-  {
-    "objectID": "03-style.html#sizes-after",
-    "href": "03-style.html#sizes-after",
-    "title": "Quarto Websites Workshop",
-    "section": "Sizes after",
-    "text": "Sizes after"
+    "text": "Your Turn\nAdd a listing page to your site:\n\nCreate a page to house the listing\nEither:\n\npopulate a .yml file with a couple of items (use projects/project.yml as a template), or\ncreate some placeholder .qmd files.\n\nAdd the page to your site navigation\nClean up any template listing pages/files/folders you don’t want\n\n\n  \n    −\n    +\n \n 10:00"
   }
 ]
