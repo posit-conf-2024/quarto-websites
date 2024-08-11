@@ -616,6 +616,48 @@
     "text": "Your Turn\nWork on your site: add pages, edit navigation, add/edit content.\nWe are here to help. Publish a new version before lunch.\n\n  \n    −\n    +\n \n 10:00"
   },
   {
+    "objectID": "07-roundup.html#your-turn",
+    "href": "07-roundup.html#your-turn",
+    "title": "Quarto Websites Workshop",
+    "section": "Your turn",
+    "text": "Your turn\nWhat is one thing you learned that surprised you?\nWhat is one thing you learned that you plan to use?\n\n  \n    −\n    +\n \n 05:00"
+  },
+  {
+    "objectID": "07-roundup.html#resources-to-keep-learning",
+    "href": "07-roundup.html#resources-to-keep-learning",
+    "title": "Quarto Websites Workshop",
+    "section": "Resources to keep learning",
+    "text": "Resources to keep learning\n\n\nhttps://quarto.org/\n\n\n\n\nhttps://github.com/quarto-dev/quarto-cli/discussions\n\n\n\n\nhttps://github.com/mcanouil/awesome-quarto"
+  },
+  {
+    "objectID": "07-roundup.html#what-we-didnt-get-to",
+    "href": "07-roundup.html#what-we-didnt-get-to",
+    "title": "Quarto Websites Workshop",
+    "section": "What we didn’t get to",
+    "text": "What we didn’t get to\nComputations\nCode blocks that use braces around the language name (e.g. ```{r}) are executable, and will be run by Quarto during render.\n```{r}\n#| label: fig-airquality\n#| fig-cap: \"Temperature and ozone level.\"\n#| warning: false\n\nlibrary(ggplot2)\n\nggplot(airquality, aes(Temp, Ozone)) + \n  geom_point() + \n  geom_smooth(method = \"loess\")\n```\n\nhttps://quarto.org/docs/computations/r.html"
+  },
+  {
+    "objectID": "07-roundup.html#what-we-didnt-get-to-1",
+    "href": "07-roundup.html#what-we-didnt-get-to-1",
+    "title": "Quarto Websites Workshop",
+    "section": "What we didn’t get to",
+    "text": "What we didn’t get to\nFreeze\nYou can use the freeze option to denote that computational documents should never be re-rendered during a global project render, or alternatively only be re-rendered when their source file changes:\nexecute:\n  freeze: true  # never re-render during project render\nexecute:\n  freeze: auto  # re-render only when source changes"
+  },
+  {
+    "objectID": "07-roundup.html#share-what-you-have",
+    "href": "07-roundup.html#share-what-you-have",
+    "title": "Quarto Websites Workshop",
+    "section": "Share what you have",
+    "text": "Share what you have\n\nkeep sharing in Discord, we learn better together\nQuarto Team Meetup, Tuesday 12:00 – 12:40pm\nThe quarto team will be in the Lounge Wednesday morning"
+  },
+  {
+    "objectID": "07-roundup.html#submit-feedback-before-you-leave",
+    "href": "07-roundup.html#submit-feedback-before-you-leave",
+    "title": "Quarto Websites Workshop",
+    "section": "Submit feedback before you leave",
+    "text": "Submit feedback before you leave\npos.it/conf-workshop-survey\nYour feedback is crucial! Data from the survey informs curriculum and format decisions for future conf workshops and we really appreciate you taking the time to provide it."
+  },
+  {
     "objectID": "05-css.html#what-is-css",
     "href": "05-css.html#what-is-css",
     "title": "Quarto Websites Workshop",
