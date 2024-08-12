@@ -10,9 +10,9 @@
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/quarto-contrib/countdown-0.5.0/countdown.js"></script>
 <link href="site_libs/quarto-contrib/countdown-0.5.0/countdown.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.554">
+  <meta name="generator" content="quarto-1.5.56">
 
-  <title>Quarto Websites Workshop</title>
+  <title>Quarto Websites Workshop – navigation</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -43,7 +43,7 @@
     }
     @media print {
     pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
     }
     pre.numberSource code
       { counter-reset: source-line 0; }
@@ -71,7 +71,7 @@
     code span.at { color: #657422; } /* Attribute */
     code span.bn { color: #ad0000; } /* BaseN */
     code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
     code span.ch { color: #20794d; } /* Char */
     code span.cn { color: #8f5902; } /* Constant */
     code span.co { color: #5e5e5e; } /* Comment */
@@ -85,7 +85,7 @@
     code span.fu { color: #4758ab; } /* Function */
     code span.im { color: #00769e; } /* Import */
     code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; } /* Keyword */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
     code span.op { color: #5e5e5e; } /* Operator */
     code span.ot { color: #003b4f; } /* Other */
     code span.pp { color: #ad0000; } /* Preprocessor */
@@ -427,8 +427,7 @@
 <span id="cb2-5"><a aria-hidden="true" tabindex="-1"></a>{{&lt; lipsum 1 &gt;}}</span>
 <span id="cb2-6"><a aria-hidden="true" tabindex="-1"></a>{{&lt; placeholder 400 400 &gt;}}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-</div>
+</div></div>
 </section>
 <section id="adding-pages" class="slide level2">
 <h2>Adding Pages</h2>
@@ -454,8 +453,7 @@
 <p>URL</p>
 <p><code>{ site url }/talks.html</code></p>
 <p><code>{ site url }/reports/air-quality.html</code></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="index.html-is-special" class="slide level2 smaller">
 <h2><code>index.html</code> is special</h2>
@@ -468,8 +466,7 @@
 <p>URL</p>
 <p><code>{ site url }</code></p>
 <p><code>{ site url }/talks</code></p>
-</div>
-</div>
+</div></div>
 <p><code>index.qmd</code> (or <code>.md</code>, or <code>.ipynb</code>) -&gt; <code>index.html</code></p>
 <p><code>index.html</code> acts like a default page for the site or directory.</p>
 </section>
@@ -486,8 +483,7 @@
 <p><code>{ site url }/data/monthly.csv</code></p>
 <p><code>{ site url }/cv.pdf</code></p>
 <p><code>{ site url }/reports/air-quality.pdf</code></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="structure-helps" class="slide level2">
 <h2>Structure helps …</h2>
@@ -504,7 +500,7 @@
 <li>Create the page file in the appropriate location</li>
 <li>Add some content</li>
 </ol>
-<div id="timer_231be6bf3657b185e6dbab1b820e64f3c490bd8f" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_5cfcb1cf4d8eeb965f206e07db0121e2cc214735" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
@@ -533,8 +529,7 @@
 <span id="cb3-3"><a aria-hidden="true" tabindex="-1"></a>You might like to look at </span>
 <span id="cb3-4"><a aria-hidden="true" tabindex="-1"></a>my projects <span class="co">[</span><span class="ot">projects</span><span class="co">](projects/)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-</div>
+</div></div>
 <p><br>
 </p>
 <div class="columns fragment">
@@ -548,8 +543,7 @@
 <div class="sourceCode" id="cb4" data-filename="projects/index.qmd"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a aria-hidden="true" tabindex="-1"></a>You might also be interested </span>
 <span id="cb4-2"><a aria-hidden="true" tabindex="-1"></a>in my <span class="co">[</span><span class="ot">talks</span><span class="co">](/talks.qmd)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-</div>
+</div></div>
 <div class="footer">
 <p>https://quarto.org/docs/websites/#linking</p>
 </div>
@@ -571,8 +565,7 @@
 </div>
 </div><div class="column">
 
-</div>
-</div>
+</div></div>
 </section>
 <section id="your-turn-1" class="slide level2 exercise">
 <h2>Your Turn</h2>
@@ -609,8 +602,7 @@
 <span id="cb7-5"><a aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Speaking</span></span>
 <span id="cb7-6"><a aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> megaphone</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-</div>
+</div></div>
 <p>If you don’t have <code>text</code>, add <code>aria-label</code></p>
 <p>Options for <code>icon</code>: <a href="https://icons.getbootstrap.com">Bootstrap Icons</a></p>
 </section>
@@ -637,8 +629,7 @@
 <span id="cb8-10"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> github</span></span>
 <span id="cb8-11"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://github.com/cwickham</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-</div>
+</div></div>
 <div class="footer">
 <p>https://quarto.org/docs/websites/website-navigation.html#top-navigation</p>
 </div>
@@ -669,8 +660,7 @@
 <span id="cb9-13"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> github</span></span>
 <span id="cb9-14"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://github.com/cwickham</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-</div>
+</div></div>
 <div class="footer">
 <p>https://quarto.org/docs/websites/website-navigation.html#top-navigation</p>
 </div>
@@ -682,7 +672,7 @@
 <li>Experiment with the position of your links in the navbar: <code>left</code>, <code>right</code> or a mix</li>
 <li>Add at least one item to <code>tools</code> in your navbar</li>
 </ol>
-<div id="timer_231be6bf3657b185e6dbab1b820e64f3c490bd8f" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_5cfcb1cf4d8eeb965f206e07db0121e2cc214735" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
@@ -701,7 +691,7 @@
 <p><img data-src="images/navigation-quarto-web.png"></p>
 <p>…</p>
 <p><img data-src="images/navigation-quarto-web-footer.png"></p>
-<div id="timer_231be6bf3657b185e6dbab1b820e64f3c490bd8f" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_5cfcb1cf4d8eeb965f206e07db0121e2cc214735" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
@@ -732,8 +722,7 @@ Don’t peek
 </div><div class="column">
 <p>Side navigation</p>
 <p><img data-src="images/navigation-side.png"></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="primary-navigation-1" class="slide level2">
 <h2>Primary Navigation</h2>
@@ -774,8 +763,7 @@ Don’t peek
 <span id="cb11-10"><a></a><span class="at">        </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> github    </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Add items to <code>contents</code> and <code>tools</code></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="nested-navigation" class="slide level2">
 <h2>Nested Navigation</h2>
@@ -786,8 +774,7 @@ Don’t peek
 </div><div class="column">
 <p>Side navigation</p>
 <p><img data-src="images/navigation-side-nested.png"></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="nested-navigation-1" class="slide level2">
 <h2>Nested Navigation</h2>
@@ -824,8 +811,7 @@ Don’t peek
 <span id="cb13-8"><a></a><span class="at">          </span><span class="kw">-</span><span class="at"> projects/index.qmd</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Add a <code>section</code> with its own <code>contents</code></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="hybrid-navigation" class="slide level2">
 <h2>Hybrid Navigation</h2>
@@ -836,8 +822,7 @@ Don’t peek
 <p><img data-src="images/navigation-hybrid-1.png"></p>
 </div><div class="column">
 <p><img data-src="images/navigation-hybrid-2.png"></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="hybrid-navigation-1" class="slide level2">
 <h2>Hybrid Navigation</h2>
@@ -865,8 +850,7 @@ Don’t peek
 <li>Match <code>navbar</code> item <code>text</code> to a <code>sidebar</code> item <code>title</code></li>
 <li>List <code>navbar</code> item <code>href</code> as first value in <code>sidebar</code> item <code>contents</code></li>
 </ol>
-</div>
-</div>
+</div></div>
 </section>
 <section id="automatic-sidebar" class="slide level2">
 <h2>Automatic Sidebar</h2>
@@ -890,7 +874,7 @@ Don’t peek
 </ul>
 <p>Pick one, and discuss the pros and cons with your neighbor.</p>
 <p><em>(Done? Expand your conversation to another option or another neighbor)</em></p>
-<div id="timer_231be6bf3657b185e6dbab1b820e64f3c490bd8f" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_5cfcb1cf4d8eeb965f206e07db0121e2cc214735" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
@@ -900,7 +884,7 @@ Don’t peek
 </section>
 <section id="pro-and-cons" class="slide level2">
 <h2>Pro and Cons</h2>
-<table style="width:97%;">
+<table class="caption-top" style="width:97%;">
 <colgroup>
 <col style="width: 16%">
 <col style="width: 40%">
@@ -934,7 +918,7 @@ Don’t peek
 </section>
 <section id="pro-and-cons-1" class="slide level2 hidden">
 <h2>Pro and Cons</h2>
-<table style="width:99%;">
+<table class="caption-top" style="width:99%;">
 <colgroup>
 <col style="width: 6%">
 <col style="width: 46%">
@@ -1074,7 +1058,7 @@ Don’t peek
 <h2>Your Turn</h2>
 <p>Work on your site: add pages, edit navigation, add/edit content.</p>
 <p>We are here to help. Publish a new version before lunch.</p>
-<div id="timer_231be6bf3657b185e6dbab1b820e64f3c490bd8f" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_5cfcb1cf4d8eeb965f206e07db0121e2cc214735" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
@@ -1333,18 +1317,7 @@ Don’t peek
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -1376,7 +1349,29 @@ Don’t peek
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
         var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
         var mailtoRegex = new RegExp(/^mailto:/);
           var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -1384,7 +1379,7 @@ Don’t peek
             return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
         // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
         for (var i=0; i<links.length; i++) {
           const link = links[i];
           if (!isInternal(link.href)) {

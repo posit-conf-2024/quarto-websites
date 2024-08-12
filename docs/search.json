@@ -410,7 +410,7 @@
     "href": "04-navigation.html#index.html-is-special",
     "title": "Quarto Websites Workshop",
     "section": "index.html is special",
-    "text": "index.html is special\n\n\nFile location\nindex.qmd\ntalks/index.qmd\n\nURL\n{ site url }\n{ site url }/talks\n\n\nindex.qmd (or .md, or .ipynb) -&gt; index.html\nindex.html acts like a default page for the site or directory."
+    "text": "index.html is special\n\n\nFile location\nindex.qmd\ntalks/index.qmd\n\nURL\n{ site url }\n{ site url }/talks\n\nindex.qmd (or .md, or .ipynb) -&gt; index.html\nindex.html acts like a default page for the site or directory."
   },
   {
     "objectID": "04-navigation.html#you-arent-limited-to-.html",
@@ -438,7 +438,7 @@
     "href": "04-navigation.html#in-text-links",
     "title": "Quarto Websites Workshop",
     "section": "In-text Links",
-    "text": "In-text Links\n\n\nUse relative paths\nUse .qmd rather than .html\n\n\n\nindex.qmd\n\nI occasionally give [talks](talks.qmd).\n\nYou might like to look at \nmy projects [projects](projects/)\n\n\n\n\n\n\n\nUse / to refer to site root\n\n\n\nprojects/index.qmd\n\nYou might also be interested \nin my [talks](/talks.qmd) \n\n\n\n\nhttps://quarto.org/docs/websites/#linking"
+    "text": "In-text Links\n\n\nUse relative paths\nUse .qmd rather than .html\n\n\n\nindex.qmd\n\nI occasionally give [talks](talks.qmd).\n\nYou might like to look at \nmy projects [projects](projects/)\n\n\n\n\n\n\nUse / to refer to site root\n\n\n\nprojects/index.qmd\n\nYou might also be interested \nin my [talks](/talks.qmd) \n\n\n\nhttps://quarto.org/docs/websites/#linking"
   },
   {
     "objectID": "04-navigation.html#navigation-bar",
@@ -459,21 +459,21 @@
     "href": "04-navigation.html#navigation-items",
     "title": "Quarto Websites Workshop",
     "section": "Navigation Items",
-    "text": "Navigation Items\n\n\nA path:\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    right:\n      - talks.qmd\n\n\nA nav item object:\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    right:\n      - href: talks.qmd\n        text: Speaking\n        icon: megaphone\n\n\n\nIf you don’t have text, add aria-label\nOptions for icon: Bootstrap Icons"
+    "text": "Navigation Items\n\n\nA path:\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    right:\n      - talks.qmd\n\n\nA nav item object:\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    right:\n      - href: talks.qmd\n        text: Speaking\n        icon: megaphone\n\n\nIf you don’t have text, add aria-label\nOptions for icon: Bootstrap Icons"
   },
   {
     "objectID": "04-navigation.html#navigation-bar-links",
     "href": "04-navigation.html#navigation-bar-links",
     "title": "Quarto Websites Workshop",
     "section": "Navigation Bar Links",
-    "text": "Navigation Bar Links\nUse navigation items in left, right and tools\n\n\n\n\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    right: \n      - talks.qmd\n    left:\n      - text: Home\n        href: index.qmd\n        icon: house-door-fill\n    tools: \n      - icon: github\n        href: https://github.com/cwickham\n\n\n\n\nhttps://quarto.org/docs/websites/website-navigation.html#top-navigation"
+    "text": "Navigation Bar Links\nUse navigation items in left, right and tools\n\n\n\n\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    right: \n      - talks.qmd\n    left:\n      - text: Home\n        href: index.qmd\n        icon: house-door-fill\n    tools: \n      - icon: github\n        href: https://github.com/cwickham\n\n\n\nhttps://quarto.org/docs/websites/website-navigation.html#top-navigation"
   },
   {
     "objectID": "04-navigation.html#navigation-bar-options",
     "href": "04-navigation.html#navigation-bar-options",
     "title": "Quarto Websites Workshop",
     "section": "Navigation Bar Options",
-    "text": "Navigation Bar Options\nOther customization: title, logo, search\n\n\n\n\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    title: cwick.co.nz \n    logo: logo.png\n    search: true\n    right: \n      - talks.qmd\n    left:\n      - text: Home\n        href: index.qmd\n        icon: house-door-fill\n    tools: \n      - icon: github\n        href: https://github.com/cwickham\n\n\n\n\nhttps://quarto.org/docs/websites/website-navigation.html#top-navigation"
+    "text": "Navigation Bar Options\nOther customization: title, logo, search\n\n\n\n\n\n\n_quarto.yml\n\nwebsite:\n  navbar:\n    title: cwick.co.nz \n    logo: logo.png\n    search: true\n    right: \n      - talks.qmd\n    left:\n      - text: Home\n        href: index.qmd\n        icon: house-door-fill\n    tools: \n      - icon: github\n        href: https://github.com/cwickham\n\n\n\nhttps://quarto.org/docs/websites/website-navigation.html#top-navigation"
   },
   {
     "objectID": "04-navigation.html#your-turn-2",
